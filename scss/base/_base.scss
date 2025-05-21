@@ -1,0 +1,33 @@
+@use "../utilities/index" as utility;
+
+body {
+    background-color: gray;
+    margin: 0px;
+    font-family: "Space Grotesk", serif;
+    color: #ffebd1;
+}
+
+.main-content {
+    margin-left: 120px;
+}
+
+.container {
+    margin-inline: auto;
+
+    @media (min-width: utility.$break-point-small) {
+        width: 750px;
+    }
+
+    @media (min-width: utility.$break-point-medium) {
+        width: 970px;
+    }
+
+    @media (min-width: utility.$break-point-large) {
+        width: 1200px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
