@@ -1,0 +1,29 @@
+@use "../utilities/index" as variable;
+
+.contact {
+    &-box {
+        flex-grow: 1;
+
+        &-names {
+            @media(min-width: variable.$break-point-large) {
+                display: flex;
+            }
+        }
+
+        @media(min-width: variable.$break-point-medium) {
+            margin-left: 25px;
+        }
+    }
+
+    @media(min-width: variable.$break-point-medium) {
+        display: flex;
+    }
+}
+
+form {
+    input {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

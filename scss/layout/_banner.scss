@@ -1,8 +1,15 @@
+@use "sass:map";
+@use "../utilities/index" as variable;
+
 .hero-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../image/space.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
+    border-bottom: 3px solid map.get(variable.$color-theme, "primary");
 }

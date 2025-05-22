@@ -1,10 +1,22 @@
 @use "sass:color";
 @use "sass:map";
+@use "../utilities/index" as variable;
+
+// shove everything to the right of nav bar
+
+.main-content {
+    @media(min-width: variable.$break-point-small) {
+        margin-left: 120px;
+    }
+}
+
+// nav bar
 
 .sidebar {
+    display: none;
     width: 120px;
     height: 100vh;
-    background-color: map.get($theme, "crimson");
+    background-color: map.get(variable.$color-theme, "primary");
     position: fixed;
 
     a {
@@ -16,7 +28,11 @@
         padding: 15px;
 
         &:hover {
-            background-color: color.adjust(map.get($theme, "crimson"), $lightness: -10%);
+            background-color: color.adjust(map.get(variable.$color-theme, "primary"), $lightness: -10%);
         }
+    }
+
+    @media (min-width: variable.$break-point-small) {
+        display: block;
     }
 }

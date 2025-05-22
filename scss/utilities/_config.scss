@@ -1,13 +1,14 @@
 // Break Points
 
+$break-point-x-small: 612px;
 $break-point-small: 768px;
 $break-point-medium: 992px;
-$break-point-large: 1260px;
+$break-point-large: 1380px;
 
 // Colors
 
-$theme: (
-    "crimson": #F62459,
+$color-theme: (
+    "primary": #160202,
 );
 
 // Fonts
