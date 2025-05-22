@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../../utilities/index" as variable;
+@use "../utilities/index" as variable;
 
 .scs{
     &-grid-container {
@@ -15,10 +15,9 @@
 
         p, li {
             font-size: 1.125rem;
-            letter-spacing: 0.4px;
         }
 
-        @media (min-width: variable.$break-point-medium) {
+        @media (min-width: variable.$break-point-large) {
             grid-template-columns: 1fr 1fr;
         }
     }
@@ -30,9 +29,4 @@
         border-radius: 10px;
         padding: 25px;
     }
-}
-
-.about-scs-header {
-    margin: 0px;
-    padding-top: 60px;
 }

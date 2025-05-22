@@ -19,12 +19,6 @@ figure, blockquote, dl, dd {
   margin-block-end: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
-  list-style: none;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -73,6 +67,124 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?9ughs7");
+  src: url("../fonts/icomoon.eot?9ughs7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?9ughs7") format("truetype"), url("../fonts/icomoon.woff?9ughs7") format("woff"), url("../fonts/icomoon.svg?9ughs7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-call:before {
+  content: "\e900";
+}
+
+.icon-keyboard_arrow_down:before {
+  content: "\e901";
+}
+
+.icon-keyboard_arrow_left:before {
+  content: "\e902";
+}
+
+.icon-keyboard_arrow_up:before {
+  content: "\e903";
+}
+
+.icon-navigate_next:before {
+  content: "\e904";
+}
+
+.icon-person:before {
+  content: "\e906";
+}
+
+.icon-info:before {
+  content: "\e907";
+}
+
+.icon-trending_up:before {
+  content: "\e908";
+}
+
+.icon-business_center:before {
+  content: "\e909";
+}
+
+.icon-add_business:before {
+  content: "\e90a";
+}
+
+.icon-architecture:before {
+  content: "\e90b";
+}
+
+.icon-connect_without_contact:before {
+  content: "\e90d";
+}
+
+.icon-github:before {
+  content: "\e90e";
+}
+
+.icon-steam:before {
+  content: "\e90f";
+}
+
+.icon-youtube:before {
+  content: "\e910";
+}
+
+.icon-medal:before {
+  content: "\e911";
+}
+
+.icon-education:before {
+  content: "\e905";
+}
+
+.icon-group:before {
+  content: "\e90c";
+}
+
+.icon-users:before {
+  content: "\e90c";
+}
+
+.icon-display:before {
+  content: "\e956";
+}
+
+.icon-link:before {
+  content: "\e9cb";
+}
+
+.icon-embed2:before {
+  content: "\ea80";
+}
+
 body {
   background-color: gray;
   margin: 0px;
@@ -80,6 +192,8 @@ body {
   color: #ffebd1;
   background-image: url(../image/stars.jpg);
   background-position: center;
+  background-attachment: fixed;
+  letter-spacing: 0.4px;
 }
 
 .container {
@@ -105,6 +219,23 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+a[class=link]:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
+  margin-block-end: 0px;
+}
+
+header h1 {
+  margin: 0px;
+  padding-top: 60px;
 }
 
 @media (min-width: 768px) {
@@ -210,9 +341,8 @@ form input {
 }
 .scs-grid-container p, .scs-grid-container li {
   font-size: 1.125rem;
-  letter-spacing: 0.4px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1380px) {
   .scs-grid-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -221,11 +351,6 @@ form input {
   background-color: #1E0302;
   border-radius: 10px;
   padding: 25px;
-}
-
-.about-scs-header {
-  margin: 0px;
-  padding-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

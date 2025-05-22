@@ -7,6 +7,8 @@ body {
     color: variable.$color-light-theme;
     background-image: url(../image/stars.jpg);
     background-position: center;
+    background-attachment: fixed;
+    letter-spacing: 0.4px;
 }
 
 .container {
@@ -29,4 +31,29 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+
+    &[class="link"] {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+    margin-block-end: 0px;
+}
+
+// Consistant headers for all pages
+
+header {
+    h1 {
+        margin: 0px;
+        padding-top: 60px;
+    }
+}
+
