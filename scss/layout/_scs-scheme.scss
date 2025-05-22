@@ -25,7 +25,7 @@
     //childeren of the grid container
 
     &-item{
-        background-color: map.get(variable.$color-theme, "licorice");
+        background-color: map.get(variable.$color-dark-theme, "dark-4");
         border-radius: 10px;
         padding: 25px;
     }

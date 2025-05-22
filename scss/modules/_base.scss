@@ -1,10 +1,11 @@
+@use "sass:map";
 @use "../utilities/index" as variable;
 
 body {
     background-color: gray;
     margin: 0px;
     font-family: "Space Grotesk", serif;
-    color: variable.$color-light-theme;
+    color: map.get(variable.$color-light-theme, "light-3");
     background-image: url(../image/stars.jpg);
     background-position: center;
     background-attachment: fixed;
