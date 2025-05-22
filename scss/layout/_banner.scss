@@ -11,5 +11,6 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    border-bottom: 3px solid map.get(variable.$color-theme, "primary");
+    border-bottom: 3px solid map.get(variable.$color-theme, "licorice");
+    box-shadow: 0px 0px 400px 100px rgba(variable.$color-light-theme, 0.25);
 }

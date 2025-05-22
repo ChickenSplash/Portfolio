@@ -1,10 +1,10 @@
-@use "../utilities/index" as utility;
+@use "../utilities/index" as variable;
 
 body {
     background-color: gray;
     margin: 0px;
     font-family: "Space Grotesk", serif;
-    color: #ffebd1;
+    color: variable.$color-light-theme;
     background-image: url(../image/stars.jpg);
     background-position: center;
 }
@@ -13,15 +13,15 @@ body {
     margin-inline: auto;
     padding-inline: 15px;
     
-    @media (max-width: utility.$break-point-medium) {
+    @media (max-width: variable.$break-point-medium) {
         max-width: 564px;
     }
 
-    @media (min-width: utility.$break-point-medium) {
+    @media (min-width: variable.$break-point-medium) {
         width: 822px;
     }
 
-    @media (min-width: utility.$break-point-large) {
+    @media (min-width: variable.$break-point-large) {
         width: 1138px;
     }
 }

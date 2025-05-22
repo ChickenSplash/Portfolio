@@ -1,0 +1,38 @@
+@use "sass:map";
+@use "../../utilities/index" as variable;
+
+.scs{
+    &-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-top: 60px;
+
+        h2 {
+            margin: 0px;
+            text-align: center;
+        }
+
+        p, li {
+            font-size: 1.125rem;
+            letter-spacing: 0.4px;
+        }
+
+        @media (min-width: variable.$break-point-medium) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    //childeren of the grid container
+
+    &-item{
+        background-color: map.get(variable.$color-theme, "licorice");
+        border-radius: 10px;
+        padding: 25px;
+    }
+}
+
+.about-scs-header {
+    margin: 0px;
+    padding-top: 60px;
+}

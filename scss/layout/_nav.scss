@@ -16,7 +16,7 @@
     display: none;
     width: 120px;
     height: 100vh;
-    background-color: map.get(variable.$color-theme, "primary");
+    background-color: map.get(variable.$color-theme, "licorice");
     position: fixed;
 
     a {
@@ -28,7 +28,7 @@
         padding: 15px;
 
         &:hover {
-            background-color: color.adjust(map.get(variable.$color-theme, "primary"), $lightness: -10%);
+            background-color: color.adjust(map.get(variable.$color-theme, "licorice"), $lightness: 10%);
         }
     }
 

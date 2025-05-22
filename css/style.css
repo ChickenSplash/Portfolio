@@ -117,7 +117,7 @@ a {
   display: none;
   width: 120px;
   height: 100vh;
-  background-color: #160202;
+  background-color: #1E0302;
   position: fixed;
 }
 .sidebar a {
@@ -129,7 +129,7 @@ a {
   padding: 15px;
 }
 .sidebar a:hover {
-  background-color: hsl(0, 83.3333333333%, -5.2941176471%);
+  background-color: rgb(77.8125, 7.78125, 5.1875);
 }
 @media (min-width: 768px) {
   .sidebar {
@@ -147,23 +147,24 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  border-bottom: 3px solid #160202;
+  border-bottom: 3px solid #1E0302;
+  box-shadow: 0px 0px 400px 100px rgba(255, 235, 209, 0.25);
 }
 
 .projects {
   display: grid;
-  margin-top: 20px;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(300px, auto);
   gap: 40px;
+  padding-top: 60px;
 }
-.projects .project {
+.projects .project-thumbnail {
   display: block;
   border-radius: 5px;
   transition: transform 0.5s ease;
   border: 1px solid #ccc;
 }
-.projects .project:hover {
+.projects .project-thumbnail:hover {
   transform: translateY(-10px);
 }
 @media (min-width: 992px) {
@@ -195,6 +196,36 @@ form input {
   display: block;
   width: 100%;
   margin-top: 20px;
+}
+
+.scs-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-top: 60px;
+}
+.scs-grid-container h2 {
+  margin: 0px;
+  text-align: center;
+}
+.scs-grid-container p, .scs-grid-container li {
+  font-size: 1.125rem;
+  letter-spacing: 0.4px;
+}
+@media (min-width: 992px) {
+  .scs-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.scs-item {
+  background-color: #1E0302;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.about-scs-header {
+  margin: 0px;
+  padding-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
