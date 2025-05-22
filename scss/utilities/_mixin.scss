@@ -1,0 +1,13 @@
+@use "config" as variable;
+
+@mixin project-tile-theme($theme: variable.$color-light-theme) {
+    @each $i, $color in $theme {
+        .theme-#{$i} {
+            border: 2px solid $color;
+
+            h3 {
+                background-color: $color;
+            }
+        }
+    }
+}
