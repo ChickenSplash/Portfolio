@@ -51,10 +51,16 @@ ul {
 
 // Consistant headers for all pages
 
-header {
+.section-header {
     h1 {
         margin: 0px;
         padding-top: 60px;
+    }
+}
+
+footer {
+    p {
+        text-align: center;
     }
 }
 

@@ -1,17 +1,29 @@
+@use "sass:map";
+@use "sass:color";
 @use "../utilities/index" as variable;
 
 .contact {
+    @extend %content-background;
+    margin-block: 60px;
+    font-size: 1.125rem;
+    
+    &-info {
+        flex: 1
+    }
+
     &-box {
-        flex-grow: 1;
 
         &-names {
             @media(min-width: variable.$break-point-large) {
-                display: flex;
+                display: grid;
+                grid-auto-flow: column;
+                gap: 40px;
             }
         }
 
         @media(min-width: variable.$break-point-medium) {
-            margin-left: 25px;
+            padding-left: 25px;
+            flex: 0 1 75%;
         }
     }
 
@@ -21,9 +33,31 @@
 }
 
 form {
-    input {
-        display: block;
-        width: 100%;
-        margin-top: 20px;
+    @include variable.background-theme();   
+}
+
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: map.get(variable.$color-dark-theme, "4");
+
+    &:focus {
+        outline: none;
     }
+
+    &::placeholder {
+        color: color.adjust(map.get(variable.$color-light-theme, "3"), $alpha: -0.5);
+    }
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-large {
+    height: 150px;
 }

@@ -67,3 +67,11 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+// consistent input across browsers
+
+input {
+  appearance: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
