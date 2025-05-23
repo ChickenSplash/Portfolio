@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 54px;
+    max-width: 100%;
+    padding-inline: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    span {
+        transition: all 0.2s;
+    }
+
+    &:hover span {
+        transform: scale(.9);
+        opacity: .75;   
+    }
+
+    [class^="icon-"] {
+        margin-right: 5px;
+    }
+}

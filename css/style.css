@@ -69,8 +69,8 @@ textarea:not([rows]) {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?9ughs7");
-  src: url("../fonts/icomoon.eot?9ughs7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?9ughs7") format("truetype"), url("../fonts/icomoon.woff?9ughs7") format("woff"), url("../fonts/icomoon.svg?9ughs7#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?mqoe3u");
+  src: url("../fonts/icomoon.eot?mqoe3u#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mqoe3u") format("truetype"), url("../fonts/icomoon.woff?mqoe3u") format("woff"), url("../fonts/icomoon.svg?mqoe3u#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -97,6 +97,14 @@ textarea:not([rows]) {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ruler:before {
+  content: "\e913";
+}
+
+.icon-medal:before {
+  content: "\e911";
+}
+
 .icon-call:before {
   content: "\e900";
 }
@@ -115,6 +123,10 @@ textarea:not([rows]) {
 
 .icon-navigate_next:before {
   content: "\e904";
+}
+
+.icon-folder_special:before {
+  content: "\e912";
 }
 
 .icon-person:before {
@@ -155,10 +167,6 @@ textarea:not([rows]) {
 
 .icon-youtube:before {
   content: "\e910";
-}
-
-.icon-medal:before {
-  content: "\e911";
 }
 
 .icon-education:before {
@@ -238,6 +246,27 @@ header h1 {
   padding-top: 60px;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 54px;
+  max-width: 100%;
+  padding-inline: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button span {
+  transition: all 0.2s;
+}
+.button:hover span {
+  transform: scale(0.9);
+  opacity: 0.75;
+}
+.button [class^=icon-] {
+  margin-right: 5px;
+}
+
 @media (min-width: 768px) {
   .main-content {
     margin-left: 120px;
@@ -307,31 +336,31 @@ header h1 {
 .projects .theme-1 {
   border: 2px solid #FEC89A;
 }
-.projects .theme-1 h3 {
+.projects .theme-1 h3, .projects .theme-1 .button {
   background-color: #FEC89A;
 }
 .projects .theme-2 {
   border: 2px solid #F9DCC4;
 }
-.projects .theme-2 h3 {
+.projects .theme-2 h3, .projects .theme-2 .button {
   background-color: #F9DCC4;
 }
 .projects .theme-3 {
   border: 2px solid #F8EDEB;
 }
-.projects .theme-3 h3 {
+.projects .theme-3 h3, .projects .theme-3 .button {
   background-color: #F8EDEB;
 }
 .projects .theme-4 {
   border: 2px solid #FCD5CE;
 }
-.projects .theme-4 h3 {
+.projects .theme-4 h3, .projects .theme-4 .button {
   background-color: #FCD5CE;
 }
 .projects .theme-5 {
   border: 2px solid #FFB5A7;
 }
-.projects .theme-5 h3 {
+.projects .theme-5 h3, .projects .theme-5 .button {
   background-color: #FFB5A7;
 }
 @media (min-width: 992px) {
@@ -346,12 +375,12 @@ header h1 {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  color: #1E0302;
   background-color: rgba(30, 3, 2, 0.75);
   box-shadow: 0px 0px 80px 0px rgba(248, 237, 235, 0.25);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 .project-thumbnail img {
-  position: absolute;
   filter: blur(0px) brightness(75%);
   transition: filter 0.2s ease;
 }
@@ -362,12 +391,13 @@ header h1 {
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  color: #1E0302;
 }
 .project-thumbnail .view-more {
   display: none;
+  justify-content: space-around;
+  width: 100%;
   z-index: 1;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .project-thumbnail:hover {
   transform: translateY(-10px);
@@ -377,7 +407,16 @@ header h1 {
   filter: blur(2px) brightness(35%);
 }
 .project-thumbnail:hover .view-more {
-  display: block;
+  display: flex;
+}
+
+#nm-project-img {
+  position: absolute;
+  width: 90%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
 }
 
 .contact-box {

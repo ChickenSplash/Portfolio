@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?9ughs7');
-  src:  url('../fonts/icomoon.eot?9ughs7#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?9ughs7') format('truetype'),
-    url('../fonts/icomoon.woff?9ughs7') format('woff'),
-    url('../fonts/icomoon.svg?9ughs7#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?mqoe3u');
+  src:  url('../fonts/icomoon.eot?mqoe3u#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?mqoe3u') format('truetype'),
+    url('../fonts/icomoon.woff?mqoe3u') format('woff'),
+    url('../fonts/icomoon.svg?mqoe3u#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,6 +34,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ruler:before {
+  content: "\e913";
+}
+.icon-medal:before {
+  content: "\e911";
+}
 .icon-call:before {
   content: "\e900";
 }
@@ -48,6 +54,9 @@
 }
 .icon-navigate_next:before {
   content: "\e904";
+}
+.icon-folder_special:before {
+  content: "\e912";
 }
 .icon-person:before {
   content: "\e906";
@@ -78,9 +87,6 @@
 }
 .icon-youtube:before {
   content: "\e910";
-}
-.icon-medal:before {
-  content: "\e911";
 }
 .icon-education:before {
   content: "\e905";
