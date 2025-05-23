@@ -210,7 +210,7 @@ body {
   background-color: gray;
   margin: 0px;
   font-family: "Space Grotesk", serif;
-  color: #F8EDEB;
+  color: #F9DCC4;
   background-image: url(../image/stars.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -272,6 +272,7 @@ footer p {
   padding-inline: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  background-color: #F9DCC4;
 }
 .button .scale {
   transition: all 0.2s;
@@ -320,7 +321,7 @@ footer p {
 }
 .sidebar a:hover {
   background-color: rgb(53.90625, 5.390625, 3.59375);
-  box-shadow: 0px 0px 20px 0px rgba(248, 237, 235, 0.25) inset, 0px 0px 20px 0px rgba(248, 237, 235, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(249, 220, 196, 0.25) inset, 0px 0px 20px 0px rgba(249, 220, 196, 0.25);
 }
 @media (min-width: 768px) {
   .sidebar {
@@ -340,7 +341,7 @@ footer p {
   background-position: center;
   height: 100vh;
   border-bottom: 3px solid #1E0302;
-  box-shadow: 0px 0px 400px 100px rgba(248, 237, 235, 0.25);
+  box-shadow: 0px 0px 400px 100px rgba(249, 220, 196, 0.25);
 }
 
 .projects {
@@ -349,36 +350,6 @@ footer p {
   grid-auto-rows: 300px;
   gap: 40px;
   padding-top: 60px;
-}
-.projects .theme-1 {
-  border: 2px solid #FEC89A;
-}
-.projects .theme-1 .has-theme {
-  background-color: #FEC89A;
-}
-.projects .theme-2 {
-  border: 2px solid #F9DCC4;
-}
-.projects .theme-2 .has-theme {
-  background-color: #F9DCC4;
-}
-.projects .theme-3 {
-  border: 2px solid #F8EDEB;
-}
-.projects .theme-3 .has-theme {
-  background-color: #F8EDEB;
-}
-.projects .theme-4 {
-  border: 2px solid #FCD5CE;
-}
-.projects .theme-4 .has-theme {
-  background-color: #FCD5CE;
-}
-.projects .theme-5 {
-  border: 2px solid #FFB5A7;
-}
-.projects .theme-5 .has-theme {
-  background-color: #FFB5A7;
 }
 @media (min-width: 992px) {
   .projects {
@@ -394,8 +365,9 @@ footer p {
   overflow: hidden;
   color: #1E0302;
   background-color: rgba(30, 3, 2, 0.75);
-  box-shadow: 0px 0px 80px 0px rgba(248, 237, 235, 0.25);
+  box-shadow: 0px 0px 80px 0px rgba(249, 220, 196, 0.25);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border: 2px solid #F9DCC4;
 }
 .project-thumbnail img {
   filter: blur(0px) brightness(75%);
@@ -408,6 +380,7 @@ footer p {
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+  background-color: #F9DCC4;
 }
 .project-thumbnail .view-more {
   display: none;
@@ -418,7 +391,7 @@ footer p {
 }
 .project-thumbnail:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 0px 80px 0px rgba(248, 237, 235, 0.5);
+  box-shadow: 0px 0px 80px 0px rgba(249, 220, 196, 0.5);
 }
 .project-thumbnail:hover img {
   filter: blur(2px) brightness(35%);
@@ -462,27 +435,6 @@ footer p {
   }
 }
 
-form .theme-1 {
-  border: 2px solid #FEC89A;
-  color: #FEC89A;
-}
-form .theme-2 {
-  border: 2px solid #F9DCC4;
-  color: #F9DCC4;
-}
-form .theme-3 {
-  border: 2px solid #F8EDEB;
-  color: #F8EDEB;
-}
-form .theme-4 {
-  border: 2px solid #FCD5CE;
-  color: #FCD5CE;
-}
-form .theme-5 {
-  border: 2px solid #FFB5A7;
-  color: #FFB5A7;
-}
-
 input, textarea {
   display: block;
   width: 100%;
@@ -490,21 +442,19 @@ input, textarea {
   border-radius: 5px;
   padding: 10px 15px;
   background-color: #1E0302;
+  border: 2px solid #F9DCC4;
+  color: #F9DCC4;
 }
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+  box-shadow: 0 0 8px #f9dcc4;
 }
 input::placeholder, textarea::placeholder {
-  color: rgba(248, 237, 235, 0.5);
+  color: rgba(249, 220, 196, 0.5);
 }
 
 textarea {
   resize: vertical;
-}
-
-.input-large {
-  height: 150px;
 }
 
 .scs-grid-container {

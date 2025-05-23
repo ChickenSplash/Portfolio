@@ -32,33 +32,26 @@
     }
 }
 
-form {
-    @include variable.background-theme();   
-}
-
-
 input, textarea {
     display: block;
     width: 100%;
     margin-top: 30px;
     border-radius: 5px;
     padding: 10px 15px;
-    background-color: map.get(variable.$color-dark-theme, "4");
+    background-color: variable.$color-dark;
+    border: 2px solid variable.$color-light;
+    color: variable.$color-light;
 
     &:focus {
         outline: none;
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+        box-shadow: 0 0 8px rgba(variable.$color-light, 1);
     }
 
     &::placeholder {
-        color: color.adjust(map.get(variable.$color-light-theme, "3"), $alpha: -0.5);
+        color: color.adjust(variable.$color-light, $alpha: -0.5);
     }
 }
 
 textarea {
   resize: vertical;
-}
-
-.input-large {
-    height: 150px;
 }

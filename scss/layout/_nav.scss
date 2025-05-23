@@ -16,7 +16,7 @@
     display: none;
     width: 120px;
     height: 100vh;
-    background-color: map.get(variable.$color-dark-theme, "4");
+    background-color: variable.$color-dark;
     position: fixed;
 
     .initials{
@@ -46,10 +46,10 @@
         }
 
         &:hover {
-            background-color: color.adjust(map.get(variable.$color-dark-theme, "4"), $lightness: 5%);
+            background-color: color.adjust(variable.$color-dark, $lightness: 5%);
             box-shadow: 
-            0px 0px 20px 0px rgba(map.get(variable.$color-light-theme, "3"), 0.25) inset,
-            0px 0px 20px 0px rgba(map.get(variable.$color-light-theme, "3"), 0.25);
+            0px 0px 20px 0px rgba(variable.$color-light, 0.25) inset,
+            0px 0px 20px 0px rgba(variable.$color-light, 0.25);
         }
     }
 

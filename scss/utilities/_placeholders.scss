@@ -2,7 +2,7 @@
 @use "config" as variable;
 
 %content-background {
-    background-color: map.get(variable.$color-dark-theme, "4");
+    background-color: variable.$color-dark;
     border-radius: 10px;
     padding: 25px;
 }

@@ -1,3 +1,5 @@
+@use "../utilities/index" as variable;
+
 .button {
     display: flex;
     align-items: center;
@@ -7,6 +9,7 @@
     padding-inline: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    background-color: variable.$color-light;
 
     .scale {
         transition: all 0.2s;
