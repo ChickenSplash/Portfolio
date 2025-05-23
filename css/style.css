@@ -273,10 +273,10 @@ footer p {
   text-transform: uppercase;
   font-weight: bold;
 }
-.button span {
+.button .scale {
   transition: all 0.2s;
 }
-.button:hover span {
+.button:hover .scale {
   transform: scale(0.9);
   opacity: 0.75;
 }
@@ -493,6 +493,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 input::placeholder, textarea::placeholder {
   color: rgba(248, 237, 235, 0.5);

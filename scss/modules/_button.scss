@@ -8,11 +8,11 @@
     text-transform: uppercase;
     font-weight: bold;
 
-    span {
+    .scale {
         transition: all 0.2s;
     }
 
-    &:hover span {
+    &:hover .scale {
         transform: scale(.9);
         opacity: .75;   
     }
