@@ -30,6 +30,11 @@
     @media(min-width: variable.$break-point-large) {
         display: flex;
     }
+
+    .phone-number, .email-address {
+        font-size: 1.375rem;
+        font-weight: bold;
+    }
 }
 
 input, textarea {
@@ -39,7 +44,7 @@ input, textarea {
     border-radius: 5px;
     padding: 10px 15px;
     background-color: variable.$color-dark;
-    border: 2px solid variable.$color-light;
+    border: 1px solid variable.$color-light;
     color: variable.$color-light;
 
     &:focus {
@@ -48,7 +53,7 @@ input, textarea {
     }
 
     &::placeholder {
-        color: color.adjust(variable.$color-light, $alpha: -0.5);
+        color: color.adjust(variable.$color-light, $alpha: -0.6);
     }
 }
 

@@ -9,18 +9,19 @@
     <body>
         <nav class="sidebar">
             <ul>
-                <a class="initials main-link">
+                <a class="initials main-link" href="#">
                     <div>
                         <span>EC</span>
                     </div>
                 </a>
-                <a class="main-link">
+                <hr class="nav-divider">
+                <a class="main-link" href="#about-me">
                     <div class="center">
                         <span class="icon-info"></span>
                         <span>&nbsp;About Me</span>
                     </div>
                 </a>
-                <a class="main-link">
+                <a class="main-link" href="#projects">
                     <div class="center">
                         <span class="icon-ruler"></span>
                         <span>&nbsp;My Portfolio</span>
@@ -32,18 +33,20 @@
                         <span>&nbsp;Coding Examples</span>
                     </div>
                 </a>
-                <a class="main-link">
+                <a class="main-link" href="internal-pages/scs-scheme.html">
                     <div class="center">
                         <span class="icon-education"></span>
                         <span>&nbsp;SCS Scheme</span>
                     </div>
                 </a>
-                <a class="main-link">
+                <hr class="nav-divider">
+                <a class="main-link" href="#contact-me">
                     <div class="center">
                         <span class="icon-call"></span>
                         <span>&nbsp;Contact Me</span>
                     </div>
                 </a>
+                <hr class="nav-divider">
             </ul>
         </nav>
         <div class="main-content">
@@ -52,7 +55,16 @@
                 <p>I'm a Web Developer</p>
             </div>
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" id="about-me">
+                    <h1>About Me</h1>
+                </div>
+                <div class="about-me">
+                    <h2>Where it Started</h2>
+                    <p>My journey into programming began with a passion for creativity and problem solving through Minecraft datapacks. What started as tinkering quickly evolved into creating <a class="seamless-link" href="https://www.planetminecraft.com/member/chickensplash/">datapacks</a> for others to enjoy, sparking a deeper curiosity for how things work under the hood. This experience led me to explore broader areas of development, including 3D modeling with Blender, where I’ve created items for the <a class="seamless-link" href="https://steamcommunity.com/id/ChickenSplash/myworkshopfiles/">Steam Workshop</a> and designed avatars for VRChat.</p>
+                    <h2>What's Next</h2>
+                    <p>What drives me is the belief that with the right knowledge, I can build anything on a computer. That mindset keeps me eager to learn and grow across multiple domains; from front-end and back-end web development to cybersecurity and AI. I'm especially fascinated by the potential of artificial intelligence to change how we build, interact, and solve problems. My goal is to continually expand my skillset and carve out a versatile, meaningful role in the world of software development.</p>
+                </div>
+                <div class="section-header"  id="projects">
                     <h1>My Projects</h1>
                 </div>
                 <div class="projects">
@@ -160,14 +172,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-header">
+                <div class="section-header" id="contact-me">
                     <h1>Get In Touch</h1>
                 </div>
                 <div class="contact">
                     <div class="contact-info">
-                        <p>Got a project in mind or just want to say hi? Drop me a message in the form or give me a shout through my socials!</p>
-                        <p>+44 7858501493</p>
-                        <p>guardeded@gmail.com</p>
+                        <p class="phone-number">+44 (0)7858501493</p>
+                        <p class="email-address"><a class="seamless-link" href="mailto:guardeded@gmail.com">guardeded@gmail.com</a></p>
+                        <p>Got a project in mind or just want to say hi?</p>
+                        <p>Drop me a message in the form or give me a shout through my socials!</p>
                     </div>
                     <div class="contact-box">
                         <form>

@@ -200,21 +200,60 @@ input {
   content: "\ea80";
 }
 
-.scs-item, .contact {
-  background-color: #1E0302;
+.hero-image, .scs-item, .contact, .project-thumbnail, .about-me {
+  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.25);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.hero-image:hover, .scs-item:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
+  background-color: rgba(26, 2, 2, 0.85);
+  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.5);
+}
+
+.scs-item, .contact, .project-thumbnail, .about-me {
+  background-color: rgba(26, 2, 2, 0.7);
   border-radius: 10px;
   padding: 25px;
+  border: 1px solid rgb(190, 159, 159);
+}
+
+.hero-image h1, .hero-image p {
+  text-shadow: 0px 0px 16px rgba(190, 159, 159, 0.25);
+  transition: text-shadow 0.5s ease;
+}
+.hero-image h1:hover, .hero-image p:hover {
+  text-shadow: 0px 0px 16px rgba(190, 159, 159, 0.5);
+}
+
+.main-link .center::after, .seamless-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(190, 159, 159, 0.75);
+  transition: transform 0.2s ease;
+}
+.main-link .center:hover::after, .seamless-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: gray;
   margin: 0px;
   font-family: "Space Grotesk", serif;
-  color: #F9DCC4;
+  color: rgb(190, 159, 159);
   background-image: url(../image/stars.jpg);
   background-position: center;
   background-attachment: fixed;
   letter-spacing: 0.4px;
+  line-height: 30px;
 }
 
 .container {
@@ -263,11 +302,11 @@ footer p {
   padding-inline: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #F9DCC4;
+  background-color: rgb(190, 159, 159);
   transition: all 0.4s;
 }
 .button:hover {
-  background-color: rgb(252.2953846154, 239.2230769231, 228.4046153846);
+  background-color: rgb(204.4130434783, 180.2869565217, 180.2869565217);
 }
 .button .scale {
   transition: all 0.2s;
@@ -275,6 +314,12 @@ footer p {
 .button:hover .scale {
   transform: scale(0.9);
   opacity: 0.75;
+}
+
+.seamless-link {
+  font-weight: bold;
+  color: rgb(210.5900621118, 189.4099378882, 189.4099378882);
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -287,8 +332,15 @@ footer p {
   display: none;
   width: 220px;
   height: 100vh;
-  background-color: #1E0302;
+  background-color: rgb(26, 2, 2);
   position: fixed;
+  border-right: 1px solid rgb(190, 159, 159);
+  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.sidebar:hover {
+  background-color: rgba(26, 2, 2, 0.85);
+  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.5);
 }
 .sidebar .initials {
   margin-bottom: 60px;
@@ -318,24 +370,9 @@ footer p {
   font-size: 1.125rem;
   transition: all 0.2s;
 }
-.main-link .center:hover {
-  transform: scale(0.9);
-  opacity: 0.75;
-}
-.main-link .center::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  transform-origin: center;
-  width: 75%;
-  height: 1px;
-  background-color: rgba(249, 220, 196, 0.75);
-  transition: transform 0.2s ease;
-}
-.main-link .center:hover::after {
-  transform: translateX(-50%) scaleX(1);
+
+.nav-divider {
+  border-color: rgb(190, 159, 159);
 }
 
 .hero-image {
@@ -348,8 +385,13 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  border-bottom: 3px solid #1E0302;
-  box-shadow: 0px 0px 400px 100px rgba(249, 220, 196, 0.25);
+  border-bottom: 1px solid rgb(190, 159, 159);
+}
+.about-me {
+  margin-top: 60px;
+}
+.about-me p {
+  font-size: 1.125rem;
 }
 
 .projects {
@@ -371,11 +413,9 @@ footer p {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  color: #1E0302;
-  background-color: rgba(30, 3, 2, 0.75);
-  box-shadow: 0px 0px 80px 0px rgba(249, 220, 196, 0.25);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  border: 2px solid #F9DCC4;
+  color: rgb(26, 2, 2);
+  transition: all 0.5s ease;
+  padding: 0px;
 }
 .project-thumbnail img {
   filter: blur(0px) brightness(75%);
@@ -388,7 +428,7 @@ footer p {
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-color: #F9DCC4;
+  background-color: rgb(190, 159, 159);
 }
 .project-thumbnail .view-more {
   display: none;
@@ -398,8 +438,7 @@ footer p {
   margin-bottom: 40px;
 }
 .project-thumbnail:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 80px 0px rgba(249, 220, 196, 0.5);
+  transform: translateY(-5px);
 }
 .project-thumbnail:hover img {
   filter: blur(2px) brightness(35%);
@@ -442,6 +481,10 @@ footer p {
     display: flex;
   }
 }
+.contact .phone-number, .contact .email-address {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
 
 input, textarea {
   display: block;
@@ -449,16 +492,16 @@ input, textarea {
   margin-top: 30px;
   border-radius: 5px;
   padding: 10px 15px;
-  background-color: #1E0302;
-  border: 2px solid #F9DCC4;
-  color: #F9DCC4;
+  background-color: rgb(26, 2, 2);
+  border: 1px solid rgb(190, 159, 159);
+  color: rgb(190, 159, 159);
 }
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 8px #f9dcc4;
+  box-shadow: 0 0 8px #be9f9f;
 }
 input::placeholder, textarea::placeholder {
-  color: rgba(249, 220, 196, 0.5);
+  color: rgba(190, 159, 159, 0.4);
 }
 
 textarea {

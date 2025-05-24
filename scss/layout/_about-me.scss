@@ -1,0 +1,10 @@
+@use "../utilities/index";
+
+.about-me {
+    @extend %content-background;
+    margin-top: 60px;
+
+    p {
+        font-size: 1.125rem;
+    }
+}

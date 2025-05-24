@@ -1,6 +1,8 @@
 @use "sass:color";
 @use "../utilities/index" as variable;
 
+//buttons
+
 .button {
     display: flex;
     align-items: center;
@@ -24,4 +26,13 @@
         transform: scale(.9);
         opacity: .75;   
     }
+}
+
+//links
+
+.seamless-link {
+    font-weight: bold;
+    color: color.adjust(variable.$color-light, $lightness: 10%);
+    position: relative;
+    @extend %text-underline;
 }

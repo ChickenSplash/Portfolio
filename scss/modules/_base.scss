@@ -1,6 +1,10 @@
 @use "sass:map";
 @use "../utilities/index" as variable;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: gray;
     margin: 0px;
@@ -10,6 +14,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     letter-spacing: 0.4px;
+    line-height: 30px;
 }
 
 .container {
@@ -57,4 +62,3 @@ footer {
         text-align: center;
     }
 }
-
