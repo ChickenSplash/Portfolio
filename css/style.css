@@ -220,19 +220,11 @@ body {
 .container {
   margin-inline: auto;
   padding-inline: 15px;
+  max-width: 564px;
 }
-@media (max-width: 992px) {
+@media (min-width: 1410px) {
   .container {
-    max-width: 564px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 822px;
-  }
-}
-@media (min-width: 1380px) {
-  .container {
+    max-width: none;
     width: 1138px;
   }
 }
@@ -268,11 +260,14 @@ footer p {
   align-items: center;
   border-radius: 5px;
   height: 54px;
-  max-width: 100%;
   padding-inline: 20px;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #F9DCC4;
+  transition: all 0.4s;
+}
+.button:hover {
+  background-color: rgb(252.2953846154, 239.2230769231, 228.4046153846);
 }
 .button .scale {
   transition: all 0.2s;
@@ -281,53 +276,66 @@ footer p {
   transform: scale(0.9);
   opacity: 0.75;
 }
-.button [class^=icon-] {
-  margin-right: 5px;
-}
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main-content {
-    margin-left: 120px;
+    margin-left: 220px;
   }
 }
 
 .sidebar {
   display: none;
-  width: 120px;
+  width: 220px;
   height: 100vh;
   background-color: #1E0302;
   position: fixed;
 }
 .sidebar .initials {
-  font-size: 3rem;
+  margin-bottom: 60px;
 }
-.sidebar a {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+.sidebar .initials span {
+  font-size: 4rem;
+  font-weight: bold;
 }
-.sidebar a [class^=icon-] {
-  font-size: 2rem;
-}
-.sidebar a .text {
-  font-size: 1.125rem;
-  margin-top: 10px;
-}
-.sidebar a:hover {
-  background-color: rgb(53.90625, 5.390625, 3.59375);
-  box-shadow: 0px 0px 20px 0px rgba(249, 220, 196, 0.25) inset, 0px 0px 20px 0px rgba(249, 220, 196, 0.25);
-}
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .sidebar {
     display: flex;
     flex-direction: column;
   }
+}
+
+.main-link {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-block: 15px;
+}
+.main-link .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.125rem;
+  transition: all 0.2s;
+}
+.main-link .center:hover {
+  transform: scale(0.9);
+  opacity: 0.75;
+}
+.main-link .center::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 75%;
+  height: 1px;
+  background-color: rgba(249, 220, 196, 0.75);
+  transition: transform 0.2s ease;
+}
+.main-link .center:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .hero-image {
@@ -351,7 +359,7 @@ footer p {
   gap: 40px;
   padding-top: 60px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1410px) {
   .projects {
     grid-template-columns: 1fr 1fr;
   }
@@ -416,20 +424,20 @@ footer p {
 .contact-info {
   flex: 1;
 }
-@media (min-width: 1380px) {
+@media (min-width: 1410px) {
   .contact-box-names {
     display: grid;
     grid-auto-flow: column;
     gap: 40px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1410px) {
   .contact-box {
     padding-left: 25px;
     flex: 0 1 75%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1410px) {
   .contact {
     display: flex;
   }
@@ -470,7 +478,7 @@ textarea {
 .scs-grid-container p, .scs-grid-container li {
   font-size: 1.125rem;
 }
-@media (min-width: 1380px) {
+@media (min-width: 1410px) {
   .scs-grid-container {
     grid-template-columns: 1fr 1fr;
   }

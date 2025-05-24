@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../utilities/index" as variable;
 
 .button {
@@ -5,11 +6,15 @@
     align-items: center;
     border-radius: 5px;
     height: 54px;
-    max-width: 100%;
     padding-inline: 20px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: variable.$color-light;
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: color.adjust(variable.$color-light, $lightness: 7%);
+    }
 
     .scale {
         transition: all 0.2s;
@@ -18,9 +23,5 @@
     &:hover .scale {
         transform: scale(.9);
         opacity: .75;   
-    }
-
-    [class^="icon-"] {
-        margin-right: 5px;
     }
 }

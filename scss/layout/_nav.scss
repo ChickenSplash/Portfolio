@@ -5,56 +5,70 @@
 // shove everything to the right of nav bar
 
 .main-content {
-    @media(min-width: variable.$break-point-small) {
-        margin-left: 120px;
+    @media(min-width: variable.$break-point-medium) {
+        margin-left: variable.$nav-width;
     }
 }
 
 // nav bar
+//initials and layout of sidebar
 
 .sidebar {
     display: none;
-    width: 120px;
+    width: variable.$nav-width;
     height: 100vh;
     background-color: variable.$color-dark;
     position: fixed;
 
     .initials{
-        font-size: 3rem;
+        margin-bottom: 60px;
+
+        span {
+            font-size: 4rem;
+            font-weight: bold;
+        }
     }
 
-    a {
+    @media (min-width: variable.$break-point-medium) {
         display: flex;
         flex-direction: column;
-        text-align: center;
+    }
+}
+
+.main-link {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-block: 15px;
+
+    .center {
+        display: flex;
         justify-content: center;
         align-items: center;
-        height: 120px;
-        padding: 15px;
-        margin-bottom:10px;
-        border-radius: 10px;
-
-        [class^="icon-"] {
-            font-size: 2rem
-        }
-
-        
-
-        .text {
-            font-size: 1.125rem;
-            margin-top: 10px;
-        }
+        position: relative;
+        font-size: 1.125rem;
+        transition: all 0.2s;
 
         &:hover {
-            background-color: color.adjust(variable.$color-dark, $lightness: 5%);
-            box-shadow: 
-            0px 0px 20px 0px rgba(variable.$color-light, 0.25) inset,
-            0px 0px 20px 0px rgba(variable.$color-light, 0.25);
+            transform: scale(.9);
+            opacity: .75;   
         }
-    }
 
-    @media (min-width: variable.$break-point-small) {
-        display: flex;
-        flex-direction: column;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: center;
+            width: 75%;
+            height: 1px;
+            background-color: rgba(variable.$color-light, .75);
+            transition: transform 0.2s ease;
+        }
+       
+        &:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
     }
 }

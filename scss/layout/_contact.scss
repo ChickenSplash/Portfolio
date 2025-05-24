@@ -21,13 +21,13 @@
             }
         }
 
-        @media(min-width: variable.$break-point-medium) {
+        @media(min-width: variable.$break-point-large) {
             padding-left: 25px;
             flex: 0 1 75%;
         }
     }
 
-    @media(min-width: variable.$break-point-medium) {
+    @media(min-width: variable.$break-point-large) {
         display: flex;
     }
 }
