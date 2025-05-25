@@ -35,6 +35,12 @@
         font-size: 1.375rem;
         font-weight: bold;
     }
+
+    .top-inset-item-breakpoint {
+        @media (min-width: variable.$break-point-large) {
+            margin-top: 0px;
+        }
+    }
 }
 
 input, textarea {

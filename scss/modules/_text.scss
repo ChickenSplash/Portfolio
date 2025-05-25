@@ -1,0 +1,36 @@
+@use "sass:color";
+@use "sass:map";
+@use "../utilities/index" as variable;
+
+.text {
+    &-html {
+        color: map.get(variable.$code-language-color, "html");
+        font-weight: bold;
+    }
+
+    &-c-sharp {
+        color: map.get(variable.$code-language-color, "c-sharp");
+        font-weight: bold;
+    }
+}
+
+.section-header {
+    h1 {
+        margin: 0px;
+        padding-top: 60px;
+    }
+}
+
+.top-inset-item {
+    margin-top: 0px;
+}
+
+footer {
+    p {
+        text-align: center;
+    }
+}
+
+p {
+    line-height: 30px;
+}
