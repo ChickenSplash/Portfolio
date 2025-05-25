@@ -2,10 +2,8 @@
 @use "../utilities/index" as variable;
 
 .hero-image {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url("../image/space.png");
     background-size: cover;
     background-repeat: no-repeat;

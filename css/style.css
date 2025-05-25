@@ -76,8 +76,8 @@ input {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?mqoe3u");
-  src: url("../fonts/icomoon.eot?mqoe3u#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mqoe3u") format("truetype"), url("../fonts/icomoon.woff?mqoe3u") format("woff"), url("../fonts/icomoon.svg?mqoe3u#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?4v8ers");
+  src: url("../fonts/icomoon.eot?4v8ers#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4v8ers") format("truetype"), url("../fonts/icomoon.woff?4v8ers") format("woff"), url("../fonts/icomoon.svg?4v8ers#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -102,6 +102,10 @@ input {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cube:before {
+  content: "\e914";
 }
 
 .icon-ruler:before {
@@ -164,8 +168,47 @@ input {
   content: "\e90d";
 }
 
+.icon-blender:before {
+  content: "\e915";
+  color: #f5792a;
+}
+
+.icon-css3:before {
+  content: "\e916";
+  color: #1572b6;
+}
+
+.icon-discord:before {
+  content: "\e917";
+}
+
 .icon-github:before {
   content: "\e90e";
+}
+
+.icon-html5:before {
+  content: "\e918";
+  color: #e34f26;
+}
+
+.icon-javascript:before {
+  content: "\e919";
+  color: #f7df1e;
+}
+
+.icon-php:before {
+  content: "\e91a";
+  color: #777bb4;
+}
+
+.icon-python:before {
+  content: "\e91b";
+  color: #3776ab;
+}
+
+.icon-sass:before {
+  content: "\e91c";
+  color: #c69;
 }
 
 .icon-steam:before {
@@ -200,6 +243,12 @@ input {
   content: "\ea80";
 }
 
+.hero-image, .main-link .center, .initials-link .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-image, .scs-item, .contact, .project-thumbnail, .about-me {
   box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.25);
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
@@ -224,7 +273,7 @@ input {
   text-shadow: 0px 0px 16px rgba(190, 159, 159, 0.5);
 }
 
-.main-link .center::after, .seamless-link::after {
+.main-link .center::after, .initials-link span::after, .seamless-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -236,7 +285,7 @@ input {
   background-color: rgba(190, 159, 159, 0.75);
   transition: transform 0.2s ease;
 }
-.main-link .center:hover::after, .seamless-link:hover::after {
+.main-link .center:hover::after, .initials-link span:hover::after, .seamless-link:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -253,7 +302,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   letter-spacing: 0.4px;
-  line-height: 30px;
 }
 
 .container {
@@ -272,9 +320,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a[class=link]:hover {
-  text-decoration: underline;
-}
 
 li {
   list-style: none;
@@ -282,7 +327,7 @@ li {
 
 ul {
   padding: 0px;
-  margin-block-end: 0px;
+  margin: 0px;
 }
 
 .section-header h1 {
@@ -292,6 +337,10 @@ ul {
 
 footer p {
   text-align: center;
+}
+
+p {
+  line-height: 30px;
 }
 
 .button {
@@ -339,15 +388,7 @@ footer p {
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .sidebar:hover {
-  background-color: rgba(26, 2, 2, 0.85);
   box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.5);
-}
-.sidebar .initials {
-  margin-bottom: 60px;
-}
-.sidebar .initials span {
-  font-size: 4rem;
-  font-weight: bold;
 }
 @media (min-width: 992px) {
   .sidebar {
@@ -363,23 +404,61 @@ footer p {
   margin-block: 15px;
 }
 .main-link .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   font-size: 1.125rem;
   transition: all 0.2s;
+}
+
+.initials-link .center {
+  margin-block: 40px;
+}
+.initials-link span {
+  font-size: 4rem;
+  font-weight: bold;
+  position: relative;
 }
 
 .nav-divider {
   border-color: rgb(190, 159, 159);
 }
 
-.hero-image {
+.socials {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-block: 25px;
+  font-size: 1.5rem;
+}
+.socials [class^=icon-] {
+  display: block;
+  margin-inline: 10px;
+}
+.socials [class$=github] {
+  transition: color 0.5s ease;
+}
+.socials [class$=github]:hover {
+  color: #2B3034;
+}
+.socials [class$=steam] {
+  transition: color 0.5s ease;
+}
+.socials [class$=steam]:hover {
+  color: #153D72;
+}
+.socials [class$=youtube] {
+  transition: color 0.5s ease;
+}
+.socials [class$=youtube]:hover {
+  color: #f00;
+}
+.socials [class$=discord] {
+  transition: color 0.5s ease;
+}
+.socials [class$=discord]:hover {
+  color: #7289da;
+}
+
+.hero-image {
+  flex-direction: column;
   background-image: url("../image/space.png");
   background-size: cover;
   background-repeat: no-repeat;

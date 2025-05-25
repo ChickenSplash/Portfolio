@@ -1,4 +1,13 @@
 @use "config" as variable;
 
-// pass in the container containing everything you want to see shrinked in the argument.
+@mixin nav-socials() {
+    @each $name, $color in variable.$socials {
+        [class$=#{$name}] {
+            transition: color 0.5s ease;
 
+            &:hover {
+                color: $color;
+            }
+        }
+    }
+}

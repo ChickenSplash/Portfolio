@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?mqoe3u');
-  src:  url('../fonts/icomoon.eot?mqoe3u#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?mqoe3u') format('truetype'),
-    url('../fonts/icomoon.woff?mqoe3u') format('woff'),
-    url('../fonts/icomoon.svg?mqoe3u#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?4v8ers');
+  src:  url('../fonts/icomoon.eot?4v8ers#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4v8ers') format('truetype'),
+    url('../fonts/icomoon.woff?4v8ers') format('woff'),
+    url('../fonts/icomoon.svg?4v8ers#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,6 +34,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cube:before {
+  content: "\e914";
+}
 .icon-ruler:before {
   content: "\e913";
 }
@@ -79,8 +82,39 @@
 .icon-connect_without_contact:before {
   content: "\e90d";
 }
+.icon-blender:before {
+  content: "\e915";
+  color: #f5792a;
+}
+.icon-css3:before {
+  content: "\e916";
+  color: #1572b6;
+}
+.icon-discord:before {
+  content: "\e917";
+}
 .icon-github:before {
   content: "\e90e";
+}
+.icon-html5:before {
+  content: "\e918";
+  color: #e34f26;
+}
+.icon-javascript:before {
+  content: "\e919";
+  color: #f7df1e;
+}
+.icon-php:before {
+  content: "\e91a";
+  color: #777bb4;
+}
+.icon-python:before {
+  content: "\e91b";
+  color: #3776ab;
+}
+.icon-sass:before {
+  content: "\e91c";
+  color: #c69;
 }
 .icon-steam:before {
   content: "\e90f";

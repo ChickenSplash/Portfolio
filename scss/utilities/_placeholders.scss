@@ -1,6 +1,14 @@
 @use "sass:map";
 @use "config" as variable;
 
+// Center content vertically and horizontially 
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
 // in charge of the glowing shadow effects you see throughout
 
 %content-background-base {
@@ -32,6 +40,7 @@
     }
 }
 
+// Underlining animation upon hovering the text
 // dont forget to add the {position: relative;} with this placeholder
 
 %text-underline {
