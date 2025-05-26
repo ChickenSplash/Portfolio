@@ -46,7 +46,7 @@
 
 %text-underline {
     &:hover {
-        color: color.adjust(variable.$color-light, $hue: 180deg);
+        color: variable.$color-link;
     }  
     &::after {
         content: "";
@@ -57,7 +57,7 @@
         transform-origin: center;
         width: 100%;
         height: 1px;
-        background-color: color.adjust(variable.$color-light, $hue: 180deg);
+        background-color: variable.$color-link;
         transition: transform 0.2s ease;
     }
        

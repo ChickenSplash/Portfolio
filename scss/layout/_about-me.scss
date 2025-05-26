@@ -6,13 +6,10 @@
     p {
         font-size: 1.125rem;
     }
-    
-    .my-experience {
-        grid-column: span 2;
 
-        div {
-            display: flex;
-            justify-content: space-around;
+    .top-inset-responsive {
+        @media (min-width: variable.$break-point-large) {
+            margin-top: 0px;
         }
     }
 
@@ -20,5 +17,50 @@
         display: grid;
         gap: 40px;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+.my-experience {
+    grid-column: span 2;
+
+    [class^="icon-"] {
+        font-size: 4rem;
+        @extend %flex-center;
+    }
+
+    @include variable.coding-language-color-hover();
+}
+
+.coding {
+    &-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        margin-top: 40px;
+
+        @media (min-width: variable.$break-point-x-small) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        @media (min-width: variable.$break-point-large) {
+            grid-template-columns: repeat(10, 1fr);
+        }
+    }
+
+    &-info {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .tooltip {
+            opacity: 0;
+            position: absolute;
+            top: -45px;
+            transition: opacity 0.2s ease;
+        }
+
+        &:hover .tooltip {
+            opacity: 1
+        }
     }
 }

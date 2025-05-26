@@ -15,7 +15,7 @@
     transition: all 0.5s;
 
     &:hover {
-        background-color: color.adjust(variable.$color-light, $hue: 180deg);
+        background-color: variable.$color-link;
     }
 
     .scale {
@@ -24,7 +24,6 @@
 
     &:hover .scale {
         transform: scale(.9);
-        opacity: .75;   
     }
 }
 
@@ -32,12 +31,8 @@
 
 .seamless-link {
     font-weight: bold;
-    color: color.adjust(variable.$color-light, $hue: 90deg);
+    color: variable.$color-link;
     position: relative;
     transition: color 0.5s ease;
     @extend %text-underline;
-
-    &:hover {
-        color: color.adjust(variable.$color-light, $hue: 180deg);
-    }
 }

@@ -174,7 +174,6 @@ input {
 
 .icon-css3:before {
   content: "\e916";
-  color: #1572b6;
 }
 
 .icon-discord:before {
@@ -187,27 +186,22 @@ input {
 
 .icon-html5:before {
   content: "\e918";
-  color: #e34f26;
 }
 
 .icon-javascript:before {
   content: "\e919";
-  color: #f7df1e;
 }
 
 .icon-php:before {
   content: "\e91a";
-  color: #777bb4;
 }
 
 .icon-python:before {
   content: "\e91b";
-  color: #3776ab;
 }
 
 .icon-sass:before {
   content: "\e91c";
-  color: #c69;
 }
 
 .icon-steam:before {
@@ -242,38 +236,38 @@ input {
   content: "\ea80";
 }
 
-.hero-image, .main-link .center, .initials-link .center {
+.my-experience [class^=icon-], .hero-image, .main-link .center, .initials-link .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-image, .coding-examples, .scs-item, .nm-homepage, .contact, .project-thumbnail, .about-me {
-  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0.25);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.25);
   transition: background-color 2s ease, box-shadow 2s ease;
 }
 .hero-image:hover, .coding-examples:hover, .scs-item:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
-  background-color: rgba(0, 0, 0, 0.85);
-  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0.5);
+  background-color: rgba(15, 15, 15, 0.85);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.5);
 }
 
 .coding-examples, .scs-item, .nm-homepage, .contact, .project-thumbnail, .about-me {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(15, 15, 15, 0.7);
   border-radius: 10px;
   padding: 25px;
-  border: 1px solid rgb(0, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
 }
 
-.hero-image h1, .hero-image p {
-  text-shadow: 0px 0px 16px rgba(0, 255, 0, 0.25);
+.hero-image h1, .hero-image p, .section-header h1 {
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.25);
   transition: text-shadow 0.5s ease;
 }
-.hero-image h1:hover, .hero-image p:hover {
-  text-shadow: 0px 0px 16px rgba(0, 255, 0, 0.5);
+.hero-image h1:hover, .hero-image p:hover, .section-header h1:hover {
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.5);
 }
 
 .main-link .center:hover, .initials-link span:hover, .seamless-link:hover {
-  color: fuchsia;
+  color: #ff00ff;
 }
 .main-link .center::after, .initials-link span::after, .seamless-link::after {
   content: "";
@@ -284,7 +278,7 @@ input {
   transform-origin: center;
   width: 100%;
   height: 1px;
-  background-color: fuchsia;
+  background-color: #ff00ff;
   transition: transform 0.2s ease;
 }
 .main-link .center:hover::after, .initials-link span:hover::after, .seamless-link:hover::after {
@@ -299,7 +293,7 @@ body {
   background-color: gray;
   margin: 0px;
   font-family: "Space Grotesk", serif;
-  color: rgb(0, 255, 0);
+  color: rgb(255, 255, 255);
   background-image: url(../image/stars.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -339,32 +333,27 @@ ul {
   padding-inline: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: rgb(0, 255, 0);
+  background-color: rgb(255, 255, 255);
   transition: all 0.5s;
 }
 .button:hover {
-  background-color: fuchsia;
+  background-color: #ff00ff;
 }
 .button .scale {
   transition: all 0.2s;
 }
 .button:hover .scale {
   transform: scale(0.9);
-  opacity: 0.75;
 }
 
 .seamless-link {
   font-weight: bold;
-  color: rgb(0, 127.5, 255);
+  color: #ff00ff;
   position: relative;
   transition: color 0.5s ease;
 }
-.seamless-link:hover {
-  color: fuchsia;
-}
 
 .text-html {
-  color: #f5792a;
   font-weight: bold;
 }
 .text-c-sharp {
@@ -399,17 +388,17 @@ p {
   display: none;
   width: 220px;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: #0f0f0f;
   position: fixed;
-  border-right: 1px solid rgb(0, 255, 0);
-  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0);
+  border-right: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0);
   transition: background-color 2s ease, box-shadow 2s ease;
 }
 .sidebar ul {
   margin: 0px;
 }
 .sidebar:hover {
-  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0.5);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 992px) {
   .sidebar {
@@ -441,7 +430,7 @@ p {
 }
 
 .nav-divider {
-  border-color: rgb(0, 255, 0);
+  border-color: rgb(255, 255, 255);
 }
 
 .socials {
@@ -486,17 +475,24 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  border-bottom: 1px solid rgb(0, 255, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
+.hero-image h1, .hero-image p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.hero-image h1 {
+  font-size: 3.5rem;
+}
+
 .about-me p {
   font-size: 1.125rem;
 }
-.about-me .my-experience {
-  grid-column: span 2;
-}
-.about-me .my-experience div {
-  display: flex;
-  justify-content: space-around;
+@media (min-width: 1410px) {
+  .about-me .top-inset-responsive {
+    margin-top: 0px;
+  }
 }
 @media (min-width: 1410px) {
   .about-me {
@@ -504,6 +500,92 @@ p {
     gap: 40px;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.my-experience {
+  grid-column: span 2;
+}
+.my-experience [class^=icon-] {
+  font-size: 4rem;
+}
+.my-experience [class$=html5] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=html5]:hover {
+  color: #e34f26;
+}
+.my-experience [class$=blender] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=blender]:hover {
+  color: #f5792a;
+}
+.my-experience [class$=c-sharp] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=c-sharp]:hover {
+  color: #953DAC;
+}
+.my-experience [class$=css3] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=css3]:hover {
+  color: #1572b6;
+}
+.my-experience [class$=javascript] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=javascript]:hover {
+  color: #f7df1e;
+}
+.my-experience [class$=php] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=php]:hover {
+  color: #777bb4;
+}
+.my-experience [class$=python] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=python]:hover {
+  color: #3776ab;
+}
+.my-experience [class$=sass] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=sass]:hover {
+  color: #c69;
+}
+
+.coding-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (min-width: 612px) {
+  .coding-icons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1410px) {
+  .coding-icons {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+.coding-info {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.coding-info .tooltip {
+  opacity: 0;
+  position: absolute;
+  top: -45px;
+  transition: opacity 0.2s ease;
+}
+.coding-info:hover .tooltip {
+  opacity: 1;
 }
 
 .projects {
@@ -524,7 +606,7 @@ p {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  color: rgb(0, 0, 0);
+  color: #0f0f0f;
   transition: all 0.5s ease, background-color 2s ease, box-shadow 2s ease;
   padding: 0px;
 }
@@ -539,7 +621,7 @@ p {
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-color: rgb(0, 255, 0);
+  background-color: rgb(255, 255, 255);
 }
 .project-thumbnail .view-more {
   display: none;
@@ -608,16 +690,16 @@ input, textarea {
   margin-top: 30px;
   border-radius: 5px;
   padding: 10px 15px;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 255, 0);
-  color: rgb(0, 255, 0);
+  background-color: #0f0f0f;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 8px lime;
+  box-shadow: 0 0 8px white;
 }
 input::placeholder, textarea::placeholder {
-  color: rgba(0, 255, 0, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 textarea {
@@ -642,7 +724,6 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  padding-top: 60px;
 }
 .scs-grid-container h2 {
   text-align: center;

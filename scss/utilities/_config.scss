@@ -7,11 +7,10 @@ $break-point-large: 1410px;
 
 // Colors
 
-// $color-light: #F9DCC4;
-// $color-dark: #1E0302;
+$color-light: rgb(255, 255, 255);
+$color-link: #ff00ff;
+$color-dark: #0f0f0f;
 
-$color-light: rgb(0, 255, 0);
-$color-dark: rgb(0, 0, 0);
 
 $socials: (
     "github": #2B3034,
@@ -21,8 +20,14 @@ $socials: (
 );
 
 $code-language-color: (
-    "html": #f5792a,
+    "html5": #e34f26,
+    "blender": #f5792a,
     "c-sharp": #953DAC,
+    "css3": #1572b6,
+    "javascript": #f7df1e,
+    "php": #777bb4,
+    "python": #3776ab,
+    "sass": #c69,
 );
 
 // Variables

@@ -11,3 +11,15 @@
         }
     }
 }
+
+@mixin coding-language-color-hover() {
+    @each $name, $color in variable.$code-language-color {
+        [class$=#{$name}] {
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: $color;
+            }
+        }
+    }
+}
