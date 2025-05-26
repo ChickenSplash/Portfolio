@@ -6,7 +6,6 @@
     grid-template-columns: 1fr;
     grid-auto-rows: 300px;
     gap: 40px;
-    padding-top: 60px;
 
     @media (min-width: variable.$break-point-large) {
         grid-template-columns: 1fr 1fr;
@@ -21,7 +20,7 @@
     overflow: hidden;
     color: variable.$color-dark;
     @extend %content-background;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease, background-color 2s ease, box-shadow 2s ease;
     padding: 0px;
 
     img{
@@ -36,7 +35,7 @@
         padding: 5px 10px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        background-color: variable.$color-light;;
+        background-color: variable.$color-light;
     }
 
     .view-more {
@@ -62,8 +61,8 @@
 
 #nm-project-img {
     position: absolute;
-    width: 90%;
-    top: 20px;
+    width: 100%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;

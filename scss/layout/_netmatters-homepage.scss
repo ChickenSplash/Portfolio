@@ -1,19 +1,14 @@
 @use "../utilities/index" as variable;
 
-.about-me {
+.nm-homepage {
     @extend %content-background;
 
     p {
         font-size: 1.125rem;
     }
-    
-    .my-experience {
-        grid-column: span 2;
 
-        div {
-            display: flex;
-            justify-content: space-around;
-        }
+    img{
+        border-radius: 5px;
     }
 
     @media (min-width: variable.$break-point-large) {

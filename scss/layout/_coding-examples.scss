@@ -1,7 +1,5 @@
 @use "../utilities/index" as variable;
 
 .coding-examples {
-    margin-top: 60px;
-    
     @extend %content-background
 }

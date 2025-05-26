@@ -248,30 +248,33 @@ input {
   align-items: center;
 }
 
-.hero-image, .coding-examples, .scs-item, .contact, .project-thumbnail, .about-me {
-  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.25);
-  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+.hero-image, .coding-examples, .scs-item, .nm-homepage, .contact, .project-thumbnail, .about-me {
+  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0.25);
+  transition: background-color 2s ease, box-shadow 2s ease;
 }
-.hero-image:hover, .coding-examples:hover, .scs-item:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
-  background-color: rgba(26, 2, 2, 0.85);
-  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.5);
+.hero-image:hover, .coding-examples:hover, .scs-item:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0.5);
 }
 
-.coding-examples, .scs-item, .contact, .project-thumbnail, .about-me {
-  background-color: rgba(26, 2, 2, 0.7);
+.coding-examples, .scs-item, .nm-homepage, .contact, .project-thumbnail, .about-me {
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 25px;
-  border: 1px solid rgb(190, 159, 159);
+  border: 1px solid rgb(0, 255, 0);
 }
 
 .hero-image h1, .hero-image p {
-  text-shadow: 0px 0px 16px rgba(190, 159, 159, 0.25);
+  text-shadow: 0px 0px 16px rgba(0, 255, 0, 0.25);
   transition: text-shadow 0.5s ease;
 }
 .hero-image h1:hover, .hero-image p:hover {
-  text-shadow: 0px 0px 16px rgba(190, 159, 159, 0.5);
+  text-shadow: 0px 0px 16px rgba(0, 255, 0, 0.5);
 }
 
+.main-link .center:hover, .initials-link span:hover, .seamless-link:hover {
+  color: fuchsia;
+}
 .main-link .center::after, .initials-link span::after, .seamless-link::after {
   content: "";
   position: absolute;
@@ -281,7 +284,7 @@ input {
   transform-origin: center;
   width: 100%;
   height: 1px;
-  background-color: rgba(190, 159, 159, 0.75);
+  background-color: fuchsia;
   transition: transform 0.2s ease;
 }
 .main-link .center:hover::after, .initials-link span:hover::after, .seamless-link:hover::after {
@@ -296,7 +299,7 @@ body {
   background-color: gray;
   margin: 0px;
   font-family: "Space Grotesk", serif;
-  color: rgb(190, 159, 159);
+  color: rgb(0, 255, 0);
   background-image: url(../image/stars.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -336,11 +339,11 @@ ul {
   padding-inline: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: rgb(190, 159, 159);
-  transition: all 0.4s;
+  background-color: rgb(0, 255, 0);
+  transition: all 0.5s;
 }
 .button:hover {
-  background-color: rgb(204.4130434783, 180.2869565217, 180.2869565217);
+  background-color: fuchsia;
 }
 .button .scale {
   transition: all 0.2s;
@@ -352,8 +355,12 @@ ul {
 
 .seamless-link {
   font-weight: bold;
-  color: rgb(210.5900621118, 189.4099378882, 189.4099378882);
+  color: rgb(0, 127.5, 255);
   position: relative;
+  transition: color 0.5s ease;
+}
+.seamless-link:hover {
+  color: fuchsia;
 }
 
 .text-html {
@@ -367,7 +374,7 @@ ul {
 
 .section-header h1 {
   margin: 0px;
-  padding-top: 60px;
+  padding-block: 60px;
 }
 
 .top-inset-item {
@@ -392,17 +399,17 @@ p {
   display: none;
   width: 220px;
   height: 100vh;
-  background-color: rgb(26, 2, 2);
+  background-color: rgb(0, 0, 0);
   position: fixed;
-  border-right: 1px solid rgb(190, 159, 159);
-  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0);
-  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  border-right: 1px solid rgb(0, 255, 0);
+  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0);
+  transition: background-color 2s ease, box-shadow 2s ease;
 }
 .sidebar ul {
   margin: 0px;
 }
 .sidebar:hover {
-  box-shadow: 0px 0px 80px 0px rgba(190, 159, 159, 0.5);
+  box-shadow: 0px 0px 80px 0px rgba(0, 255, 0, 0.5);
 }
 @media (min-width: 992px) {
   .sidebar {
@@ -420,7 +427,7 @@ p {
 .main-link .center {
   position: relative;
   font-size: 1.125rem;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .initials-link .center {
@@ -430,10 +437,11 @@ p {
   font-size: 4rem;
   font-weight: bold;
   position: relative;
+  transition: color 0.5s ease;
 }
 
 .nav-divider {
-  border-color: rgb(190, 159, 159);
+  border-color: rgb(0, 255, 0);
 }
 
 .socials {
@@ -478,13 +486,24 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  border-bottom: 1px solid rgb(190, 159, 159);
-}
-.about-me {
-  margin-top: 60px;
+  border-bottom: 1px solid rgb(0, 255, 0);
 }
 .about-me p {
   font-size: 1.125rem;
+}
+.about-me .my-experience {
+  grid-column: span 2;
+}
+.about-me .my-experience div {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 1410px) {
+  .about-me {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .projects {
@@ -492,7 +511,6 @@ p {
   grid-template-columns: 1fr;
   grid-auto-rows: 300px;
   gap: 40px;
-  padding-top: 60px;
 }
 @media (min-width: 1410px) {
   .projects {
@@ -506,8 +524,8 @@ p {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  color: rgb(26, 2, 2);
-  transition: all 0.5s ease;
+  color: rgb(0, 0, 0);
+  transition: all 0.5s ease, background-color 2s ease, box-shadow 2s ease;
   padding: 0px;
 }
 .project-thumbnail img {
@@ -521,7 +539,7 @@ p {
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-color: rgb(190, 159, 159);
+  background-color: rgb(0, 255, 0);
 }
 .project-thumbnail .view-more {
   display: none;
@@ -542,15 +560,15 @@ p {
 
 #nm-project-img {
   position: absolute;
-  width: 90%;
-  top: 20px;
+  width: 100%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
 }
 
 .contact {
-  margin-block: 60px;
+  margin-bottom: 60px;
   font-size: 1.125rem;
 }
 .contact-info {
@@ -590,20 +608,34 @@ input, textarea {
   margin-top: 30px;
   border-radius: 5px;
   padding: 10px 15px;
-  background-color: rgb(26, 2, 2);
-  border: 1px solid rgb(190, 159, 159);
-  color: rgb(190, 159, 159);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
 }
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 8px #be9f9f;
+  box-shadow: 0 0 8px lime;
 }
 input::placeholder, textarea::placeholder {
-  color: rgba(190, 159, 159, 0.4);
+  color: rgba(0, 255, 0, 0.4);
 }
 
 textarea {
   resize: vertical;
+}
+
+.nm-homepage p {
+  font-size: 1.125rem;
+}
+.nm-homepage img {
+  border-radius: 5px;
+}
+@media (min-width: 1410px) {
+  .nm-homepage {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .scs-grid-container {
@@ -629,10 +661,6 @@ textarea {
 }
 .scs-item li [class^=icon-] {
   margin-right: 10px;
-}
-
-.coding-examples {
-  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
