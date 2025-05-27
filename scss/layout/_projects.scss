@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../utilities/index" as variable;
 
-.projects {
+.projects-work, .projects-personal {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 300px;
@@ -10,6 +10,10 @@
     @media (min-width: variable.$break-point-large) {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+.projects-personal {
+    display: none;
 }
 
 .project-thumbnail {
@@ -28,7 +32,7 @@
         transition: filter 0.2s ease;
     }
 
-    h3 {
+    .title {
         margin: 0px;
         position: absolute;
         top: 20px;

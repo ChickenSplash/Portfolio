@@ -54,16 +54,21 @@
         position: relative;
 
         .tooltip {
-            background: black;
+            display: none;
+            @extend %background-shape;
+            border: variable.$border-style;
+            background-color: variable.$color-dark;
             padding: 20px;
-            opacity: 0;
             position: absolute;
-            top: -45px;
-            transition: opacity 0.2s ease;
+            bottom: 100px;
+
+            h3 {
+                margin: 0px;
+            }
         }
 
         &:hover .tooltip {
-            opacity: 1
+            display: block;
         }
     }
 }

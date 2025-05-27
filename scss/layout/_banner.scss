@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    @extend %content-background-base;
+    @extend %background-effect;
     @include variable.light-border("bottom");
 
     h1, p {

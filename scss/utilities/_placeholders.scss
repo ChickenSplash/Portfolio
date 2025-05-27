@@ -12,7 +12,12 @@
 
 // in charge of the glowing shadow effects you see throughout
 
-%content-background-base {
+%background-shape {
+    border-radius: 5px;
+    padding: 25px;
+}
+
+%background-effect {
     background-color: rgba(variable.$color-dark, 0.7);
     box-shadow: 0px 0px 80px 0px rgba(variable.$color-light, 0.25);
         
@@ -23,9 +28,8 @@
 }
 
 %content-background {
-    border-radius: 5px;
-    padding: 25px;
-    @extend %content-background-base;
+    @extend %background-shape;
+    @extend %background-effect;
 }
 
 // same thing but for text
@@ -78,6 +82,7 @@
     background-color: variable.$color-dark;
     border: 1px solid color.adjust(variable.$color-light, $lightness: -60%);
     color: variable.$color-light;
+    transition: box-shadow 0.5s ease;
 
     &:focus {
         outline: none;
