@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?4v8ers');
-  src:  url('../fonts/icomoon.eot?4v8ers#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?4v8ers') format('truetype'),
-    url('../fonts/icomoon.woff?4v8ers') format('woff'),
-    url('../fonts/icomoon.svg?4v8ers#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?mvb1fj');
+  src:  url('../fonts/icomoon.eot?mvb1fj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?mvb1fj') format('truetype'),
+    url('../fonts/icomoon.woff?mvb1fj') format('woff'),
+    url('../fonts/icomoon.svg?mvb1fj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,6 +36,9 @@
 
 .icon-cube:before {
   content: "\e914";
+}
+.icon-paperplane:before {
+  content: "\e91d";
 }
 .icon-ruler:before {
   content: "\e913";

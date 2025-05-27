@@ -3,8 +3,8 @@
 @use "../utilities/index" as variable;
 
 .text {
-    &-html {
-        color: map.get(variable.$code-language-color, "html");
+    &-html5 {
+        color: map.get(variable.$code-language-color, "html5");
         font-weight: bold;
     }
 

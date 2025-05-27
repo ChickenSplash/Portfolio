@@ -76,8 +76,8 @@ input {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?4v8ers");
-  src: url("../fonts/icomoon.eot?4v8ers#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4v8ers") format("truetype"), url("../fonts/icomoon.woff?4v8ers") format("woff"), url("../fonts/icomoon.svg?4v8ers#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?mvb1fj");
+  src: url("../fonts/icomoon.eot?mvb1fj#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mvb1fj") format("truetype"), url("../fonts/icomoon.woff?mvb1fj") format("woff"), url("../fonts/icomoon.svg?mvb1fj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -106,6 +106,10 @@ input {
 
 .icon-cube:before {
   content: "\e914";
+}
+
+.icon-paperplane:before {
+  content: "\e91d";
 }
 
 .icon-ruler:before {
@@ -285,6 +289,23 @@ input {
   transform: translateX(-50%) scaleX(1);
 }
 
+.message-box textarea, input {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #0f0f0f;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.message-box textarea:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 8px white;
+}
+.message-box textarea::placeholder, input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -353,7 +374,8 @@ ul {
   transition: color 0.5s ease;
 }
 
-.text-html {
+.text-html5 {
+  color: #e34f26;
   font-weight: bold;
 }
 .text-c-sharp {
@@ -684,26 +706,40 @@ p {
   }
 }
 
-input, textarea {
-  display: block;
-  width: 100%;
+.message-box {
+  display: flex;
   margin-top: 30px;
-  border-radius: 5px;
-  padding: 10px 15px;
-  background-color: #0f0f0f;
+}
+.message-box textarea {
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  resize: vertical;
+}
+.message-box button {
+  width: 70px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   border: 1px solid rgb(255, 255, 255);
+  background-color: #0f0f0f;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.message-box button [class^=icon-] {
+  display: inline-block;
   color: rgb(255, 255, 255);
+  font-size: 2rem;
+  transition: transform 0.5s ease;
 }
-input:focus, textarea:focus {
-  outline: none;
-  box-shadow: 0 0 8px white;
+.message-box button:hover {
+  background-color: #ff00ff;
 }
-input::placeholder, textarea::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+.message-box button:hover [class^=icon-] {
+  transform: scale(0.9);
 }
 
-textarea {
-  resize: vertical;
+input {
+  margin-top: 30px;
 }
 
 .nm-homepage p {

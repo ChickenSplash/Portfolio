@@ -43,26 +43,45 @@
     }
 }
 
-input, textarea {
-    display: block;
-    width: 100%;
+.message-box {
+    display: flex;
     margin-top: 30px;
-    border-radius: 5px;
-    padding: 10px 15px;
-    background-color: variable.$color-dark;
-    border: 1px solid variable.$color-light;
-    color: variable.$color-light;
 
-    &:focus {
-        outline: none;
-        box-shadow: 0 0 8px rgba(variable.$color-light, 1);
+    textarea {
+        @extend %input-text-box;
+        border-right: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        resize: vertical;
     }
 
-    &::placeholder {
-        color: color.adjust(variable.$color-light, $alpha: -0.6);
+    button {
+        width: 70px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid variable.$color-light;
+        background-color: variable.$color-dark;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+        
+        [class^="icon-"] {
+            display: inline-block;
+            color: variable.$color-light;
+            font-size: 2rem;
+            transition: transform 0.5s ease;
+        }
+
+        &:hover {
+            background-color: variable.$color-link;
+
+            [class^="icon-"] {
+                transform: scale(.9);
+            }
+        }
     }
 }
 
-textarea {
-  resize: vertical;
+input {
+    @extend %input-text-box;
+    margin-top: 30px;
 }

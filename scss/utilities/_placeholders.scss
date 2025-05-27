@@ -69,3 +69,24 @@
 %icon-right-margin {
     margin-right: 10px;
 }
+
+// Input text boxes
+
+%input-text-box {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: variable.$color-dark;
+    border: 1px solid variable.$color-light;
+    color: variable.$color-light;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 8px rgba(variable.$color-light, 1);
+    }
+
+    &::placeholder {
+        color: color.adjust(variable.$color-light, $alpha: -0.6);
+    }
+}
