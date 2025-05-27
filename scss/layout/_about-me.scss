@@ -2,6 +2,7 @@
 
 .about-me {
     @extend %content-background;
+    @include variable.light-border();
 
     p {
         font-size: 1.125rem;
@@ -53,6 +54,8 @@
         position: relative;
 
         .tooltip {
+            background: black;
+            padding: 20px;
             opacity: 0;
             position: absolute;
             top: -45px;

@@ -19,16 +19,23 @@
     height: 100vh;
     background-color: variable.$color-dark;
     position: fixed;
-    border-right: 1px solid variable.$color-light;
+    @include variable.light-border("right");
     box-shadow: 0px 0px 80px 0px rgba(variable.$color-light, 0);
-    transition: background-color 2s ease, box-shadow 2s ease;
 
     ul {
         margin: 0px;
     }
+    .nav-divider {
+        border: variable.$border-style;
+        transition: border 2s ease;
+    }
         
     &:hover {
         box-shadow: 0px 0px 80px 0px rgba(variable.$color-light, 0.5);
+
+        .nav-divider {
+            border: variable.$border-style-hovered;
+        }
     }
 
     @media (min-width: variable.$break-point-medium) {
@@ -68,10 +75,6 @@
         transition: color 0.5s ease;
         @extend %text-underline;
     }
-}
-
-.nav-divider {
-    border-color: variable.$color-light;
 }
 
 .socials {

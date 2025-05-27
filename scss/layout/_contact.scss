@@ -4,6 +4,8 @@
 
 .contact {
     @extend %content-background;
+    @include variable.light-border();
+    
     margin-bottom: 60px;
     font-size: 1.125rem;
     
@@ -59,7 +61,7 @@
         width: 70px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        border: 1px solid variable.$color-light;
+        border: variable.$border-style;
         background-color: variable.$color-dark;
         transition: background-color 0.5s ease;
         cursor: pointer;
@@ -68,7 +70,7 @@
             display: inline-block;
             color: variable.$color-light;
             font-size: 2rem;
-            transition: transform 0.5s ease;
+            transition: transform 0.5s ease, color 0.5s ease;
         }
 
         &:hover {
@@ -76,6 +78,7 @@
 
             [class^="icon-"] {
                 transform: scale(.9);
+                color: variable.$color-dark;
             }
         }
     }

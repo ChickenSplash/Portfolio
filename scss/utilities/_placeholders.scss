@@ -13,8 +13,8 @@
 // in charge of the glowing shadow effects you see throughout
 
 %content-background-base {
+    background-color: rgba(variable.$color-dark, 0.7);
     box-shadow: 0px 0px 80px 0px rgba(variable.$color-light, 0.25);
-    transition: background-color 2s ease, box-shadow 2s ease;
         
     &:hover {
         background-color: rgba(variable.$color-dark, .85);
@@ -23,10 +23,8 @@
 }
 
 %content-background {
-    background-color: rgba(variable.$color-dark, 0.7);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 25px;
-    border: 1px solid variable.$color-light;
     @extend %content-background-base;
 }
 
@@ -78,7 +76,7 @@
     border-radius: 5px;
     padding: 10px 15px;
     background-color: variable.$color-dark;
-    border: 1px solid variable.$color-light;
+    border: 1px solid color.adjust(variable.$color-light, $lightness: -60%);
     color: variable.$color-light;
 
     &:focus {

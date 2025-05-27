@@ -1,5 +1,6 @@
 @use "../utilities/index" as variable;
 
 .coding-examples {
-    @extend %content-background
+    @extend %content-background;
+    @include variable.light-border();
 }

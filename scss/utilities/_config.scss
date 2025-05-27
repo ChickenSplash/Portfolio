@@ -1,38 +1,43 @@
+@use "sass:color";
+
 // Break Points
 
 $break-point-x-small: 612px;
-$break-point-small: 768px;
-$break-point-medium: 992px;
-$break-point-large: 1410px;
+$break-point-small  : 768px;
+$break-point-medium : 992px;
+$break-point-large  : 1410px;
 
 // Colors
 
-$color-light: rgb(255, 255, 255);
-$color-link: #ff00ff;
-$color-dark: #0f0f0f;
+$color-light    : rgb(226, 226, 226);
+$color-link     : #ff00ff;
+$color-dark     : #0f0f0f;
 
 
 $socials: (
-    "github": #2B3034,
-    "steam": #153D72,
-    "youtube": #f00,
-    "discord": #7289da,
+    "github"    : #2B3034,
+    "steam"     : #153D72,
+    "youtube"   : #f00,
+    "discord"   : #7289da,
 );
 
 $code-language-color: (
-    "html5": #e34f26,
-    "blender": #f5792a,
-    "c-sharp": #953DAC,
-    "css3": #1572b6,
+    "html5"     : #e34f26,
+    "blender"   : #f5792a,
+    "c-sharp"   : #953DAC,
+    "css3"      : #1572b6,
     "javascript": #f7df1e,
-    "php": #777bb4,
-    "python": #3776ab,
-    "sass": #c69,
+    "php"       : #777bb4,
+    "python"    : #3776ab,
+    "sass"      : #c69,
 );
 
 // Variables
 
-$nav-width: 220px;
+$nav-width      : 220px;
+
+$border-style           : 1px solid color.adjust($color-light, $lightness: -60%);
+$border-style-hovered   : 1px solid $color-light;
 
 // Fonts
 

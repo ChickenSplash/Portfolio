@@ -9,8 +9,8 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    border-bottom: 1px solid variable.$color-light;
     @extend %content-background-base;
+    @include variable.light-border("bottom");
 
     h1, p {
         text-align: center;

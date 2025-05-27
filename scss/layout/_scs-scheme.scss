@@ -31,6 +31,8 @@
                 margin-right: 10px;
             }
         }
+        
         @extend %content-background;
+        @include variable.light-border();
     }
 }
