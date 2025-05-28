@@ -21,18 +21,10 @@
 
     h1 {
         font-size: 3rem;
-
-        // Reveal background through text
         background: url("../image/space.png") center/cover;
         background-clip: text;
         color: transparent;
-        transition: -webkit-text-stroke 2s ease;
-        -webkit-text-stroke: 1px color.adjust(variable.$color-light, $lightness: -60%);
-        filter: brightness(3);
-
-        &:hover {
-            -webkit-text-stroke: 1px variable.$color-light;
-        }
+        -webkit-text-stroke: 1px variable.$color-light;
         
         @media (min-width:variable.$break-point-small) {
             font-size: 5rem;

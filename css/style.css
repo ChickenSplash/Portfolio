@@ -314,9 +314,9 @@ body {
   margin: 0px;
   font-family: "Space Grotesk", serif;
   color: rgb(226, 226, 226);
-  background-image: url(../image/stars.jpg);
+  background-image: url(../image/stars.png);
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: cover;
   letter-spacing: 0.4px;
 }
 
@@ -518,11 +518,6 @@ p {
   background: url("../image/space.png") center/cover;
   background-clip: text;
   color: transparent;
-  transition: -webkit-text-stroke 2s ease;
-  -webkit-text-stroke: 1px #494949;
-  filter: brightness(3);
-}
-.hero-image h1:hover {
   -webkit-text-stroke: 1px rgb(226, 226, 226);
 }
 @media (min-width: 768px) {

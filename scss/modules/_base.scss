@@ -10,9 +10,9 @@ body {
     margin: 0px;
     font-family: "Space Grotesk", serif;
     color: variable.$color-light;
-    background-image: url(../image/stars.jpg);
+    background-image: url(../image/stars.png);
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: cover;
     letter-spacing: 0.4px;
 }
 
