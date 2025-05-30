@@ -240,7 +240,97 @@ input {
   content: "\ea80";
 }
 
-.my-experience [class^=icon-], .hero-image, .main-link .center, .initials-link .center {
+/* PrismJS 1.30.0
+https://prismjs.com/download#themes=prism-tomorrow&languages=markup+css+clike+javascript+sass+scss */
+code[class*=language-], pre[class*=language-] {
+  color: #ccc;
+  background: 0 0;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*=language-], pre[class*=language-] {
+  background: #2d2d2d;
+}
+
+:not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.block-comment, .token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #999;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.attr-name, .token.deleted, .token.namespace, .token.tag {
+  color: #e2777a;
+}
+
+.token.function-name {
+  color: #6196cc;
+}
+
+.token.boolean, .token.function, .token.number {
+  color: #f08d49;
+}
+
+.token.class-name, .token.constant, .token.property, .token.symbol {
+  color: #f8c555;
+}
+
+.token.atrule, .token.builtin, .token.important, .token.keyword, .token.selector {
+  color: #cc99cd;
+}
+
+.token.attr-value, .token.char, .token.regex, .token.string, .token.variable {
+  color: #7ec699;
+}
+
+.token.entity, .token.operator, .token.url {
+  color: #67cdcc;
+}
+
+.token.bold, .token.important {
+  font-weight: 700;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: green;
+}
+
+.hero-image, .main-link .center, .initials-link .center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,7 +436,8 @@ ul {
 }
 
 .button {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
   border-radius: 5px;
   height: 54px;
@@ -627,11 +718,13 @@ p {
 }
 .coding-info {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   position: relative;
 }
 .coding-info .tooltip {
   display: none;
+  left: 50%;
+  transform: translateX(-50%);
   border: 1px solid #494949;
   background-color: #0f0f0f;
   padding: 20px;
@@ -657,13 +750,10 @@ p {
   }
 }
 
-.projects-personal {
-  display: none;
-}
-
 .project-thumbnail {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   color: #0f0f0f;
@@ -682,18 +772,86 @@ p {
 .project-thumbnail .title {
   margin: 0px;
   position: absolute;
+  left: 0px;
   top: 20px;
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   background-color: rgb(226, 226, 226);
+  border: 1px solid #494949;
+  border-left: none;
+}
+.project-thumbnail .project-languages {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  color: rgb(226, 226, 226);
+  padding: 60px 0px 10px 40px;
+}
+.project-thumbnail .project-languages [class^=icon-] {
+  font-size: 2.5rem;
+  z-index: 1;
+}
+.project-thumbnail .project-languages [class$=html5] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=html5]:hover {
+  color: #e34f26;
+}
+.project-thumbnail .project-languages [class$=blender] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=blender]:hover {
+  color: #f5792a;
+}
+.project-thumbnail .project-languages [class$=c-sharp] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=c-sharp]:hover {
+  color: #953DAC;
+}
+.project-thumbnail .project-languages [class$=css3] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=css3]:hover {
+  color: #1572b6;
+}
+.project-thumbnail .project-languages [class$=javascript] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=javascript]:hover {
+  color: #f7df1e;
+}
+.project-thumbnail .project-languages [class$=php] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=php]:hover {
+  color: #777bb4;
+}
+.project-thumbnail .project-languages [class$=python] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=python]:hover {
+  color: #3776ab;
+}
+.project-thumbnail .project-languages [class$=sass] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=sass]:hover {
+  color: #c69;
 }
 .project-thumbnail .view-more {
   display: none;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
   z-index: 1;
-  margin-bottom: 40px;
+  flex-direction: column;
+  height: 100%;
+  padding: 80px 5px 15px;
+}
+@media (min-width: 612px) {
+  .project-thumbnail .view-more {
+    padding: 40px;
+  }
 }
 .project-thumbnail:hover {
   transform: translateY(-5px);
@@ -701,8 +859,18 @@ p {
 .project-thumbnail:hover img {
   filter: blur(2px) brightness(35%);
 }
+@media (min-width: 612px) {
+  .project-thumbnail:hover .project-languages {
+    display: grid;
+  }
+}
 .project-thumbnail:hover .view-more {
   display: flex;
+}
+@media (min-width: 612px) {
+  .project-thumbnail {
+    justify-content: space-between;
+  }
 }
 
 #nm-project-img {
@@ -841,6 +1009,11 @@ input {
 }
 .coding-examples:hover {
   border: 1px solid rgb(226, 226, 226);
+}
+
+.code {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

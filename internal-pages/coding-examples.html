@@ -61,9 +61,63 @@
                     <h1>Coding Examples</h1>
                 </header>
                 <div class="coding-examples">
-                    <h2 class="top-inset-item">Coming Soon...</h2>
+                    <h2 class="top-inset-item">WIP - I Have plans once I learn JS ;)</h2>
+                    <p>When making my netmatters website, to add all the different colours on the nav bar, I first declare a map variable containing all the theme colours.</p>
+                    <div class="code">
+<pre><code class="language-scss">$theme: (
+    "gray": #67809F,
+    "yellow": #F7B322,
+    "blue": #4183D7,
+    "green": #2ECC71,
+    "red": #D64541,
+    "purple": #926FB1,
+    "crimson": #F62459,
+);</code></pre>                     
+                    </div>
+                    <p>I then create a loop that goes through each key and uses its corresponding colour that is to be applied.</p>
+                    <div class="code">
+<pre><code class="language-scss">@mixin nav-bar-theme($theme) {
+  @each $name, $color in $theme {
+    &-#{$name} {
+      .theme {
+        color: $color;
+      }
+      .triangle {
+        border-color: $color transparent transparent transparent;
+      }
+      &:hover {
+        background-color: $color;
+      }
+      &:hover .theme {
+        color: #fff;
+      }
+      .nav-dropdown {
+        background-color: color.adjust($color, $lightness: -10%);
+      }
+    }
+  }  
+}</code></pre>
+                    </div>
+                    <div class="code">
+<pre><code class="language-css">.theme {
+  @include nav-bar-theme($theme);
+}</code></pre>
+                    </div>
+                    <div class="code">
+<pre><code class="language-css">&lt;div  class=&quot;nav-category theme-gray&quot;&gt;
+    &lt;a class=&quot;nav-button&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;icon-cogs theme&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;small&quot;&gt;Bespoke&lt;/span&gt;
+        &lt;span&gt;Software&lt;/span&gt;
+        &lt;span class=&quot;triangle&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;nav-dropdown&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="../js/prism.js"></script>
     </body>
 </html>

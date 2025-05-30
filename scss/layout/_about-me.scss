@@ -26,7 +26,6 @@
 
     [class^="icon-"] {
         font-size: 4rem;
-        @extend %flex-center;
     }
 
     @include variable.coding-language-color-hover();
@@ -50,12 +49,14 @@
 
     &-info {
         display: flex;
-        justify-content: center;
+        margin: 0 auto;
         position: relative;
 
         .tooltip {
             display: none;
             @extend %background-shape;
+            left: 50%;
+            transform: translateX(-50%);
             border: variable.$border-style;
             background-color: variable.$color-dark;
             padding: 20px;

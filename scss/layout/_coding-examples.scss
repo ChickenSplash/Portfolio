@@ -4,3 +4,8 @@
     @extend %content-background;
     @include variable.light-border();
 }
+
+.code {
+    display: flex;
+    justify-content: center;
+}

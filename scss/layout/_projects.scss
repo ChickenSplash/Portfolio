@@ -12,13 +12,10 @@
     }
 }
 
-.projects-personal {
-    display: none;
-}
-
 .project-thumbnail {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     color: variable.$color-dark;
@@ -35,19 +32,42 @@
     .title {
         margin: 0px;
         position: absolute;
+        left: 0px;
         top: 20px;
         padding: 5px 10px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         background-color: variable.$color-light;
+        border: variable.$border-style;
+        border-left: none;
+    }
+
+    .project-languages {
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        color: variable.$color-light;
+        padding: 60px 0px 10px 40px;
+
+        [class^="icon-"] {
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+        @include variable.coding-language-color-hover();
     }
 
     .view-more {
         display: none;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: space-between;
         z-index: 1;
-        margin-bottom: 40px;
+        flex-direction: column;
+        height: 100%;
+        padding: 80px 5px 15px;
+
+        @media (min-width: variable.$break-point-x-small) {
+            padding: 40px;
+        }
     }
     
     &:hover {
@@ -57,9 +77,19 @@
             filter: blur(2px) brightness(35%);
         }
 
+        .project-languages {
+            @media (min-width: variable.$break-point-x-small) {
+                display: grid;
+            }
+        }
+
         .view-more {
             display: flex;
         }
+    }
+
+    @media (min-width: variable.$break-point-x-small) {
+        justify-content: space-between;
     }
 }
 
