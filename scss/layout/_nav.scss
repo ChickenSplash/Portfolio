@@ -5,8 +5,28 @@
 // shove everything to the right of nav bar
 
 .main-content {
+    transition: margin-left 0.5s ease;
+
     @media(min-width: variable.$break-point-medium) {
         margin-left: variable.$nav-width;
+    }
+}
+
+//darkens everything upon opening sidebar
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+    pointer-events: none; 
+    
+    &.translate-nav {
+        background-color: rgba(0,0,0,0.5);
+        pointer-events: auto;
     }
 }
 
@@ -14,14 +34,19 @@
 //layout of sidebar
 
 .sidebar {
-    display: none;
+    display: flex;
+    flex-direction: column;
     width: variable.$nav-width;
     height: 100vh;
     background-color: variable.$color-dark;
     position: fixed;
+    z-index: 1000;
     @include variable.light-border("right");
+    transition: all 2s ease, transform 0.5s;
     box-shadow: 0px 0px 80px 0px rgba(variable.$color-light, 0);
+    transform: translateX(-220px);
 
+    
     ul {
         margin: 0px;
     }
@@ -29,7 +54,13 @@
         border: variable.$border-style;
         transition: border 2s ease;
     }
-        
+
+    // when hamburger menu is clicked on
+    
+    &.translate-nav {
+        transform: translateX(0px);
+    }
+
     &:hover {
         box-shadow: 0px 0px 80px 0px rgba(variable.$color-light, 0.5);
 
@@ -39,8 +70,7 @@
     }
 
     @media (min-width: variable.$break-point-medium) {
-        display: flex;
-        flex-direction: column;
+        transform: translateX(0px);
     }
 }
 
@@ -89,4 +119,56 @@
     }
 
     @include variable.nav-socials()
+}
+
+//Hamburger meny for mobile viewports
+
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+
+    .bars {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        gap: 5px;
+
+        .bar {
+            width: 100%;
+            height: 4px;
+            border-radius: 5px;
+            background: variable.$color-dark;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+    }
+
+    //when hamburger menu is clicked on
+    
+    &.translate-nav {
+        left: calc(variable.$nav-width + 20px);
+
+        .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            }
+            .bar:nth-child(2) {
+            opacity: 0;
+            }
+            .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            }
+    }
+
+    @media (min-width: variable.$break-point-medium) {
+        display: none;
+    }
 }
