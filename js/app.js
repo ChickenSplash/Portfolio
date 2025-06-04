@@ -1,30 +1,24 @@
+const navAnimation = [
+    ".sidebar",
+    ".hamburger",
+    ".nav-overlay",
+];
+
 $(".hamburger").on("click", () => {
-    if ($(".sidebar").hasClass("translate-nav")) {
-        $(".sidebar").removeClass("translate-nav")
-    }
-    else {
-        $(".sidebar").addClass("translate-nav")
-    }
-    
-    if ($(".hamburger").hasClass("translate-nav")) {
-        $(".hamburger").removeClass("translate-nav")
-    }
-    else {
-        $(".hamburger").addClass("translate-nav")
-    }
-    
-    if ($(".nav-overlay").hasClass("translate-nav")) {
-        $(".nav-overlay").removeClass("translate-nav")
-    }
-    else {
-        $(".nav-overlay").addClass("translate-nav")
+    for (i = 0; i < navAnimation.length; i++) {
+        if ($(navAnimation[i]).hasClass("translate-nav")) {
+            $(navAnimation[i]).removeClass("translate-nav")
+        }
+        else {
+            $(navAnimation[i]).addClass("translate-nav")
+        }
     }
 });
 
 $(".nav-overlay").on("click", () => {
     if ($(".sidebar").hasClass("translate-nav")) {
-        $(".sidebar").removeClass("translate-nav")
-        $(".hamburger").removeClass("translate-nav")
-        $(".nav-overlay").removeClass("translate-nav")
+        for (i = 0; i < navAnimation.length; i++) {
+            $(navAnimation[i]).removeClass("translate-nav")
+        }
     }
 });
