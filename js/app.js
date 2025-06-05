@@ -27,17 +27,37 @@ $(".nav-overlay").on("click", () => {
 
 // Projects section
 
-const netmattersButton = document.querySelector("#netmatters-details");
-const netmattersCard = document.querySelector("#netmatters-card");
 const projectCards = document.querySelector(".projects-work");
 const cardCloseButton = document.querySelectorAll(".details-header .button");
 
-cardCloseButton[0].addEventListener("click", () => {
-    netmattersCard.style.display = "none"
-    projectCards.style.display = ""
-})
+const moreDetailsButtons = document.querySelectorAll(`
+    #netmatters-details,
+    #project-2-details,
+    #project-3-details,
+    #project-4-details,
+    #project-5-details,
+    #project-6-details
+`);
 
-netmattersButton.addEventListener("click", () => {
-    netmattersCard.style.display = ""
-    projectCards.style.display = "none"
-})
+const moreDetailsCards = document.querySelectorAll(`
+    #netmatters-card,
+    #project-2-card,
+    #project-3-card,
+    #project-4-card,
+    #project-5-card,
+    #project-6-card    
+`)
+
+for (let i = 0; i < moreDetailsButtons.length; i++) {
+    moreDetailsButtons[i].addEventListener("click", () => {
+        moreDetailsCards[i].style.display = "";
+        projectCards.style.display = "none";
+    });
+}
+
+for (let i = 0; i < cardCloseButton.length; i++) {
+    cardCloseButton[i].addEventListener("click", () => {
+        moreDetailsCards[i].style.display = "none";
+        projectCards.style.display = "";        
+    });
+}
