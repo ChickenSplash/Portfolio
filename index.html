@@ -65,9 +65,24 @@
         <div class="nav-overlay"></div>
         <div class="main-content">
             <div class="hero-image">
-                <p>My name is</p>
-                <h1>Emanuel Correia</h1>
-                <p>I'm a Web Developer</p>
+                <div id="particles-js"></div>
+                <div class="hero-text">
+                    <p>
+                        <span class="floating-text">My</span> 
+                        <span class="floating-text">name</span> 
+                        <span class="floating-text">is</span>
+                    </p>
+                    <h1>
+                        <span class="floating-text">Emanuel</span> 
+                        <span class="floating-text">Correia</span>
+                    </h1>
+                    <p>
+                        <span class="floating-text">I'm</span> 
+                        <span class="floating-text">a</span> 
+                        <span class="floating-text">Web</span> 
+                        <span class="floating-text">Developer</span>
+                    </p>
+                </div>
             </div>
             <div class="container">
                 <div class="section-header" id="about-me">
@@ -134,7 +149,12 @@
                     </div>
                     <div class="details-wrapper">
                         <div class="details-info">
-                            <p>This project recreates Netmatters homepage using HTML, CSS, SASS, javaScript and PHP. The projects makes use of javaScript to add dynamic animations on the page such as the pop out sidemenu. This project also uses PHP to make us of include partials for things such as the header, footer and nav. I have also implemented a dynamic news section where content is pulled from a MySQL database and rendered using PHP, allowing for easy content management and updates.</p>
+                            <ul>
+                                <li><p>Recreated the Netmatters homepage to the best of my ability using HTML, CSS, SASS, JavaScript, and PHP</p></li>
+                                <li><p>Used JavaScript to add dynamic animations, including a pop-out side menu</p></li>
+                                <li><p>Applied PHP include partials for reusable components like the header, footer, and navigation</p></li>
+                                <li><p>Implemented a dynamic news section powered by a MySQL database, allowing content to be pulled and displayed using PHP, and easily updated and managed through the database</p></li>
+                            </ul>
                             <div class="buttons">
                                 <a class="button" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
                                     <div class="scale">
@@ -469,15 +489,15 @@
                         <p class="phone-number"><a class="seamless-link" href="tel:+447858501493">(+44) 7858501493</a></p>
                     </div>
                     <div class="contact-box">
-                        <form>
+                        <form id="contactForm">
                             <div class="contact-box-names">
-                                <input class="top-inset-item-breakpoint" placeholder="Forename">
-                                <input class="top-inset-item-breakpoint" placeholder="Surname">
+                                <input class="top-inset-item-breakpoint" placeholder="Forename" id="forename">
+                                <input class="top-inset-item-breakpoint" placeholder="Surname" id="surname">
                             </div>
-                            <input placeholder="Email">
-                            <input placeholder="Subject">
+                            <input placeholder="Email" id="email">
+                            <input placeholder="Subject" id="subject">
                             <div class="message-box">
-                                <textarea placeholder="Message"></textarea>
+                                <textarea placeholder="Message" id="message"></textarea>
                                 <button type="submit" aria-label="submit form"><span class="icon-paperplane"></span></button>
                             </div>
                         </form>
@@ -489,6 +509,8 @@
             </div>
         </div>
         <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

@@ -25,7 +25,7 @@ $(".nav-overlay").on("click", () => {
     }
 });
 
-// Projects section
+// Enables the functionality of the "view more" button
 
 const projectCards = document.querySelector(".projects-work");
 const cardCloseButton = document.querySelectorAll(".details-header .button");
@@ -48,6 +48,8 @@ const moreDetailsCards = document.querySelectorAll(`
     #project-6-card    
 `)
 
+// iterates through all the more details buttons and adds a click event handler to display their relevant cards
+
 for (let i = 0; i < moreDetailsButtons.length; i++) {
     moreDetailsButtons[i].addEventListener("click", () => {
         moreDetailsCards[i].style.display = "";
@@ -55,9 +57,168 @@ for (let i = 0; i < moreDetailsButtons.length; i++) {
     });
 }
 
+// iterates through all the more close buttons and adds a click event handler to set everything back to normal
+
 for (let i = 0; i < cardCloseButton.length; i++) {
     cardCloseButton[i].addEventListener("click", () => {
         moreDetailsCards[i].style.display = "none";
         projectCards.style.display = "";        
     });
+}
+
+// contact form
+
+function validateForm() {
+    let valid = true;
+}
+
+// loads particles js, particles config currently shoved in there, ideally to be offloaded on a seperate json file
+
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 90,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 1,
+          "opacity_min": 0.3,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 1.5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "size_min": 0.5,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.1,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 1
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+
+);
+
+// animejs to add animation to hero text
+
+const heroText = document.querySelectorAll(".floating-text");
+
+function floatBlock(element) {
+    console.log("animation");
+    anime({
+        targets: element,
+        translateX: () => anime.random(-50, 50),
+        translateY: () => anime.random(-50, 50),
+        duration: anime.random(12000, 20000),
+        easing: 'easeInOutSine',
+        rotateZ: Math.floor((Math.random() - 0.5) * 45),
+        direction: 'alternate',
+        loop: true
+    });
+}
+
+for (i = 0; i < heroText.length; i++) {
+    floatBlock(heroText[i]);
 }
