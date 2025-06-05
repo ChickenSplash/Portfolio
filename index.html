@@ -64,7 +64,6 @@
         </nav>
         <div class="nav-overlay"></div>
         <div class="main-content">
-            <div id="particles-js"></div>
             <div class="hero-image">
                 <p>My name is</p>
                 <h1>Emanuel Correia</h1>
@@ -128,24 +127,15 @@
                 <div class="section-header" id="projects">
                     <h1>My Projects</h1>
                 </div>
-                <div class="slider">
-                    <div class="projects-work">
-                        <div class="project-thumbnail">
-                            <img id="nm-project-img" src="image/Netmatters website.png">
-                            <h3 class="title">Netmatters Homepage</h3>
-                            <div class="project-languages">
-                                <span class="icon-html5"></span>
-                                <span class="icon-css3"></span>
-                                <span class="icon-sass"></span>
-                                <span class="icon-javascript"></span>
-                            </div>
-                            <div class="view-more">
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-info"></span>
-                                        <span>More Details</span>
-                                    </div>
-                                </a>
+                <div class="project-details" id="netmatters-card" style="display: none">
+                    <div class="details-header">
+                        <h2 class="top-inset-item">Netmatters Homepage</h2>
+                        <div class="button">X</div>
+                    </div>
+                    <div class="details-wrapper">
+                        <div class="details-info">
+                            <p>This project recreates Netmatters homepage using HTML, CSS, SASS, javaScript and PHP. The projects makes use of javaScript to add dynamic animations on the page such as the pop out sidemenu. This project also uses PHP to make us of include partials for things such as the header, footer and nav. I have also implemented a dynamic news section where content is pulled from a MySQL database and rendered using PHP, allowing for easy content management and updates.</p>
+                            <div class="buttons">
                                 <a class="button" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
                                     <div class="scale">
                                         <span class="icon-ruler"></span>
@@ -160,25 +150,27 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project-thumbnail">
-                            <h3 class="title">Project 2</h3>
-                            <div class="project-languages">
-                                <span class="icon-html5"></span>
-                            </div>
-                            <div class="view-more">
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-info"></span>
-                                        <span>More Details</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
+                        <div class="details-illustration">
+                            <img src="image/Netmatters website.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details" id="project-2-card" style="display: none">
+                    <div class="details-header">
+                        <h2 class="top-inset-item">Project 2</h2>
+                        <div class="button">X</div>
+                    </div>
+                    <div class="details-wrapper">
+                        <div class="details-info">
+                            <p>This is the second project that i have done, im not sure what im going to do yet... guess ill find out</p>
+                            <div class="buttons">
+                                <a class="button" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
                                     <div class="scale">
                                         <span class="icon-ruler"></span>
                                         <span>View Project</span>
                                     </div>
                                 </a>
-                                <a class="button" href="#">
+                                <a class="button" href="https://github.com/ChickenSplash/Netmatters-Homepage" target="_blank">
                                     <div class="scale">
                                         <span class="icon-embed2"></span>
                                         <span>View Code</span>
@@ -186,109 +178,170 @@
                                 </a>
                             </div>
                         </div>
-                        <div href="#" class="project-thumbnail">
-                            <h3 class="title">Project 3</h3>
-                            <div class="project-languages">
-                                <span class="icon-html5"></span>
-                            </div>
-                            <div class="view-more">
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-info"></span>
-                                        <span>More Details</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-ruler"></span>
-                                        <span>View Project</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-embed2"></span>
-                                        <span>View Code</span>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="details-illustration">
+                            <img src="image/Netmatters website.png">
                         </div>
-                        <div href="#" class="project-thumbnail">
-                            <h3 class="title">Project 4</h3>
-                            <div class="project-languages">
-                                <span class="icon-html5"></span>
-                            </div>
-                            <div class="view-more">
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-info"></span>
-                                        <span>More Details</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-ruler"></span>
-                                        <span>View Project</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-embed2"></span>
-                                        <span>View Code</span>
-                                    </div>
-                                </a>
-                            </div>
+                    </div>
+                </div>
+                <div class="projects-work">
+                    <div class="project-thumbnail">
+                        <img id="nm-project-img" src="image/Netmatters website.png">
+                        <h3 class="title">Netmatters Homepage</h3>
+                        <div class="project-languages">
+                            <span class="icon-html5"></span>
+                            <span class="icon-css3"></span>
+                            <span class="icon-sass"></span>
+                            <span class="icon-javascript"></span>
                         </div>
-                        <div href="#" class="project-thumbnail">
-                            <h3 class="title">Project 5</h3>
-                            <div class="project-languages">
-                                <span class="icon-html5"></span>
+                        <div class="view-more">
+                            <div class="button" id="netmatters-details">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
                             </div>
-                            <div class="view-more">
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-info"></span>
-                                        <span>More Details</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-ruler"></span>
-                                        <span>View Project</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-embed2"></span>
-                                        <span>View Code</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="https://github.com/ChickenSplash/Netmatters-Homepage" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
                         </div>
-                        <div href="#" class="project-thumbnail">
-                            <h3 class="title">Project 6</h3>
-                            <div class="project-languages">
-                                <span class="icon-html5"></span>
+                    </div>
+                    <div class="project-thumbnail">
+                        <h3 class="title">Project 2</h3>
+                        <div class="project-languages">
+                            <span class="icon-html5"></span>
+                        </div>
+                        <div class="view-more">
+                            <div class="button" id="project-2-details">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
                             </div>
-                            <div class="view-more">
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-info"></span>
-                                        <span>More Details</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-ruler"></span>
-                                        <span>View Project</span>
-                                    </div>
-                                </a>
-                                <a class="button" href="#">
-                                    <div class="scale">
-                                        <span class="icon-embed2"></span>
-                                        <span>View Code</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div href="#" class="project-thumbnail">
+                        <h3 class="title">Project 3</h3>
+                        <div class="project-languages">
+                            <span class="icon-html5"></span>
+                        </div>
+                        <div class="view-more">
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div href="#" class="project-thumbnail">
+                        <h3 class="title">Project 4</h3>
+                        <div class="project-languages">
+                            <span class="icon-html5"></span>
+                        </div>
+                        <div class="view-more">
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div href="#" class="project-thumbnail">
+                        <h3 class="title">Project 5</h3>
+                        <div class="project-languages">
+                            <span class="icon-html5"></span>
+                        </div>
+                        <div class="view-more">
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div href="#" class="project-thumbnail">
+                        <h3 class="title">Project 6</h3>
+                        <div class="project-languages">
+                            <span class="icon-html5"></span>
+                        </div>
+                        <div class="view-more">
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

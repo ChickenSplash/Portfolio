@@ -330,22 +330,22 @@ pre[class*=language-] {
   color: green;
 }
 
-.hero-image, .main-link .center, .initials-link .center {
+.hero-image, .main-link .center, .initials-link .center, .hamburger {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.coding-info .tooltip, .coding-examples, .scs-item, .nm-homepage, .contact, .project-thumbnail, .about-me {
+.coding-info .tooltip, .coding-examples, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
   border-radius: 5px;
   padding: 25px;
 }
 
-.hero-image, .coding-examples, .scs-item, .nm-homepage, .contact, .project-thumbnail, .about-me {
+.hero-image, .coding-examples, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
   background-color: rgba(15, 15, 15, 0.7);
   box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0.25);
 }
-.hero-image:hover, .coding-examples:hover, .scs-item:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
+.hero-image:hover, .coding-examples:hover, .scs-item:hover, .project-details:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
   background-color: rgba(15, 15, 15, 0.85);
   box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0.5);
 }
@@ -445,6 +445,7 @@ ul {
   font-weight: bold;
   background-color: rgb(226, 226, 226);
   transition: all 0.5s;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #ff00ff;
@@ -610,9 +611,6 @@ p {
 }
 
 .hamburger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   width: 56px;
   height: 56px;
@@ -1040,6 +1038,57 @@ input {
     gap: 40px;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.project-details {
+  border: 1px solid #494949;
+  transition: all 2s ease;
+}
+.project-details:hover {
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+}
+.details-header .button {
+  width: 54px;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+.details-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 1410px) {
+  .details-wrapper {
+    display: grid;
+  }
+}
+.details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.details-info p {
+  font-size: 1.125rem;
+  margin-top: 0;
+}
+.details-info .buttons {
+  display: flex;
+  justify-content: center;
+  margin-block: 20px;
+}
+.details-info .buttons > * {
+  margin-inline: 20px;
+  padding-inline: 20px;
+  color: #0f0f0f;
+}
+.details-illustration {
+  height: 500px;
+  overflow-y: scroll;
+  border-radius: 5px;
 }
 
 .scs-grid-container {

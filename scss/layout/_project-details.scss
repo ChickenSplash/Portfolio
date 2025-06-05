@@ -1,0 +1,57 @@
+@use "../utilities/index" as variable;
+
+.project-details {
+    @extend %content-background;
+    @include variable.light-border;
+}
+
+.details {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            width: 54px;
+            margin-bottom: 20px;
+            color: variable.$color-dark;
+        }
+    }
+
+    &-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media (min-width: variable.$break-point-large) {
+            display: grid;
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p{
+            font-size: 1.125rem;
+            margin-top: 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-block: 20px;
+
+            & > *{
+                margin-inline: 20px;
+                padding-inline: 20px;
+                color: variable.$color-dark;
+            }
+        }
+    }
+
+    &-illustration {
+        height: 500px;
+        overflow-y: scroll;
+        border-radius: 5px;
+    }
+}
