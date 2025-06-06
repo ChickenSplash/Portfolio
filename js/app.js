@@ -66,13 +66,67 @@ for (let i = 0; i < cardCloseButton.length; i++) {
     });
 }
 
-// contact form
+// contact form validation
 
 function validateForm() {
+    
     let valid = true;
+
+    // Get DOM elements
+    const forename = document.getElementById('forename');
+    const surname = document.getElementById('surname');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message'); 
+    
+    // Clear previous errors
+    const error = document.querySelectorAll('.error')
+    for (i = 0; i < error.length; i++) {
+      error[i].classList.remove("error");
+    }
+
+    forename.placeholder = "Forename"
+    surname.placeholder = "Surname"
+    email.placeholder = "Email"
+    subject.placeholder = "Subject"
+    message.placeholder = "Message"
+
+    if (forename.value.trim() === '') {
+        valid = false;
+        forename.classList.add("error")
+        forename.placeholder += " - Required"
+    }
+
+    if (surname.value.trim() === '') {
+        valid = false;
+        surname.classList.add("error")
+        surname.placeholder += " - Required"
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value.trim())) {
+        valid = false;
+        email.classList.add("error")
+        email.placeholder += " - Must be valid"
+    }
+    
+    if (subject.value.trim() === '') {
+        valid = false;
+        subject.classList.add("error")
+        subject.placeholder += " - Required"
+    }
+
+    if (message.value.trim() === '') {
+        valid = false;
+        message.classList.add("error")
+        message.placeholder += " - Required"
+    }
+    
+    return valid;
 }
 
 // loads particles js, particles config currently shoved in there, ideally to be offloaded on a seperate json file
+// particlesJS parameters: DOM element it targets, object config, callback function.
 
 /*
 particlesJS.load('particles-js', 'particles.json', function() {
@@ -114,7 +168,7 @@ particlesJS('particles-js',
         "random": true,
         "anim": {
           "enable": true,
-          "speed": 1,
+          "speed": 0.8,
           "opacity_min": 0.3,
           "sync": false
         }
@@ -139,9 +193,9 @@ particlesJS('particles-js',
       "move": {
         "enable": true,
         "speed": 0.1,
-        "direction": "none",
-        "random": false,
-        "straight": false,
+        "direction": "top",
+        "random": true,
+        "straight": true,
         "out_mode": "out",
         "attract": {
           "enable": false,
@@ -205,18 +259,22 @@ particlesJS('particles-js',
 
 const heroText = document.querySelectorAll(".floating-text");
 
+// function accepts value of a DOM object and animates it
+
 function floatBlock(element) {
-    console.log("animation");
-    anime({
-        targets: element,
-        translateX: () => anime.random(-50, 50),
-        translateY: () => anime.random(-50, 50),
-        duration: anime.random(12000, 20000),
-        easing: 'easeInOutSine',
-        rotateZ: Math.floor((Math.random() - 0.5) * 45),
-        direction: 'alternate',
-        loop: true
-    });
+    function animateOnce() {
+        anime({
+            targets: element,  // Targeting the individual DOM object
+            translateX: anime.random(-50, 50),
+            translateY: anime.random(-50, 50),
+            duration: anime.random(12000, 30000),
+            easing: 'easeInOutSine',
+            rotateZ: (Math.random() - 0.5) * 45,
+            direction: 'alternate',
+            complete: animateOnce // Reruns the animation with new values on complete
+        });
+    }
+    animateOnce();
 }
 
 for (i = 0; i < heroText.length; i++) {

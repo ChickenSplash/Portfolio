@@ -489,13 +489,13 @@
                         <p class="phone-number"><a class="seamless-link" href="tel:+447858501493">(+44) 7858501493</a></p>
                     </div>
                     <div class="contact-box">
-                        <form id="contactForm">
+                        <form id="contactForm" onsubmit="return validateForm()">
                             <div class="contact-box-names">
-                                <input class="top-inset-item-breakpoint" placeholder="Forename" id="forename">
-                                <input class="top-inset-item-breakpoint" placeholder="Surname" id="surname">
+                                <input class="top-inset-item-breakpoint" placeholder="Forename" id="forename" maxlength="50">
+                                <input class="top-inset-item-breakpoint" placeholder="Surname" id="surname" maxlength="50">
                             </div>
-                            <input placeholder="Email" id="email">
-                            <input placeholder="Subject" id="subject">
+                            <input placeholder="Email" id="email" maxlength="128">
+                            <input placeholder="Subject" id="subject" maxlength="128">
                             <div class="message-box">
                                 <textarea placeholder="Message" id="message"></textarea>
                                 <button type="submit" aria-label="submit form"><span class="icon-paperplane"></span></button>
