@@ -27,44 +27,42 @@ $(".nav-overlay").on("click", () => {
 
 // Enables the functionality of the "view more" button
 
-const projectCards = document.querySelector(".projects-work");
-const cardCloseButton = document.querySelectorAll(".details-header .button");
+const moreDetailsButtons = [
+    "#netmatters-details",
+    "#project-2-details",
+    "#project-3-details",
+    "#project-4-details",
+    "#project-5-details",
+    "#project-6-details",
+];
 
-const moreDetailsButtons = document.querySelectorAll(`
-    #netmatters-details,
-    #project-2-details,
-    #project-3-details,
-    #project-4-details,
-    #project-5-details,
-    #project-6-details
-`);
+const moreDetailsCards = [
+    "#netmatters-card",
+    "#project-2-card",
+    "#project-3-card",
+    "#project-4-card",
+    "#project-5-card",
+    "#project-6-card",
+];
 
-const moreDetailsCards = document.querySelectorAll(`
-    #netmatters-card,
-    #project-2-card,
-    #project-3-card,
-    #project-4-card,
-    #project-5-card,
-    #project-6-card    
-`)
+// collapsing animations using jquery
 
-// iterates through all the more details buttons and adds a click event handler to display their relevant cards
 
 for (let i = 0; i < moreDetailsButtons.length; i++) {
-    moreDetailsButtons[i].addEventListener("click", () => {
-        moreDetailsCards[i].style.display = "";
-        projectCards.style.display = "none";
+    $(moreDetailsCards[i]).hide();
+
+    $(moreDetailsButtons[i]).click(() => {
+        $(".projects-work").slideUp(400);
+        $(moreDetailsCards[i]).slideDown(400);
+    });
+
+    $(".project-details .button").click(() => {
+        $(moreDetailsCards[i]).slideUp(400);
+        $(".projects-work").slideDown(400);
     });
 }
 
-// iterates through all the more close buttons and adds a click event handler to set everything back to normal
 
-for (let i = 0; i < cardCloseButton.length; i++) {
-    cardCloseButton[i].addEventListener("click", () => {
-        moreDetailsCards[i].style.display = "none";
-        projectCards.style.display = "";        
-    });
-}
 
 // contact form validation
 
@@ -264,7 +262,7 @@ const heroText = document.querySelectorAll(".floating-text");
 function floatBlock(element) {
     function animateOnce() {
         anime({
-            targets: element,  // Targeting the individual DOM object
+            targets: element,  // Targeting the individual DOM object so it knows what to animate
             translateX: anime.random(-50, 50),
             translateY: anime.random(-50, 50),
             duration: anime.random(12000, 30000),

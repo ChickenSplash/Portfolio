@@ -2,7 +2,7 @@
 
 .project-details {
     @extend %content-background;
-    @include variable.light-border;
+    @include variable.light-border; 
 }
 
 .details {
@@ -11,8 +11,8 @@
         justify-content: space-between;
 
         .button {
-            width: 54px;
-            margin-bottom: 20px;
+            width: 32px;
+            height: 32px;
             color: variable.$color-dark;
         }
     }
@@ -51,6 +51,7 @@
 
     &-illustration {
         height: 500px;
+        margin-top: 16px;
         overflow-y: scroll;
         border-radius: 5px;
     }

@@ -825,14 +825,14 @@ p {
   display: block;
 }
 
-.projects-work, .projects-personal {
+.projects-work {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 300px;
   gap: 40px;
 }
 @media (min-width: 1410px) {
-  .projects-work, .projects-personal {
+  .projects-work {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -1073,8 +1073,8 @@ input {
   justify-content: space-between;
 }
 .details-header .button {
-  width: 54px;
-  margin-bottom: 20px;
+  width: 32px;
+  height: 32px;
   color: #0f0f0f;
 }
 .details-wrapper {
@@ -1107,6 +1107,7 @@ input {
 }
 .details-illustration {
   height: 500px;
+  margin-top: 16px;
   overflow-y: scroll;
   border-radius: 5px;
 }

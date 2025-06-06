@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../utilities/index" as variable;
 
-.projects-work, .projects-personal {
+.projects-work {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 300px;
