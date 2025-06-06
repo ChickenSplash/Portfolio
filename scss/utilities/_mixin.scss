@@ -43,3 +43,12 @@
         }
     }
 }
+
+@mixin text-code-color() {
+    @each $name, $color in variable.$code-language-color {
+        .text-#{$name} {
+            color: $color;
+            font-weight: bold;
+        }
+    }
+}

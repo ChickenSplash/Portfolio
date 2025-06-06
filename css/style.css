@@ -467,15 +467,6 @@ ul {
   transition: color 0.5s ease;
 }
 
-.text-html5 {
-  color: #e34f26;
-  font-weight: bold;
-}
-.text-c-sharp {
-  color: #953DAC;
-  font-weight: bold;
-}
-
 .section-header h1 {
   margin: 0px;
   padding-block: 60px;
@@ -491,6 +482,51 @@ footer p {
 
 p {
   line-height: 30px;
+}
+
+.text-html5 {
+  color: #e34f26;
+  font-weight: bold;
+}
+
+.text-blender {
+  color: #f5792a;
+  font-weight: bold;
+}
+
+.text-c-sharp {
+  color: #953DAC;
+  font-weight: bold;
+}
+
+.text-css3 {
+  color: #1572b6;
+  font-weight: bold;
+}
+
+.text-javascript {
+  color: #f7df1e;
+  font-weight: bold;
+}
+
+.text-php {
+  color: #777bb4;
+  font-weight: bold;
+}
+
+.text-python {
+  color: #3776ab;
+  font-weight: bold;
+}
+
+.text-sass {
+  color: #c69;
+  font-weight: bold;
+}
+
+.text-mysql {
+  color: #136494;
+  font-weight: bold;
 }
 
 .main-content {
@@ -787,6 +823,12 @@ p {
 .my-experience [class$=sass]:hover {
   color: #c69;
 }
+.my-experience [class$=mysql] {
+  transition: color 0.2s ease;
+}
+.my-experience [class$=mysql]:hover {
+  color: #136494;
+}
 
 .coding-icons {
   display: grid;
@@ -929,6 +971,12 @@ p {
 }
 .project-thumbnail .project-languages [class$=sass]:hover {
   color: #c69;
+}
+.project-thumbnail .project-languages [class$=mysql] {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages [class$=mysql]:hover {
+  color: #136494;
 }
 .project-thumbnail .view-more {
   display: none;
@@ -1090,6 +1138,9 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.details-info li {
+  margin-bottom: 10px;
 }
 .details-info p {
   font-size: 1.125rem;

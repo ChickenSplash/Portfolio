@@ -52,13 +52,13 @@ for (let i = 0; i < moreDetailsButtons.length; i++) {
     $(moreDetailsCards[i]).hide();
 
     $(moreDetailsButtons[i]).click(() => {
-        $(".projects-work").slideUp(400);
-        $(moreDetailsCards[i]).slideDown(400);
+        $(".projects-work").slideUp(350);
+        $(moreDetailsCards[i]).slideDown(350);
     });
 
     $(".project-details .button").click(() => {
-        $(moreDetailsCards[i]).slideUp(400);
-        $(".projects-work").slideDown(400);
+        $(moreDetailsCards[i]).slideUp(350);
+        $(".projects-work").slideDown(350);
     });
 }
 
@@ -137,7 +137,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 90,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
@@ -166,7 +166,7 @@ particlesJS('particles-js',
         "random": true,
         "anim": {
           "enable": true,
-          "speed": 0.8,
+          "speed": 0.6,
           "opacity_min": 0.3,
           "sync": false
         }

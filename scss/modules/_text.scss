@@ -2,18 +2,6 @@
 @use "sass:map";
 @use "../utilities/index" as variable;
 
-.text {
-    &-html5 {
-        color: map.get(variable.$code-language-color, "html5");
-        font-weight: bold;
-    }
-
-    &-c-sharp {
-        color: map.get(variable.$code-language-color, "c-sharp");
-        font-weight: bold;
-    }
-}
-
 .section-header {
     h1 {
         margin: 0px;
@@ -36,3 +24,5 @@ footer {
 p {
     line-height: 30px;
 }
+
+@include variable.text-code-color();
