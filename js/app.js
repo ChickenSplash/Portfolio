@@ -62,6 +62,20 @@ for (let i = 0; i < moreDetailsButtons.length; i++) {
     });
 }
 
+// Remove the blur effect upon user scrolling scrollable elements
+
+function onScroll(event) {
+  const target = event.target;
+  target.classList.remove("scroll-me");
+  target.removeEventListener("scroll", onScroll);
+}
+
+const scrollable = document.querySelectorAll(".scroll-me");
+
+for (let i = 0; i < scrollable.length; i++) {
+  scrollable[i].addEventListener("scroll", onScroll)
+}
+
 
 
 // contact form validation

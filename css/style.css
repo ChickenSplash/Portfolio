@@ -1161,6 +1161,34 @@ input {
   margin-top: 16px;
   overflow-y: scroll;
   border-radius: 5px;
+  position: relative;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.details-illustration::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.details-illustration img {
+  transition: filter 0.2s ease;
+}
+.details-illustration .scroll-me-text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.details-illustration.scroll-me:hover img {
+  filter: blur(2px) brightness(35%);
+}
+.details-illustration.scroll-me:hover .scroll-me-text {
+  display: flex;
 }
 
 .scs-grid-container {

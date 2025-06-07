@@ -58,5 +58,44 @@
         margin-top: 16px;
         overflow-y: scroll;
         border-radius: 5px;
+        position: relative;
+
+        // To hide the scrollbar
+
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+        
+        
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        img {
+            transition: filter 0.2s ease;
+        }
+
+        .scroll-me-text {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 2rem;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+        &.scroll-me:hover {
+            img {
+                filter: blur(2px) brightness(35%);
+            }
+
+            .scroll-me-text {
+                display: flex;
+            }
+        }
     }
 }
