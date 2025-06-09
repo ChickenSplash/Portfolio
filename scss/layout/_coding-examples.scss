@@ -3,9 +3,36 @@
 .coding-examples {
     @extend %content-background;
     @include variable.light-border();
+    
+    display: grid;
+    gap: 15px;
+
+    @media (min-width: variable.$break-point-large) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    p{
+        font-size: 1.125rem;
+    }
 }
 
 .code {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.example-buttons {
+    @extend %hover-icons;
+
+    .coding-icons {
+        margin-bottom: 40px;
+
+        span {
+            cursor: pointer;
+        }
+    }
+}
+
+.margin {
+    margin-top: 30px;
 }

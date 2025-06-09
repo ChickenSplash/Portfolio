@@ -336,7 +336,7 @@ pre[class*=language-] {
   align-items: center;
 }
 
-.coding-info .tooltip, .coding-examples, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
+.example-buttons .coding-info .tooltip, .my-experience .coding-info .tooltip, .coding-examples, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
   border-radius: 5px;
   padding: 25px;
 }
@@ -348,14 +348,6 @@ pre[class*=language-] {
 .hero-image:hover, .coding-examples:hover, .scs-item:hover, .project-details:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
   background-color: rgba(15, 15, 15, 0.85);
   box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0.5);
-}
-
-.section-header h1 {
-  text-shadow: 0px 0px 16px rgba(226, 226, 226, 0.25);
-  transition: text-shadow 0.5s ease;
-}
-.section-header h1:hover {
-  text-shadow: 0px 0px 16px rgba(226, 226, 226, 0.5);
 }
 
 .main-link .center:hover, .initials-link span:hover, .seamless-link:hover {
@@ -398,6 +390,102 @@ pre[class*=language-] {
   color: rgba(226, 226, 226, 0.4);
 }
 
+.example-buttons, .my-experience {
+  grid-column: span 2;
+}
+.example-buttons [class^=icon-], .my-experience [class^=icon-] {
+  font-size: 4rem;
+}
+.example-buttons [class$=html5], .my-experience [class$=html5] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=html5]:hover, .my-experience [class$=html5]:hover {
+  color: #e34f26;
+}
+.example-buttons [class$=blender], .my-experience [class$=blender] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=blender]:hover, .my-experience [class$=blender]:hover {
+  color: #f5792a;
+}
+.example-buttons [class$=c-sharp], .my-experience [class$=c-sharp] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=c-sharp]:hover, .my-experience [class$=c-sharp]:hover {
+  color: #953DAC;
+}
+.example-buttons [class$=css3], .my-experience [class$=css3] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=css3]:hover, .my-experience [class$=css3]:hover {
+  color: #1572b6;
+}
+.example-buttons [class$=javascript], .my-experience [class$=javascript] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=javascript]:hover, .my-experience [class$=javascript]:hover {
+  color: #f7df1e;
+}
+.example-buttons [class$=php], .my-experience [class$=php] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=php]:hover, .my-experience [class$=php]:hover {
+  color: #777bb4;
+}
+.example-buttons [class$=python], .my-experience [class$=python] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=python]:hover, .my-experience [class$=python]:hover {
+  color: #3776ab;
+}
+.example-buttons [class$=sass], .my-experience [class$=sass] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=sass]:hover, .my-experience [class$=sass]:hover {
+  color: #c69;
+}
+.example-buttons [class$=mysql], .my-experience [class$=mysql] {
+  transition: color 0.2s ease;
+}
+.example-buttons [class$=mysql]:hover, .my-experience [class$=mysql]:hover {
+  color: #136494;
+}
+.example-buttons .coding-icons, .my-experience .coding-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 612px) {
+  .example-buttons .coding-icons, .my-experience .coding-icons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1410px) {
+  .example-buttons .coding-icons, .my-experience .coding-icons {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+.example-buttons .coding-info, .my-experience .coding-info {
+  margin: 0 auto;
+  position: relative;
+}
+.example-buttons .coding-info .tooltip, .my-experience .coding-info .tooltip {
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #494949;
+  background-color: #0f0f0f;
+  padding: 20px;
+  position: absolute;
+  bottom: 100px;
+}
+.example-buttons .coding-info .tooltip h3, .my-experience .coding-info .tooltip h3 {
+  margin: 0px;
+}
+.example-buttons .coding-info:hover .tooltip, .my-experience .coding-info:hover .tooltip {
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -436,6 +524,10 @@ li {
 
 ul {
   padding: 0px;
+}
+
+.floating {
+  display: inline-block;
 }
 
 .button {
@@ -742,8 +834,9 @@ p {
   }
 }
 
-.floating-text {
+.hero-floating-text {
   display: inline-block;
+  margin: 0px 10px 35px 0px;
 }
 
 .about-me {
@@ -769,102 +862,8 @@ p {
   }
 }
 
-.my-experience {
-  grid-column: span 2;
-}
-.my-experience [class^=icon-] {
-  font-size: 4rem;
-}
-.my-experience [class$=html5] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=html5]:hover {
-  color: #e34f26;
-}
-.my-experience [class$=blender] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=blender]:hover {
-  color: #f5792a;
-}
-.my-experience [class$=c-sharp] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=c-sharp]:hover {
-  color: #953DAC;
-}
-.my-experience [class$=css3] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=css3]:hover {
-  color: #1572b6;
-}
-.my-experience [class$=javascript] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=javascript]:hover {
-  color: #f7df1e;
-}
-.my-experience [class$=php] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=php]:hover {
-  color: #777bb4;
-}
-.my-experience [class$=python] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=python]:hover {
-  color: #3776ab;
-}
-.my-experience [class$=sass] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=sass]:hover {
-  color: #c69;
-}
-.my-experience [class$=mysql] {
-  transition: color 0.2s ease;
-}
-.my-experience [class$=mysql]:hover {
-  color: #136494;
-}
-
-.coding-icons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.my-experience .coding-icons {
   margin-top: 40px;
-}
-@media (min-width: 612px) {
-  .coding-icons {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-@media (min-width: 1410px) {
-  .coding-icons {
-    grid-template-columns: repeat(10, 1fr);
-  }
-}
-.coding-info {
-  margin: 0 auto;
-  position: relative;
-}
-.coding-info .tooltip {
-  display: none;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid #494949;
-  background-color: #0f0f0f;
-  padding: 20px;
-  position: absolute;
-  bottom: 100px;
-}
-.coding-info .tooltip h3 {
-  margin: 0px;
-}
-.coding-info:hover .tooltip {
-  display: block;
 }
 
 .projects-work {
@@ -1225,14 +1224,35 @@ input {
 .coding-examples {
   border: 1px solid #494949;
   transition: all 2s ease;
+  display: grid;
+  gap: 15px;
 }
 .coding-examples:hover {
   border: 1px solid rgb(226, 226, 226);
 }
+@media (min-width: 1410px) {
+  .coding-examples {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.coding-examples p {
+  font-size: 1.125rem;
+}
 
 .code {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.example-buttons .coding-icons {
+  margin-bottom: 40px;
+}
+.example-buttons .coding-icons span {
+  cursor: pointer;
+}
+
+.margin {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

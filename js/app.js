@@ -50,7 +50,7 @@ for(const button in detailsCards) {
     });
 }
 
-// Remove the blur effect upon user scrolling scrollable elements
+// Remove the blur effect upon user scrolling scrollable elements. Resets when closing card again.
 
 function removeScroll(event) {
     const target = event.target;
@@ -58,9 +58,9 @@ function removeScroll(event) {
     target.removeEventListener("scroll", removeScroll);
 }
 
-
 function resetScroll(event) {
     const illustration = event.target.parentElement.parentElement.querySelector(".details-illustration");
+    illustration.removeEventListener("scroll", removeScroll); // Remove any previous events should the user not have triggered it
     illustration.addEventListener("scroll", removeScroll)
     illustration.classList.add("scroll-me")
 }
@@ -140,139 +140,144 @@ particlesJS.load('particles-js', 'particles.json', function() {
 });
 */
 
-particlesJS('particles-js',
-  
-    {
-        "particles": {
-        "number": {
-            "value": 100,
-            "density": {
-            "enable": true,
-            "value_area": 800
-            }
-        },
-        "color": {
-            "value": "#ffffff"
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-            "width": 0,
-            "color": "#000000"
+try {
+    particlesJS('particles-js',
+      
+        {
+            "particles": {
+            "number": {
+                "value": 100,
+                "density": {
+                "enable": true,
+                "value_area": 800
+                }
             },
-            "polygon": {
-            "nb_sides": 5
+            "color": {
+                "value": "#ffffff"
             },
-            "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-            }
-        },
-        "opacity": {
-            "value": 1,
-            "random": true,
-            "anim": {
-            "enable": true,
-            "speed": 0.6,
-            "opacity_min": 0.3,
-            "sync": false
-            }
-        },
-        "size": {
-            "value": 1.5,
-            "random": true,
-            "anim": {
-            "enable": false,
-            "speed": 1,
-            "size_min": 0.5,
-            "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": false,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 0.1,
-            "direction": "top",
-            "random": true,
-            "straight": true,
-            "out_mode": "out",
-            "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-            }
-        }
-        },
-        "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-            "enable": false,
-            "mode": "repulse"
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                "width": 0,
+                "color": "#000000"
+                },
+                "polygon": {
+                "nb_sides": 5
+                },
+                "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+                }
             },
-            "onclick": {
-            "enable": true,
-            "mode": "push"
+            "opacity": {
+                "value": 1,
+                "random": true,
+                "anim": {
+                "enable": true,
+                "speed": 0.6,
+                "opacity_min": 0.3,
+                "sync": false
+                }
             },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-            "distance": 400,
+            "size": {
+                "value": 1.5,
+                "random": true,
+                "anim": {
+                "enable": false,
+                "speed": 1,
+                "size_min": 0.5,
+                "sync": false
+                }
+            },
             "line_linked": {
-                "opacity": 1
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 0.1,
+                "direction": "top",
+                "random": true,
+                "straight": true,
+                "out_mode": "out",
+                "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+                }
             }
             },
-            "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
+            "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                "enable": false,
+                "mode": "repulse"
+                },
+                "onclick": {
+                "enable": true,
+                "mode": "push"
+                },
+                "resize": true
             },
-            "repulse": {
-            "distance": 200
+            "modes": {
+                "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+                },
+                "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+                },
+                "repulse": {
+                "distance": 200
+                },
+                "push": {
+                "particles_nb": 1
+                },
+                "remove": {
+                "particles_nb": 2
+                }
+            }
             },
-            "push": {
-            "particles_nb": 1
-            },
-            "remove": {
-            "particles_nb": 2
+            "retina_detect": true,
+            "config_demo": {
+            "hide_card": false,
+            "background_color": "#b61924",
+            "background_image": "",
+            "background_position": "50% 50%",
+            "background_repeat": "no-repeat",
+            "background_size": "cover"
             }
         }
-        },
-        "retina_detect": true,
-        "config_demo": {
-        "hide_card": false,
-        "background_color": "#b61924",
-        "background_image": "",
-        "background_position": "50% 50%",
-        "background_repeat": "no-repeat",
-        "background_size": "cover"
-        }
-    }
-
-);
+    
+    );
+}
+catch {
+    console.log("particlesJS not loaded")
+}
 
 // animejs to add animation to hero text
 // function accepts value of a DOM element object and animates it
 
-function floatBlock(element) {
+function floatBlock(element, translation, rotation) {
     function animateOnce() {
         anime({
             targets: element,  // Targeting the individual DOM object so it knows what to animate
-            translateX: anime.random(-50, 50),
-            translateY: anime.random(-50, 50),
+            translateX: anime.random(-translation, translation),
+            translateY: anime.random(-translation, translation),
             duration: anime.random(12000, 30000),
             easing: 'easeInOutSine',
-            rotateZ: (Math.random() - 0.5) * 45,
+            rotateZ: (Math.random() - 0.5) * rotation,
             direction: 'alternate',
             complete: animateOnce // Reruns the animation with new values on complete
         });
@@ -280,8 +285,8 @@ function floatBlock(element) {
     animateOnce();
 }
 
-const heroText = document.querySelectorAll(".floating-text");
+const heroText = document.querySelectorAll(".hero-floating-text");
 
 for (i = 0; i < heroText.length; i++) {
-    floatBlock(heroText[i]);
+    floatBlock(heroText[i], 50, 30);
 }

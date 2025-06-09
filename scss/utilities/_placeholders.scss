@@ -1,6 +1,7 @@
 @use "sass:color";
 @use "sass:map";
 @use "config" as variable;
+@use "mixin" as mixin;
 
 // Center content vertically and horizontially 
 
@@ -30,17 +31,6 @@
 %content-background {
     @extend %background-shape;
     @extend %background-effect;
-}
-
-// same thing but for text
-
-%text-background-base {
-    text-shadow: 0px 0px 16px rgba(variable.$color-light, 0.25);
-    transition: text-shadow 0.5s ease;
-        
-    &:hover {
-        text-shadow: 0px 0px 16px rgba(variable.$color-light, 0.5);
-    }
 }
 
 // Underlining animation upon hovering the text
@@ -97,4 +87,57 @@
         color: color.adjust(variable.$color-light, $alpha: -0.6);
     }
 
+}
+
+// Upon hovering the Icons
+
+%hover-icons {
+    grid-column: span 2;
+
+    [class^="icon-"] {
+        font-size: 4rem;
+    }
+
+    @include mixin.coding-language-color-hover();
+    
+    .coding {
+        &-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:20px;
+    
+            @media (min-width: variable.$break-point-x-small) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+    
+            @media (min-width: variable.$break-point-large) {
+                grid-template-columns: repeat(10, 1fr);
+            }
+        }
+    
+        &-info {
+            margin: 0 auto;
+            position: relative;
+    
+            .tooltip {
+                display: none;
+                @extend %background-shape;
+                left: 50%;
+                transform: translateX(-50%);
+                border: variable.$border-style;
+                background-color: variable.$color-dark;
+                padding: 20px;
+                position: absolute;
+                bottom: 100px;
+    
+                h3 {
+                    margin: 0px;
+                }
+            }
+    
+            &:hover .tooltip {
+                display: block;
+            }
+        }
+    }
 }

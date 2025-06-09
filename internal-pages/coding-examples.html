@@ -7,6 +7,13 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+        <div class="button hamburger" id="menu-toggle">
+            <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
         <nav class="sidebar">
             <ul>
                 <div class="initials-link">
@@ -55,56 +62,34 @@
                 </div>
             </ul>
         </nav>
+        <div class="nav-overlay"></div>
         <div class="main-content">
             <div class="container">
                 <header class="section-header">
                     <h1>Coding Examples</h1>
                 </header>
+                <div class="example-buttons">
+                    <div class="coding-icons">
+                        <div class="coding-info">
+                            <span class="icon-sass" id="sass-example"></span>
+                            <div class="tooltip">
+                                <h3>SASS</h3>
+                            </div>
+                        </div>
+                        <div class="coding-info">
+                            <span class="icon-javascript" id="javascript-example"></span>
+                            <div class="tooltip">
+                                <h3>JavaScript</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="coding-examples">
-                    <h2 class="top-inset-item">WIP - I Have plans once I learn JS</h2>
-                    <p>When making my netmatters website, to add all the different colours on the nav bar, I first declare a map variable containing all the theme colours.</p>
                     <div class="code">
-<pre><code class="language-scss">$theme: (
-    "gray": #67809F,
-    "yellow": #F7B322,
-    "blue": #4183D7,
-    "green": #2ECC71,
-    "red": #D64541,
-    "purple": #926FB1,
-    "crimson": #F62459,
-);</code></pre>                     
-                    </div>
-                    <p>I then create a loop that goes through each key and uses its corresponding colour that is to be applied.</p>
-                    <div class="code">
-<pre><code class="language-scss">@mixin nav-bar-theme($theme) {
-  @each $name, $color in $theme {
-    &-#{$name} {
-      .theme {
-        color: $color;
-      }
-      .triangle {
-        border-color: $color transparent transparent transparent;
-      }
-      &:hover {
-        background-color: $color;
-      }
-      &:hover .theme {
-        color: #fff;
-      }
-      .nav-dropdown {
-        background-color: color.adjust($color, $lightness: -10%);
-      }
-    }
-  }  
-}</code></pre>
-                    </div>
-                    <div class="code">
-<pre><code class="language-css">.theme {
-  @include nav-bar-theme($theme);
-}</code></pre>
-                    </div>
-                    <div class="code">
-<pre><code class="language-html">&lt;div  class=&quot;nav-category theme-gray&quot;&gt;
+                        <h2 class="top-inset-item">Application of Colours</h2>
+                        <p>When making the Netmatters mirror website, I was presented with the challenge of applying all the different colours on each sibling element, the solution to that was using a SASS mixins to do all the work for me.</p>
+                        <p>So I declare a $theme map, with that, I can iterate through each colour and apply all their colours to all child elements, all I had to do was change a single class on the parent element.</p>
+<pre><code class="language-html">&lt;div class=&quot;nav-category theme-gray&quot;&gt;
     &lt;a class=&quot;nav-button&quot; href=&quot;#&quot;&gt;
         &lt;span class=&quot;icon-cogs theme&quot;&gt;&lt;/span&gt;
         &lt;span class=&quot;small&quot;&gt;Bespoke&lt;/span&gt;
@@ -115,9 +100,81 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
+                    <div class="code">
+<pre><code class="language-scss">$theme: (
+    "gray": #67809F,
+    "yellow": #F7B322,
+    "blue": #4183D7,
+    "green": #2ECC71,
+    "red": #D64541,
+    "purple": #926FB1,
+    "crimson": #F62459,
+);
+
+@mixin nav-bar-theme($theme) {
+    @each $name, $color in $theme {
+        &-#{$name} {
+            .theme {
+                color: $color;
+            }
+            .triangle {
+                border-color: $color transparent transparent transparent;
+            }
+            &:hover {
+                background-color: $color;
+            }
+            &:hover .theme {
+                color: #fff;
+            }
+            .nav-dropdown {
+                background-color: color.adjust($color, $lightness: -10%);
+            }
+        }
+    }  
+}
+
+.theme {
+    @include nav-bar-theme($theme);
+}</code></pre>
+                    </div>
+                </div>
+                <div class="coding-examples margin">
+                    <div class="code">
+                        <h2 class="top-inset-item">Drawer Animation Functionality</h2>
+                        <p>I first declare an object containing key-value pairs, it represends the button and what the button should open.</p>
+                        <p>Then I make a loop that iterates through each key-value pair and, using jQuery, applied an event listener to the button and upon trggering the event, it opens the corresponding slide.</p>
+                        <p>I then target the close button and add an event listener to make it close its corresponding slide and re-open the original project thumbnails.</p>
+                    </div>
+                    <div class="code">
+                        <h2 class="top-inset-item"></h2>
+<pre><code class="language-javascript">const detailsCards = {
+    "#netmatters-details": "#netmatters-card",
+    "#project-2-details": "#project-2-card",
+    "#project-3-details": "#project-3-card",
+    "#project-4-details": "#project-4-card",
+    "#project-5-details": "#project-5-card",
+    "#project-6-details": "#project-6-card",
+}
+
+for(const button in detailsCards) {
+    $(detailsCards[button]).hide();
+
+    $(button).click(() => {
+        $(".projects-work").slideUp(350);
+        $(detailsCards[button]).slideDown(350);
+    });
+
+    $(detailsCards[button] + " .button.close-slide").click(() => {
+        $(detailsCards[button]).slideUp(350);
+        $(".projects-work").slideDown(350);
+    });
+}</code></pre>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="../js/jquery-3.7.1.min.js"></script>
         <script src="../js/prism.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>
