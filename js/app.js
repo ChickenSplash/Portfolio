@@ -27,6 +27,7 @@ $(".nav-overlay").on("click", () => {
 
 // collapsing animations for the projects section using jquery
 
+// Object containing buttons:cards
 const detailsCards = {
     "#netmatters-details": "#netmatters-card",
     "#project-2-details": "#project-2-card",
@@ -36,7 +37,7 @@ const detailsCards = {
     "#project-6-details": "#project-6-card",
 }
 
-for(const button in detailsCards) {
+for (const button in detailsCards) {
     $(detailsCards[button]).hide();
 
     $(button).click(() => {
@@ -49,6 +50,22 @@ for(const button in detailsCards) {
         $(".projects-work").slideDown(350);
     });
 }
+
+// collapsing animations for coding examples using jquery
+
+$(".coding-examples .slide").hide();
+
+$('.example-button').click(function () {
+    let target = $(this).data('target');
+
+// Slide up all contents first
+    $('.slide').not(target).slideUp(350);
+
+// Toggle the target content
+    $(target).is(':visible') 
+        ? $(target).slideUp(350)
+        : $(target).slideDown(350);
+});
 
 // Remove the blur effect upon user scrolling scrollable elements. Resets when closing card again.
 

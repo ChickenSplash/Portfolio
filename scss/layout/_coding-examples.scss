@@ -1,38 +1,47 @@
 @use "../utilities/index" as variable;
 
-.coding-examples {
-    @extend %content-background;
-    @include variable.light-border();
-    
+// positioning of the icons buttons
+
+.examples-selection {
     display: grid;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding-bottom: 60px;
 
-    @media (min-width: variable.$break-point-large) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .language-info {
+        flex: 1 1 100px; /* grow, shrink, base width */
+        max-width: 150px;
 
-    p{
-        font-size: 1.125rem;
-    }
-}
+        [class^="icon-"] {
+            font-size: 4rem;
+        }
 
-.code {
-    width: 100%;
-    overflow: hidden;
-}
-
-.example-buttons {
-    @extend %hover-icons;
-
-    .coding-icons {
-        margin-bottom: 40px;
-
-        span {
+        @include variable.coding-language-color-hover() {
             cursor: pointer;
         }
+        
+        @extend %icon-tooltip;
     }
 }
 
-.margin {
-    margin-top: 30px;
+// layout of the examples and the content within
+
+.coding-examples {
+    .content {
+        transition: all 2s ease;
+        @extend %content-background;
+        @include variable.light-border();
+
+        .code {
+            margin-top: 16px;
+        }
+
+        pre {
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+    }
 }

@@ -22,9 +22,34 @@
 }
 
 .my-experience {
-    @extend %hover-icons;
+    grid-column: span 2;
 
-    .coding-icons {
-        margin-top: 40px;
+    
+    
+    .coding {
+        &-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:20px;
+            margin-top: 40px;
+            
+            [class^="icon-"] {
+                font-size: 4rem;
+            }
+            
+            @include variable.coding-language-color-hover();
+    
+            @media (min-width: variable.$break-point-x-small) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+    
+            @media (min-width: variable.$break-point-large) {
+                grid-template-columns: repeat(10, 1fr);
+            }
+        }
+    
+        &-info {
+            @extend %icon-tooltip;
+        }
     }
 }

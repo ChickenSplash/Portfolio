@@ -6,7 +6,6 @@
     @extend %content-background;
     @include variable.light-border();
     
-    margin-bottom: 60px;
     font-size: 1.125rem;
     
     &-info {
