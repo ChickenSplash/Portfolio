@@ -86,7 +86,7 @@
                     <div id="sass-slide" class="slide">
                         <div class="content">
                             <h2 class="top-inset-item">Application of Colours</h2>
-                            <p>When making the Netmatters mirror website, I was presented with the challenge of applying all the different colours on each sibling element, the solution to that was using a SASS mixins to do all the work for me.</p>
+                            <p>When making my <a class="seamless-link" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">Netmatters</a> mirror website, I was presented with the challenge of applying all the different colours on each sibling element, the solution to that was using a SASS mixins to do all the work for me.</p>
                             <div class="code">
 <pre><code class="language-scss">$theme: ( // Declare a map of the commonly used theme colours
     "gray": #67809F,
@@ -141,8 +141,33 @@
                     </div>
                     <div id="javascript-slide" class="slide">
                         <div class="content">
+                            <h2 class="top-inset-item">Slider Functionality</h2>
+                            <p>These nice simple animations you see when switching between the coding examples is done using jQuery's built in slideUP() and slideDown() methods.</p>
+                            <div class="code">
+<pre><code class="language-javascript">$(".coding-examples .slide").hide();
+
+// Iterates through each icon button and adds an event listener
+$('.example-button').click(function () {
+    // The target variable gets set as an id selector string e.g. "#sass-slide"
+    let target = $(this).data('target');
+
+    // Slide up all other sliders first
+    $('.slide').not(target).slideUp(350);
+
+    $(target).is(':visible') // Toggle the target content
+        ? $(target).slideUp(350) // Target visible? slide up
+        : $(target).slideDown(350); // Else slide it down
+});</code></pre>
+                            </div>
+                            <p>With the HTML below, this gives you a barebones working example</p>
+                            <div class="code">
+<pre><code class="language-html">&#x3C;span class=&#x22;example-button&#x22; data-target=&#x22;#sass-slide&#x22;&#x3E;&#x3C;/span&#x3E;
+&#x3C;span class=&#x22;example-button&#x22; data-target=&#x22;#javascript-slide&#x22;&#x3E;&#x3C;/span&#x3E;
+&#x3C;div id=&#x22;sass-slide&#x22; class=&#x22;slide&#x22;&#x3E;Sass Content&#x3C;/div&#x3E;
+&#x3C;div id=&#x22;javascript-slide&#x22; class=&#x22;slide&#x22;&#x3E;JavaScript Content&#x3C;/div&#x3E;</code></pre>
+                            </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
             <footer>
