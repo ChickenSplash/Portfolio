@@ -76,8 +76,8 @@ input {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?mvb1fj");
-  src: url("../fonts/icomoon.eot?mvb1fj#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mvb1fj") format("truetype"), url("../fonts/icomoon.woff?mvb1fj") format("woff"), url("../fonts/icomoon.svg?mvb1fj#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?lvz47u");
+  src: url("../fonts/icomoon.eot?lvz47u#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?lvz47u") format("truetype"), url("../fonts/icomoon.woff?lvz47u") format("woff"), url("../fonts/icomoon.svg?lvz47u#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -85,6 +85,7 @@ input {
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -104,10 +105,6 @@ input {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cube:before {
-  content: "\e914";
-}
-
 .icon-paperplane:before {
   content: "\e91d";
 }
@@ -122,6 +119,10 @@ input {
 
 .icon-call:before {
   content: "\e900";
+}
+
+.icon-clear:before {
+  content: "\e91e";
 }
 
 .icon-keyboard_arrow_down:before {
@@ -1068,6 +1069,29 @@ p {
   .contact .top-inset-item-breakpoint {
     margin-top: 0px;
   }
+}
+
+.feedback-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(100, 9, 9);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  font-size: 1.125rem;
+}
+.feedback-box p {
+  margin: 0;
+  padding-left: 25px;
+}
+.feedback-box span {
+  padding: 20px;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+.feedback-box.sent {
+  background-color: rgb(6, 87, 6);
 }
 
 .message-box {

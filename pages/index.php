@@ -436,6 +436,11 @@
                 <div class="section-header" id="contact-me">
                     <h1>Get In Touch</h1>
                 </div>
+                <?php foreach ($errors as $message): ?>
+                    <div class="feedback-box">
+                        <p><?= $message ?></p><span class="icon-clear"></span>
+                    </div>
+                <?php endforeach; ?>
                 <div class="contact">
                     <div class="contact-info">
                         <p class="top-inset-item">Got a project in mind or just want to say hi?</p>
@@ -447,13 +452,13 @@
                     <div class="contact-box">
                         <form method="POST" id="contactForm" > <!-- onsubmit="return validateForm()" -->
                             <div class="contact-box-names">
-                                <input name="forename" class="top-inset-item-breakpoint" placeholder="Forename" id="forename" maxlength="50">
-                                <input name="surname" class="top-inset-item-breakpoint" placeholder="Surname" id="surname" maxlength="50">
+                                <input value="<?php if ($old_input) {echo $old_input["forename"];} ?>" name="forename" class="top-inset-item-breakpoint" placeholder="Forename" id="forename" maxlength="50">
+                                <input value="<?php if ($old_input) {echo $old_input["surname"];} ?>" name="surname" class="top-inset-item-breakpoint" placeholder="Surname" id="surname" maxlength="50">
                             </div>
-                            <input name="email" placeholder="Email" id="email" maxlength="128">
-                            <input name="subject" placeholder="Subject" id="subject" maxlength="128">
+                            <input value="<?php if ($old_input) {echo $old_input["email"];} ?>" name="email" placeholder="Email" id="email" maxlength="128">
+                            <input value="<?php if ($old_input) {echo $old_input["subject"];} ?>" name="subject" placeholder="Subject" id="subject" maxlength="128">
                             <div class="message-box">
-                                <textarea name="message" placeholder="Message" id="message"></textarea>
+                                <textarea name="message" placeholder="Message" id="message"><?php if ($old_input) {echo $old_input["message"];} ?></textarea>
                                 <button type="submit" aria-label="submit form"><span class="icon-paperplane"></span></button>
                             </div>
                         </form>

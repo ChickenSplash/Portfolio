@@ -37,4 +37,11 @@ if (!$errors) {
     } catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }    
+} else {
+    // should validation fail, keep those two around for user feedback and to persist the user input values.
+    $_SESSION["form_errors"] = $errors;
+    $_SESSION["old_input"] = $_POST;
 }
+
+header("Location: /#contact-me"); // tell the browser to reload the page as GET using that path location
+exit(); // Important to stop script execution after the redirect
