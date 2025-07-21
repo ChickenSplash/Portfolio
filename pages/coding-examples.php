@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <?php require __DIR__ . "/partials/head.php" ?>
+    <?php require BASE_PATH . "pages/partials/head.php" ?>
     <body>
-        <?php require __DIR__ . "/partials/sidebar.php" ?>
+        <?php require BASE_PATH . "pages/partials/sidebar.php" ?>
         <div class="main-content">
             <div class="container">
                 <header class="section-header">
@@ -233,7 +233,7 @@ try {
                     </div> 
                 </div>
             </div>
-            <?php require __DIR__ . "/partials/footer.php"; ?>
+            <?php require BASE_PATH . "pages/partials/footer.php"; ?>
         </div>
         <script src="../js/jquery-3.7.1.min.js"></script>   
         <script src="../js/prism.js"></script>

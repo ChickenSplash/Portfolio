@@ -1,13 +1,8 @@
-<?php
-require __DIR__ . "/functions.php";
-require __DIR__ . "/envloader.php";
-?>
-
 <!DOCTYPE html>
 <html>
-    <?php require __DIR__ . "/pages/partials/head.php" ?>
+    <?php require BASE_PATH . "pages/partials/head.php" ?>
     <body>
-        <?php require __DIR__ . "/pages/partials/sidebar.php" ?>
+        <?php require BASE_PATH . "pages/partials/sidebar.php" ?>
         <div class="main-content">
             <div class="hero-image">
                 <div id="particles-js"></div>
@@ -450,21 +445,21 @@ require __DIR__ . "/envloader.php";
                         <p class="phone-number"><a class="seamless-link" href="tel:+447858501493">(+44) 7858501493</a></p>
                     </div>
                     <div class="contact-box">
-                        <form id="contactForm" onsubmit="return validateForm()">
+                        <form method="POST" id="contactForm" > <!-- onsubmit="return validateForm()" -->
                             <div class="contact-box-names">
-                                <input class="top-inset-item-breakpoint" placeholder="Forename" id="forename" maxlength="50">
-                                <input class="top-inset-item-breakpoint" placeholder="Surname" id="surname" maxlength="50">
+                                <input name="forename" class="top-inset-item-breakpoint" placeholder="Forename" id="forename" maxlength="50">
+                                <input name="surname" class="top-inset-item-breakpoint" placeholder="Surname" id="surname" maxlength="50">
                             </div>
-                            <input placeholder="Email" id="email" maxlength="128">
-                            <input placeholder="Subject" id="subject" maxlength="128">
+                            <input name="email" placeholder="Email" id="email" maxlength="128">
+                            <input name="subject" placeholder="Subject" id="subject" maxlength="128">
                             <div class="message-box">
-                                <textarea placeholder="Message" id="message"></textarea>
+                                <textarea name="message" placeholder="Message" id="message"></textarea>
                                 <button type="submit" aria-label="submit form"><span class="icon-paperplane"></span></button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <?php require __DIR__ . "/pages/partials/footer.php"; ?>
+                <?php require BASE_PATH . "pages/partials/footer.php"; ?>
             </div>
         </div>
         <script src="js/jquery-3.7.1.min.js"></script>

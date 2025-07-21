@@ -26,13 +26,13 @@
             </a>
         </div>
         <div class="main-link">
-            <a class="center" href="/pages/coding-examples.php">
+            <a class="center" href="/coding-examples">
                 <span class="icon-embed2"></span>
                 <span>&nbsp;Coding Examples</span>
             </a>
         </div>
         <div class="main-link">
-            <a class="center" href="/pages/scs-scheme.php">
+            <a class="center" href="/scs-scheme">
                 <span class="icon-education"></span>
                 <span>&nbsp;SCS Scheme</span>
             </a>
