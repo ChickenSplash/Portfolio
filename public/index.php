@@ -1,68 +1,13 @@
+<?php
+require __DIR__ . "/functions.php";
+require __DIR__ . "/envloader.php";
+?>
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emanuel's Portfolio</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <?php require __DIR__ . "/pages/partials/head.php" ?>
     <body>
-        <div class="button hamburger" id="menu-toggle">
-            <div class="bars">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-        <nav class="sidebar">
-            <ul>
-                <div class="initials-link">
-                    <a class="center" href="#">
-                        <span>EC</span>
-                    </a>
-                </div>
-                <hr class="nav-divider">
-                <div class="main-link">
-                    <a class="center" href="#about-me">
-                        <span class="icon-info"></span>
-                        <span>&nbsp;About Me</span>
-                    </a>
-                </div>
-                <div class="main-link">
-                    <a class="center" href="#projects">
-                        <span class="icon-ruler"></span>
-                        <span>&nbsp;My Portfolio</span>
-                    </a>
-                </div>
-                <div class="main-link">
-                    <a class="center" href="internal-pages/coding-examples.html">
-                        <span class="icon-embed2"></span>
-                        <span>&nbsp;Coding Examples</span>
-                    </a>
-                </div>
-                <div class="main-link">
-                    <a class="center" href="internal-pages/scs-scheme.html">
-                        <span class="icon-education"></span>
-                        <span>&nbsp;SCS Scheme</span>
-                    </a>
-                </div>
-                <hr class="nav-divider">
-                <div class="main-link">
-                    <a class="center" href="#contact-me">
-                        <span class="icon-call"></span>
-                        <span>&nbsp;Contact Me</span>
-                    </a>
-                </div>
-                <hr class="nav-divider">
-                <div class="socials">
-                    <a href="https://github.com/ChickenSplash " target="_blank"><span class="icon-github"></span></a>
-                    <a href="https://steamcommunity.com/id/ChickenSplash/" target="_blank"><span class="icon-steam"></span></a>
-                    <a href="https://www.youtube.com/@ChickenSplash" target="_blank"><span class="icon-youtube"></span></a>
-                    <a href="https://discord.com/" target="_blank"><span class="icon-discord"></span></a>
-                </div>
-            </ul>
-        </nav>
-        <div class="nav-overlay"></div>
+        <?php require __DIR__ . "/pages/partials/sidebar.php" ?>
         <div class="main-content">
             <div class="hero-image">
                 <div id="particles-js"></div>
@@ -519,9 +464,7 @@
                         </form>
                     </div>
                 </div>
-                <footer>
-                    <p>Emanuel Correia © 2025</p>
-                </footer>
+                <?php require __DIR__ . "/pages/partials/footer.php"; ?>
             </div>
         </div>
         <script src="js/jquery-3.7.1.min.js"></script>
