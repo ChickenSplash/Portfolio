@@ -121,23 +121,11 @@ function validateForm() {
         forename.placeholder += " - Required"
     }
 
-    if (surname.value.trim() === '') {
-        valid = false;
-        surname.classList.add("error")
-        surname.placeholder += " - Required"
-    }
-
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value.trim())) {
         valid = false;
         email.classList.add("error")
-        email.placeholder += " - Must be valid"
-    }
-    
-    if (subject.value.trim() === '') {
-        valid = false;
-        subject.classList.add("error")
-        subject.placeholder += " - Required"
+        email.placeholder += " - Required"
     }
 
     if (message.value.trim() === '') {
@@ -307,3 +295,9 @@ const heroText = document.querySelectorAll(".hero-floating-text");
 for (i = 0; i < heroText.length; i++) {
     floatBlock(heroText[i], 50, 30);
 }
+
+// event listeners to be able to close server side form validation feedback
+
+$(".close").click((e) => {
+    $(e.currentTarget.parentElement).slideUp(200);
+})

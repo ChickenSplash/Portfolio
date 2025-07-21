@@ -16,10 +16,10 @@ if ($_SERVER["REQUEST_URI"] === "/") {
         require BASE_PATH . "includes/add-user-contact.php";
     }
 
-    // retain values from previous session should there be errors
-    $errors = $_SESSION["form_errors"] ?? [];
+    // retain values from previous session for user feedback
+    $status = $_SESSION["form_status"] ?? [];
     $old_input = $_SESSION["old_input"] ?? [];
-    unset($_SESSION['form_errors'], $_SESSION['old_input']);
+    unset($_SESSION['form_status'], $_SESSION['old_input'], $_SESSION["is_sent"]);
 
     $headTitle = "Emanuel's Portfolio";
     require BASE_PATH . "pages/index.php";

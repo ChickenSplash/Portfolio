@@ -13,7 +13,7 @@ CREATE TABLE `user_contact` (
   `forename` varchar(255) NOT NULL,
   `surname` varchar(255) DEFAULT NULL,
   `email` varchar(255) NOT NULL,
-  `subject` varchar(255) NOT NULL,
+  `subject` varchar(255) DEFAULT NULL,
   `message` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
