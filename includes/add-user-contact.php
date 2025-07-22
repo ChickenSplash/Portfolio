@@ -1,8 +1,5 @@
 <?php
 
-require BASE_PATH . "includes/envloader.php";
-require BASE_PATH . "includes/database-config.php";
-
 foreach ($_POST as $key => $value) { // takes all the inputs and cleanses and trims them
     $_POST[$key] = trim(strip_tags($value));
 }
@@ -35,8 +32,11 @@ if (strlen($_POST["message"]) < 5) {
     $status["message"] = "Message must contain atleast 5 characters.";
 }
 
-if (!$status) {
+if (!$status) { // has it passed all validation? load up all required stuff and add to database and send it
     try {
+        require BASE_PATH . "includes/envloader.php"; // required as following two requires in this block uses variables from this
+        require BASE_PATH . "includes/database-config.php"; // provides connection info for database and mailer
+        
         $pdo = new PDO($dsn, $username, $password, $options);
         
         //dynamically build the sql statement
@@ -46,7 +46,9 @@ if (!$status) {
         
         //passing in the POST array allows it to bind array keys with placeholders
         $statement->execute($_POST);
+        
         $status["sent"] = "Message Sent!";
+        require BASE_PATH . "includes/mailsender.php"; // upon sucessful addition to database, load file to then send email to myself
     } catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }    

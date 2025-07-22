@@ -437,7 +437,7 @@
                     <h1>Get In Touch</h1>
                 </div>
                 <?php foreach ($status as $message): ?>
-                    <div class="feedback-box <?php if (isset($status["sent"])) {echo "sent";} ?>">
+                    <div class="feedback-box <?php if ($message === "Message Sent!") {echo "sent";} ?>">
                         <p><?= $message ?></p><span class="icon-clear close"></span>
                     </div>
                 <?php endforeach; ?>
