@@ -450,7 +450,7 @@
                         <p class="phone-number"><a class="seamless-link" href="tel:+447858501493">(+44) 7858501493</a></p>
                     </div>
                     <div class="contact-box">
-                        <form method="POST" id="contactForm" onsubmit="return validateForm()"> <!--  -->
+                        <form method="POST" id="contactForm" onsubmit="return validateForm()">
                             <div class="contact-box-names">
                                 <input value="<?php if ($old_input) {echo $old_input["forename"];} ?>" name="forename" class="top-inset-item-breakpoint" placeholder="Forename" id="forename" maxlength="50">
                                 <input value="<?php if ($old_input) {echo $old_input["surname"];} ?>" name="surname" class="top-inset-item-breakpoint" placeholder="Surname" id="surname" maxlength="50">

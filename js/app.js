@@ -109,10 +109,10 @@ function validateForm() {
       error[i].classList.remove("error");
     }
 
-    forename.placeholder = "Forename" // add this in html
-    surname.placeholder = "Surname"
+    // Resets placeholders
+
+    forename.placeholder = "Forename"
     email.placeholder = "Email"
-    subject.placeholder = "Subject"
     message.placeholder = "Message"
 
     if (forename.value.trim() === '') {

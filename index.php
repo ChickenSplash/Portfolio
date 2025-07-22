@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_URI"] === "/") {
     // retain values from previous session for user feedback
     $status = $_SESSION["form_status"] ?? [];
     $old_input = $_SESSION["old_input"] ?? [];
-    unset($_SESSION['form_status'], $_SESSION['old_input'], $_SESSION["is_sent"]);
+    unset($_SESSION['form_status'], $_SESSION['old_input']);
 
     $headTitle = "Emanuel's Portfolio";
     require BASE_PATH . "pages/index.php";
