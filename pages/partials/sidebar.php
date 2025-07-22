@@ -6,7 +6,7 @@
     </div>
 </div>
 <nav class="sidebar">
-    <ul>
+    <div>
         <div class="initials-link">
             <a class="center" href="/">
                 <span>EC</span>
@@ -46,11 +46,23 @@
         </div>
         <hr class="nav-divider">
         <div class="socials">
-            <a href="https://github.com/ChickenSplash " target="_blank"><span class="icon-github"></span></a>
-            <a href="https://steamcommunity.com/id/ChickenSplash/" target="_blank"><span class="icon-steam"></span></a>
-            <a href="https://www.youtube.com/@ChickenSplash" target="_blank"><span class="icon-youtube"></span></a>
-            <a href="https://discord.com/" target="_blank"><span class="icon-discord"></span></a>
+            <a href="https://github.com/ChickenSplash " target="_blank">
+                <span class="icon-github"></span>
+                <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://steamcommunity.com/id/ChickenSplash/" target="_blank">
+                <span class="icon-steam"></span>
+                <span class="sr-only">Steam</span>
+            </a>
+            <a href="https://www.youtube.com/@ChickenSplash" target="_blank">
+                <span class="icon-youtube"></span>
+                <span class="sr-only">YouTube</span>
+            </a>
+            <a href="https://discord.com/" target="_blank">
+                <span class="icon-discord"></span>
+                <span class="sr-only">Discord</span>
+            </a>
         </div>
-    </ul>
+    </div>
 </nav>
 <div class="nav-overlay"></div>

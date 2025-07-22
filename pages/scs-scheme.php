@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <?php require BASE_PATH . "pages/partials/head.php" ?>
     <body>
         <?php require BASE_PATH . "pages/partials/sidebar.php" ?>
