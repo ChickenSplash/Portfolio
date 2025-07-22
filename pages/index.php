@@ -26,7 +26,7 @@
             </div>
             <div class="container">
                 <div class="section-header" id="about-me">
-                    <h1>About Me</h1>
+                    <h2>About Me</h2>
                 </div>
                 <div class="about-me">
                     <div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="section-header" id="projects">
-                    <h1>My Projects</h1>
+                    <h2>My Projects</h2>
                 </div>
                 <div id="netmatters-card">
                     <div class="project-details">
@@ -116,7 +116,7 @@
                                 <div class="scroll-me-text">
                                     <span>Scroll Me!</span>
                                 </div>
-                                <img src="image/Netmatters website.png">
+                                <img src="image/Netmatters-website.webp" alt="Preview of the Netmatters website.">
                             </div>
                         </div>
                     </div>
@@ -273,7 +273,7 @@
                 </div>
                 <div class="projects-work">
                     <div class="project-thumbnail">
-                        <img id="nm-project-img" src="image/Netmatters website.png">
+                        <img id="nm-project-img" src="image/Netmatters-website.webp" alt="Preview of the Netmatters website.">
                         <h3 class="title">Netmatters Homepage</h3>
                         <div class="project-languages">
                             <span class="icon-html5"></span>
@@ -434,7 +434,7 @@
                     </div>
                 </div>
                 <div class="section-header" id="contact-me">
-                    <h1>Get In Touch</h1>
+                    <h2>Get In Touch</h2>
                 </div>
                 <?php foreach ($status as $message): ?>
                     <div class="feedback-box <?php if ($message === "Message Sent!") {echo "sent";} ?>">

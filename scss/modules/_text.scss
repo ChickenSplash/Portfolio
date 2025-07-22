@@ -3,9 +3,10 @@
 @use "../utilities/index" as variable;
 
 .section-header {
-    h1 {
+    h1, h2 {
         margin: 0px;
         padding-block: 60px;
+        font-size: 1.75rem;
     }
 }
 
