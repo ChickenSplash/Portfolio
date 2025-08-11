@@ -46,19 +46,19 @@
         </div>
         <hr class="nav-divider">
         <div class="socials">
-            <a href="https://github.com/ChickenSplash " target="_blank">
+            <a class="social-github" href="https://github.com/ChickenSplash " target="_blank">
                 <span class="icon-github"></span>
                 <span class="sr-only">GitHub</span>
             </a>
-            <a href="https://steamcommunity.com/id/ChickenSplash/" target="_blank">
+            <a class="social-steam" href="https://steamcommunity.com/id/ChickenSplash/" target="_blank">
                 <span class="icon-steam"></span>
                 <span class="sr-only">Steam</span>
             </a>
-            <a href="https://www.youtube.com/@ChickenSplash" target="_blank">
+            <a class="social-youtube" href="https://www.youtube.com/@ChickenSplash" target="_blank">
                 <span class="icon-youtube"></span>
                 <span class="sr-only">YouTube</span>
             </a>
-            <a href="https://discord.com/" target="_blank">
+            <a class="social-discord" href="https://discord.com/" target="_blank">
                 <span class="icon-discord"></span>
                 <span class="sr-only">Discord</span>
             </a>

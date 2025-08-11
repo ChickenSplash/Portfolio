@@ -91,14 +91,14 @@
         border-bottom-right-radius: 5px;
         border: variable.$border-style;
         background-color: variable.$color-dark;
-        transition: box-shadow, 0.5s ease, background-color 0.5s ease;
+        transition: box-shadow, 0.2s, background-color 0.2s;
         cursor: pointer;
         
         [class^="icon-"] {
             display: inline-block;
             color: variable.$color-light;
             font-size: 2rem;
-            transition: color 0.5s ease;
+            transition: color 0.2s;
         }
 
         &:hover {

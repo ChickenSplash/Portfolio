@@ -76,8 +76,8 @@ input {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?lvz47u");
-  src: url("../fonts/icomoon.eot?lvz47u#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?lvz47u") format("truetype"), url("../fonts/icomoon.woff?lvz47u") format("woff"), url("../fonts/icomoon.svg?lvz47u#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?dgab3q");
+  src: url("../fonts/icomoon.eot?dgab3q#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?dgab3q") format("truetype"), url("../fonts/icomoon.woff?dgab3q") format("woff"), url("../fonts/icomoon.svg?dgab3q#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -177,6 +177,10 @@ input {
   content: "\e915";
 }
 
+.icon-c-sharp:before {
+  content: "\e914";
+}
+
 .icon-css3:before {
   content: "\e916";
 }
@@ -197,6 +201,18 @@ input {
   content: "\e919";
 }
 
+.icon-jquery:before {
+  content: "\e91f";
+}
+
+.icon-laravel:before {
+  content: "\e920";
+}
+
+.icon-mysql:before {
+  content: "\e921";
+}
+
 .icon-php:before {
   content: "\e91a";
 }
@@ -205,12 +221,20 @@ input {
   content: "\e91b";
 }
 
+.icon-react:before {
+  content: "\e922";
+}
+
 .icon-sass:before {
   content: "\e91c";
 }
 
 .icon-steam:before {
   content: "\e90f";
+}
+
+.icon-tailwindcss:before {
+  content: "\e923";
 }
 
 .icon-youtube:before {
@@ -571,7 +595,27 @@ p {
 }
 
 .text-mysql {
-  color: #136494;
+  color: #4479a1;
+  font-weight: bold;
+}
+
+.text-tailwindcss {
+  color: #38b2ac;
+  font-weight: bold;
+}
+
+.text-react {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.text-laravel {
+  color: #ff2d20;
+  font-weight: bold;
+}
+
+.text-jquery {
+  color: #0769ad;
   font-weight: bold;
 }
 
@@ -644,7 +688,7 @@ p {
 .main-link .center {
   position: relative;
   font-size: 1.125rem;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .initials-link .center {
@@ -654,7 +698,7 @@ p {
   font-size: 4rem;
   font-weight: bold;
   position: relative;
-  transition: color 0.5s ease;
+  transition: color 0.2s;
 }
 
 .socials {
@@ -667,28 +711,28 @@ p {
   display: block;
   margin-inline: 10px;
 }
-.socials [class$=github] {
-  transition: color 0.5s ease;
+.socials .social-github {
+  transition: color 0.2s;
 }
-.socials [class$=github]:hover {
+.socials .social-github:hover {
   color: #2B3034;
 }
-.socials [class$=steam] {
-  transition: color 0.5s ease;
+.socials .social-steam {
+  transition: color 0.2s;
 }
-.socials [class$=steam]:hover {
+.socials .social-steam:hover {
   color: #153D72;
 }
-.socials [class$=youtube] {
-  transition: color 0.5s ease;
+.socials .social-youtube {
+  transition: color 0.2s;
 }
-.socials [class$=youtube]:hover {
+.socials .social-youtube:hover {
   color: #f00;
 }
-.socials [class$=discord] {
-  transition: color 0.5s ease;
+.socials .social-discord {
+  transition: color 0.2s;
 }
-.socials [class$=discord]:hover {
+.socials .social-discord:hover {
   color: #7289da;
 }
 
@@ -823,7 +867,7 @@ p {
   margin-top: 40px;
 }
 .my-experience .coding-icons [class^=icon-] {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .my-experience .coding-icons .icon-html5 {
   transition: color 0.2s ease;
@@ -877,7 +921,31 @@ p {
   transition: color 0.2s ease;
 }
 .my-experience .coding-icons .icon-mysql:hover {
-  color: #136494;
+  color: #4479a1;
+}
+.my-experience .coding-icons .icon-tailwindcss {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-tailwindcss:hover {
+  color: #38b2ac;
+}
+.my-experience .coding-icons .icon-react {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-react:hover {
+  color: #61dafb;
+}
+.my-experience .coding-icons .icon-laravel {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-laravel:hover {
+  color: #ff2d20;
+}
+.my-experience .coding-icons .icon-jquery {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-jquery:hover {
+  color: #0769ad;
 }
 @media (min-width: 612px) {
   .my-experience .coding-icons {
@@ -998,7 +1066,31 @@ p {
   transition: color 0.2s ease;
 }
 .project-thumbnail .project-languages .icon-mysql:hover {
-  color: #136494;
+  color: #4479a1;
+}
+.project-thumbnail .project-languages .icon-tailwindcss {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-tailwindcss:hover {
+  color: #38b2ac;
+}
+.project-thumbnail .project-languages .icon-react {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-react:hover {
+  color: #61dafb;
+}
+.project-thumbnail .project-languages .icon-laravel {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-laravel:hover {
+  color: #ff2d20;
+}
+.project-thumbnail .project-languages .icon-jquery {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-jquery:hover {
+  color: #0769ad;
 }
 .project-thumbnail .view-more {
   display: none;
@@ -1120,14 +1212,14 @@ p {
   border-bottom-right-radius: 5px;
   border: 1px solid #494949;
   background-color: #0f0f0f;
-  transition: box-shadow, 0.5s ease, background-color 0.5s ease;
+  transition: box-shadow, 0.2s, background-color 0.2s;
   cursor: pointer;
 }
 .message-box button [class^=icon-] {
   display: inline-block;
   color: rgb(226, 226, 226);
   font-size: 2rem;
-  transition: color 0.5s ease;
+  transition: color 0.2s;
 }
 .message-box button:hover {
   background-color: #ff00ff;
@@ -1340,7 +1432,35 @@ input {
   cursor: pointer;
 }
 .examples-selection .language-info .icon-mysql:hover {
-  color: #136494;
+  color: #4479a1;
+}
+.examples-selection .language-info .icon-tailwindcss {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-tailwindcss:hover {
+  color: #38b2ac;
+}
+.examples-selection .language-info .icon-react {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-react:hover {
+  color: #61dafb;
+}
+.examples-selection .language-info .icon-laravel {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-laravel:hover {
+  color: #ff2d20;
+}
+.examples-selection .language-info .icon-jquery {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-jquery:hover {
+  color: #0769ad;
 }
 
 .coding-examples .content {

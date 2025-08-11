@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?lvz47u');
-  src:  url('../fonts/icomoon.eot?lvz47u#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?lvz47u') format('truetype'),
-    url('../fonts/icomoon.woff?lvz47u') format('woff'),
-    url('../fonts/icomoon.svg?lvz47u#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?dgab3q');
+  src:  url('../fonts/icomoon.eot?dgab3q#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dgab3q') format('truetype'),
+    url('../fonts/icomoon.woff?dgab3q') format('woff'),
+    url('../fonts/icomoon.svg?dgab3q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -89,6 +89,9 @@
 .icon-blender:before {
   content: "\e915";
 }
+.icon-c-sharp:before {
+  content: "\e914";
+}
 .icon-css3:before {
   content: "\e916";
 }
@@ -104,17 +107,32 @@
 .icon-javascript:before {
   content: "\e919";
 }
+.icon-jquery:before {
+  content: "\e91f";
+}
+.icon-laravel:before {
+  content: "\e920";
+}
+.icon-mysql:before {
+  content: "\e921";
+}
 .icon-php:before {
   content: "\e91a";
 }
 .icon-python:before {
   content: "\e91b";
 }
+.icon-react:before {
+  content: "\e922";
+}
 .icon-sass:before {
   content: "\e91c";
 }
 .icon-steam:before {
   content: "\e90f";
+}
+.icon-tailwindcss:before {
+  content: "\e923";
 }
 .icon-youtube:before {
   content: "\e910";

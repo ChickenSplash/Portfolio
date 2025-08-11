@@ -23,14 +23,12 @@ if ($_SERVER["REQUEST_URI"] === "/") {
 
     $headTitle = "Emanuel's Portfolio";
     require BASE_PATH . "pages/index.php";
-}
-
-if ($_SERVER["REQUEST_URI"] === "/coding-examples") {
+} elseif ($_SERVER["REQUEST_URI"] === "/coding-examples") {
     $headTitle = "Coding Examples";
     require BASE_PATH . "pages/coding-examples.php";
-}
-
-if ($_SERVER["REQUEST_URI"] === "/scs-scheme") {
+} elseif ($_SERVER["REQUEST_URI"] === "/scs-scheme") {
     $headTitle = "Scion Coalition Scheme";
     require BASE_PATH . "pages/scs-scheme.php";
+} else {
+    require BASE_PATH . "pages/404.php";
 }

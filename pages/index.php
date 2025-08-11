@@ -41,15 +41,21 @@
                         <h2>My Experience</h2>
                         <div class="coding-icons">
                             <div class="coding-info">
-                                <span class="icon-html5"></span>
+                                <span class="icon-laravel"></span>
                                 <div class="tooltip">
-                                    <h3>HTML</h3>
+                                    <h3>Laravel</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-css3"></span>
+                                <span class="icon-react"></span>
                                 <div class="tooltip">
-                                    <h3>CSS</h3>
+                                    <h3>React</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-mysql"></span>
+                                <div class="tooltip">
+                                    <h3>MySLQ</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
@@ -65,6 +71,12 @@
                                 </div>
                             </div>
                             <div class="coding-info">
+                                <span class="icon-c-sharp"></span>
+                                <div class="tooltip">
+                                    <h3>C#</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
                                 <span class="icon-php"></span>
                                 <div class="tooltip">
                                     <h3>PHP</h3>
@@ -74,6 +86,36 @@
                                 <span class="icon-python"></span>
                                 <div class="tooltip">
                                     <h3>Python</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-blender"></span>
+                                <div class="tooltip">
+                                    <h3>Blender</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-html5"></span>
+                                <div class="tooltip">
+                                    <h3>HTML</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-css3"></span>
+                                <div class="tooltip">
+                                    <h3>CSS</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-jquery"></span>
+                                <div class="tooltip">
+                                    <h3>jQuery</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-tailwindcss"></span>
+                                <div class="tooltip">
+                                    <h3>Tailwind</h3>
                                 </div>
                             </div>
                         </div>

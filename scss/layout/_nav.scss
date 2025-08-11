@@ -82,7 +82,7 @@
         @extend %flex-center;
         position: relative;
         font-size: 1.125rem;
-        transition: all 0.5s; 
+        transition: all 0.2s; 
 
         @extend %text-underline;
     }
@@ -98,7 +98,7 @@
         font-size: 4rem;
         font-weight: bold;
         position: relative;
-        transition: color 0.5s ease;
+        transition: color 0.2s;
         @extend %text-underline;
     }
 }

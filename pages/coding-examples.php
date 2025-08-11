@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="language-info">
-                        <span class="icon-javascript example-button" data-target="#javascript-slide"></span>
+                        <span class="icon-jquery example-button" data-target="#javascript-slide"></span>
                         <div class="tooltip">
                             <h3>Slider Functionality</h3>
                         </div>
