@@ -1,0 +1,11 @@
+&lt;!-- On each sibling element, changing to .theme-[your colour] affects all the child elements --&gt;
+&lt;div class=&quot;nav-category theme-gray&quot;&gt;
+    &lt;a class=&quot;nav-button&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;icon-cogs theme&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;small&quot;&gt;Bespoke&lt;/span&gt;
+        &lt;span&gt;Software&lt;/span&gt;
+        &lt;span class=&quot;triangle&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;nav-dropdown&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    box-sizing: content-box; // so it works well with height: 100vh;
     @extend %background-effect;
     @include variable.light-border("bottom");
 

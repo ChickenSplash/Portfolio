@@ -1,0 +1,1 @@
+&#60;a class="link" href="{{ route('companies.index') }}"&#62;Companies&#60;/a&#62;
