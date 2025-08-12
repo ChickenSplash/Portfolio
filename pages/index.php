@@ -29,95 +29,174 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="about-me">
-                    <div>
-                        <h2 class="top-inset-item">Where it Started</h2>
-                        <p>My programming journey began with a love for creativity and problem-solving through creating Minecraft <a class="seamless-link" href="https://www.planetminecraft.com/member/chickensplash/" target="_blank">datapacks.</a> Sparking my interest in how things work. This led me to explore 3D modeling with Blender, creating items for the Steam <a class="seamless-link" href="https://steamcommunity.com/id/ChickenSplash/myworkshopfiles/" target="_blank">Workshop</a> and avatars for VRChat.</p>
-                    </div>
-                    <div>
-                        <h2 class="top-inset-responsive">What's Next</h2>
-                        <p>What drives me is the belief that with the right knowledge, I can build anything on a computer. That mindset keeps me eager to learn and grow across multiple domains; from front-end and back-end web development to cybersecurity and AI. My goal is to continually expand my skillset and carve out a versatile, meaningful role in the world of software development.</p>
-                    </div>
                     <div class="my-experience">
-                        <h2>My Experience</h2>
+                        <h2 class="top-inset-item">My Skills</h2>
                         <div class="coding-icons">
                             <div class="coding-info">
-                                <span class="icon-laravel"></span>
+                                <span class="icon-laravel show-details-button" data-target="#laravel-info"></span>
                                 <div class="tooltip">
                                     <h3>Laravel</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-react"></span>
+                                <span class="icon-react show-details-button" data-target="#react-info"></span>
                                 <div class="tooltip">
                                     <h3>React</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-mysql"></span>
+                                <span class="icon-mysql show-details-button" data-target="#mysql-info"></span>
                                 <div class="tooltip">
                                     <h3>MySLQ</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-sass"></span>
+                                <span class="icon-sass show-details-button" data-target="#sass-info"></span>
                                 <div class="tooltip">
                                     <h3>SASS</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-javascript"></span>
+                                <span class="icon-javascript show-details-button" data-target="#javascript-info"></span>
                                 <div class="tooltip">
                                     <h3>JavaScript</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-c-sharp"></span>
+                                <span class="icon-c-sharp show-details-button" data-target="#c-sharp-info"></span>
                                 <div class="tooltip">
                                     <h3>C#</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-php"></span>
+                                <span class="icon-php show-details-button" data-target="#php-info"></span>
                                 <div class="tooltip">
                                     <h3>PHP</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-python"></span>
+                                <span class="icon-python show-details-button" data-target="#python-info"></span>
                                 <div class="tooltip">
                                     <h3>Python</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-blender"></span>
+                                <span class="icon-blender show-details-button" data-target="#blender-info"></span>
                                 <div class="tooltip">
                                     <h3>Blender</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-html5"></span>
+                                <span class="icon-html5 show-details-button" data-target="#html-info"></span>
                                 <div class="tooltip">
                                     <h3>HTML</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-css3"></span>
+                                <span class="icon-css3 show-details-button" data-target="#css-info"></span>
                                 <div class="tooltip">
                                     <h3>CSS</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-jquery"></span>
+                                <span class="icon-jquery show-details-button" data-target="#jquery-info"></span>
                                 <div class="tooltip">
                                     <h3>jQuery</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-tailwindcss"></span>
+                                <span class="icon-tailwindcss show-details-button" data-target="#tailwind-info"></span>
                                 <div class="tooltip">
                                     <h3>Tailwind</h3>
                                 </div>
                             </div>
+                            <div class="coding-info">
+                                <span class="icon-language show-details-button" data-target="#language-info"></span>
+                                <div class="tooltip">
+                                    <h3>Languages</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-to-show">
+                        <!-- <div>
+                            <h2 class="top-inset-item">Where it Started</h2>
+                            <p>My programming journey began with a love for creativity and problem-solving through creating Minecraft <a class="seamless-link" href="https://www.planetminecraft.com/member/chickensplash/" target="_blank">datapacks.</a> Sparking my interest in how things work. This led me to explore 3D modeling with Blender, creating items for the Steam <a class="seamless-link" href="https://steamcommunity.com/id/ChickenSplash/myworkshopfiles/" target="_blank">Workshop</a> and avatars for VRChat.</p>
+                        </div> -->
+                        <div class="slide" id="laravel-info">
+                            <h2 class="top-inset-responsive"><span class="text-laravel"><span class="icon-laravel"></span> Laravel</span></h2>
+                            <p class="skill-description">PHP framework for building modern web applications.</p>
+                            <p>Built my confidence in Laravel from my Companies Dashboard project. I find laravel to be the perfect tool to build a secure websites at scale</p>
+                        </div>
+                        <div class="slide" id="react-info">
+                            <h2 class="top-inset-responsive"><span class="text-react"><span class="icon-react"></span> React</span></h2>
+                            <p class="skill-description">JavaScript library for creating interactive UIs.</p>
+                            <p>I Have no experience with react, I plan to add this to my skillset.</p>
+                        </div>
+                        <div class="slide" id="mysql-info">
+                            <h2 class="top-inset-responsive"><span class="text-mysql"><span class="icon-mysql"></span> MySQL</span></h2>
+                            <p class="skill-description">Relational database system for managing structured data.</p>
+                            <p>Built relational databases on my Netmatters and Companies Dashboard projects, Following best practices to maintain security, low storage footprint and ease of use.</p>
+                        </div>
+                        <div class="slide" id="sass-info">
+                            <h2 class="top-inset-responsive"><span class="text-sass"><span class="icon-sass"></span> SASS</span></h2>
+                            <p class="skill-description">CSS preprocessor for efficient and maintainable styling.</p>
+                            <p>SASS is the perfect tool to keep my code maintainable in a fun manner by using the best DRY (Dont Repeat Yourself) practices. I use it consistently throughout every project.</p>
+                        </div>
+                        <div class="slide" id="javascript-info">
+                            <h2 class="top-inset-responsive"><span class="text-javascript"><span class="icon-javascript"></span> JavaScript</span></h2>
+                            <p class="skill-description">Programming language for dynamic web functionality.</p>
+                            <p>Very handy for adding intractability on any website. This portfolio uses javascript extensively.</p>
+                        </div>
+                        <div class="slide" id="c-sharp-info">
+                            <h2 class="top-inset-responsive"><span class="text-c-sharp"><span class="icon-c-sharp"></span> C#</span></h2>
+                            <p class="skill-description">Versatile language for desktop, web, and game development.</p>
+                            <p>I Have no experience with c#</p>
+                        </div>
+                        <div class="slide" id="php-info">
+                            <h2 class="top-inset-responsive"><span class="text-php"><span class="icon-php"></span> PHP</span></h2>
+                            <p class="skill-description">Server-side scripting language for dynamic web content.</p>
+                            <p>Very handy to keep my HTML more maintainable by applying DRY principles, Works well for smaller projects where Laravel is overkill, such as this portfolio.</p>
+                        </div>
+                        <div class="slide" id="python-info">
+                            <h2 class="top-inset-responsive"><span class="text-python"><span class="icon-python"></span> Python</span></h2>
+                            <p class="skill-description">High-level language for versatile programming applications.</p>
+                            <p>My first programming language, giving me confidence to work with all the different logical operations and functions.</p>
+                        </div>
+                        <div class="slide" id="blender-info">
+                            <h2 class="top-inset-responsive"><span class="text-blender"><span class="icon-blender"></span> Blender</span></h2>
+                            <p class="skill-description">3D creation suite for modeling, animation, and rendering.</p>
+                            <p>Made some basic VRChat avatars using blender, learning from home using documentation and AI.</p>
+                        </div>
+                        <div class="slide" id="html-info">
+                            <h2 class="top-inset-responsive"><span class="text-html5"><span class="icon-html5"></span> HTML</span></h2>
+                            <p class="skill-description">Markup language for structuring web content.</p>
+                            <p>Extensive knowledge of HTML and the box model is essential for me to take advantage of the more powerful aforementioned tools.</p>
+                        </div>
+                        <div class="slide" id="css-info">
+                            <h2 class="top-inset-responsive"><span class="text-css3"><span class="icon-css3"></span> CSS</span></h2>
+                            <p class="skill-description">Stylesheet language for designing web presentation.</p>
+                            <p>The presentation layer of the website, very powerful when paired with SASS.</p>
+                        </div>
+                        <div class="slide" id="jquery-info">
+                            <h2 class="top-inset-responsive"><span class="text-jquery"><span class="icon-jquery"></span> jQuery</span></h2>
+                            <p class="skill-description">JavaScript library simplifying DOM manipulation and events.</p>
+                            <p>Sometimes the easier alternative for JavaScript, or manintaining legacy websites</p>
+                        </div>
+                        <div class="slide" id="tailwind-info">
+                            <h2 class="top-inset-responsive"><span class="text-tailwindcss"><span class="icon-tailwindcss"></span> Tailwind</span></h2>
+                            <p class="skill-description">Utility-first CSS framework for rapid UI design.</p>
+                            <p>Powerful when paired with Laravel when you can split these rapidly made styles into seperate components for easier maintainability.</p>
+                        </div>
+                        <div class="slide" id="language-info">
+                            <h2 class="top-inset-responsive"><span class="text-mysql"><span class="icon-language"></span> 2 Fluent languages</span></h2>
+                            <p class="skill-description"><a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels" class="seamless-link" target="_blank">Learn</a> about language fluency classification</p>
+                            <ul>
+                                <li>English: C2</li>
+                                <li>Portuguese: C1</li>
+                                <li>Spanish: B1</li>
+                                <li>German: A2</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

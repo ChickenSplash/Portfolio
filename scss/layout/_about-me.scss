@@ -8,6 +8,11 @@
         font-size: 1.125rem;
     }
 
+    li {
+        font-size: 1.125rem;
+        margin-top: 10px;
+    }
+
     .top-inset-responsive {
         @media (min-width: variable.$break-point-large) {
             margin-top: 0px;
@@ -22,34 +27,39 @@
 }
 
 .my-experience {
-    grid-column: span 2;
-
-    
-    
     .coding {
         &-icons {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
             gap:20px;
-            margin-top: 40px;
+            margin-top: 20px;
             
             [class^="icon-"] {
                 font-size: 3.5rem;
+                cursor: pointer;
             }
             
             @include variable.coding-language-color-hover();
-    
-            @media (min-width: variable.$break-point-x-small) {
-                grid-template-columns: repeat(5, 1fr);
-            }
-    
-            @media (min-width: variable.$break-point-large) {
-                grid-template-columns: repeat(10, 1fr);
+
+            .icon-language {
+                transition: color 0.2s;
+
+                &:hover {
+                    color: #4479a1;
+                }
             }
         }
     
         &-info {
             @extend %icon-tooltip;
         }
+    }
+}
+
+.details-to-show {
+    .skill-description {
+        color: rgba(variable.$color-light, 0.75);
+        margin-top: 0px;
+        font-size: 1rem;
     }
 }

@@ -53,9 +53,9 @@ for (const button in detailsCards) {
 
 // collapsing animations for coding examples using jquery
 
-$(".coding-examples .slide").hide();
+$(".details-to-show .slide").hide();
 
-$('.example-button').click(function () {
+$('.show-details-button').click(function () {
     let target = $(this).data('target');
 
 // Slide up all contents first
