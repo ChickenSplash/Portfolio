@@ -43,7 +43,7 @@ for (const button in detailsCards) {
     $(button).click(() => {
         $(".projects-work").slideUp(350);
         $(detailsCards[button]).slideDown(350);
-        loadCard(); // function that forces the image to take up the height of the text container
+        loadCard($(detailsCards[button])); // function that forces the image to take up the height of the text container
     });
 
     $(detailsCards[button] + " .button.close-slide").click(() => {
@@ -52,15 +52,17 @@ for (const button in detailsCards) {
     });
 }
 
-function loadCard() {
-    const wrapper = document.querySelector(".details-wrapper");
-    const illustration = document.querySelector(".details-illustration");
-    const info = document.querySelector(".details-info ul");
+function loadCard($card) {
+    const $wrapper = $card.find(".details-wrapper");
+    const $illustration = $card.find(".details-illustration");
+    const $info = $card.find(".details-info ul");
 
-    if (wrapper && illustration && info) {
-        const infoHeight = info.offsetHeight;
-        illustration.style.maxHeight = infoHeight + "px";
-        illustration.style.overflowY = "auto";
+    if ($wrapper.length && $illustration.length && $info.length) {
+        const infoHeight = $info.outerHeight();
+        $illustration.css({
+            maxHeight: infoHeight + "px",
+            overflowY: "auto"
+        });
     }
 }
 

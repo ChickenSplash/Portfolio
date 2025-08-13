@@ -272,7 +272,7 @@
                                 </div>
                             </div>
                             <div class="details-illustration">
-                                <span>image goes here</span>
+                                <img src="image/laravel-company.webp" alt="Preview of the website.">
                             </div>
                         </div>
                     </div>
@@ -280,30 +280,35 @@
                 <div id="project-3-card">
                     <div class="project-details">
                         <div class="details-header">
-                            <h2 class="top-inset-item">Project 3</h2>
+                            <h2 class="top-inset-item">Random Image Fetcher</h2>
                             <div class="button close-slide">X</div>
                         </div>
                         <div class="details-wrapper">
                             <div class="details-info">
-                                <p>This is a future project that I shall do, im not sure what im going to do yet... guess ill find out :p</p>
-                                <div class="buttons">
-                                    <a class="button" href="#" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-ruler"></span>
-                                            <span>View Project</span>
-                                        </div>
-                                    </a>
-                                    <a class="button" href="#" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-embed2"></span>
-                                            <span>View Code</span>
-                                        </div>
-                                    </a>
-                                </div>
+                                <ul>
+                                    <li><p>Utilises the <a class="seamless-link" target="_blank" href="https://picsum.photos/">Picsum</a> API to dynamically fetch random images based on user-defined width and height inputs, the user can then assign any image to any email address. All done within <span class="text-javascript">JavaScript</span>.</p></li>
+                                    <li><p>Stores previously loaded images should the user want to go back and add them.</p></li>
+                                    <li><p>Implemented various different checks to ensure the program is to be used as intended, paird with clear and consise user feedback</p></li>
+                                    <li><p>Built a responsive and proffesional design using <span class="text-sass">SASS</span>.</p></li>
+                                </ul>
                             </div>
                             <div class="details-illustration">
-                                <span>image goes here</span>
+                                <img src="image/random-image-fetcher.webp" alt="Website Preview.">
                             </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="button" href="#" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="#" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -465,7 +470,7 @@
                         </div>
                     </div>
                     <div class="project-thumbnail">
-                        <img src="image/random-image-fetcher.webp" alt="Project 1 preview.">
+                        <img src="image/random-image-fetcher-thumbnail.webp" alt="Project 1 preview.">
                         <h3 class="title">Random Image Fetcher</h3>
                         <div class="project-languages">
                             <span class="icon-javascript"></span>
