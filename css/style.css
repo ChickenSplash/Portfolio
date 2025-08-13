@@ -1291,9 +1291,9 @@ input {
 }
 .details-illustration {
   margin-block: 16px;
-  border-radius: 5px;
 }
 .details-illustration img {
+  border-radius: 5px;
   transition: filter 0.2s ease;
 }
 

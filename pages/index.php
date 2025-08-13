@@ -250,30 +250,39 @@
                 <div id="project-2-card">
                     <div class="project-details">
                         <div class="details-header">
-                            <h2 class="top-inset-item">Project 2</h2>
+                            <h2 class="top-inset-item">Company Management Panel</h2>
                             <div class="button close-slide">X</div>
                         </div>
                         <div class="details-wrapper">
                             <div class="details-info">
-                                <p>This is a future project that I shall do, im not sure what im going to do yet... guess ill find out :p</p>
-                                <div class="buttons">
-                                    <a class="button" href="#" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-ruler"></span>
-                                            <span>View Project</span>
-                                        </div>
-                                    </a>
-                                    <a class="button" href="#" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-embed2"></span>
-                                            <span>View Code</span>
-                                        </div>
-                                    </a>
-                                </div>
+                                <ul>
+                                    <li><p>
+                                        <strong>Email:</strong> admin@admin.com<br>
+                                        <strong>Password:</strong> password
+                                    </p></li>
+                                    <li><p>Implemented <span class="text-laravel">Laravel's</span> built-in authentication system, allowing secure administrator login and session management.</p></li>
+                                    <li><p>Developed Create, Read, Update, and Delete operations for two key resources; <strong>Companies</strong> and <strong>Employees</strong>.</p></li>
+                                    <li><p>Leveraged <span class="text-laravel">Laravel's</span> FormRequest classes to enforce validation rules keeping the aplication secure and robust.</p></li>
+                                    <li><p>Built a responsive and proffesional design using <span class="text-sass">SASS</span> and <span class="text-tailwindcss">Tailwind</span>.</p></li>
+                                </ul>
                             </div>
                             <div class="details-illustration">
                                 <img src="image/laravel-company.webp" alt="Preview of the website.">
                             </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="button" href="https://laravel.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="https://github.com/ChickenSplash/Company-Management-Panel" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
