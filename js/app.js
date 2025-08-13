@@ -43,6 +43,7 @@ for (const button in detailsCards) {
     $(button).click(() => {
         $(".projects-work").slideUp(350);
         $(detailsCards[button]).slideDown(350);
+        loadCard();
     });
 
     $(detailsCards[button] + " .button.close-slide").click(() => {
@@ -51,9 +52,23 @@ for (const button in detailsCards) {
     });
 }
 
+// function that forces the image to take up the height of the text container
+
+function loadCard() {
+    const wrapper = document.querySelector(".details-wrapper");
+    const illustration = document.querySelector(".details-illustration");
+    const info = document.querySelector(".details-info ul");
+
+    if (wrapper && illustration && info) {
+        const infoHeight = info.offsetHeight;
+        illustration.style.maxHeight = infoHeight + "px";
+        illustration.style.overflowY = "auto";
+    }
+}
+
 // collapsing animations for coding examples using jquery
 
-$(".details-to-show .slide").hide();
+$(".details-to-show .slide").not(":first").hide();
 
 $('.show-details-button').click(function () {
     let target = $(this).data('target');
@@ -66,29 +81,6 @@ $('.show-details-button').click(function () {
         ? $(target).slideUp(350)
         : $(target).slideDown(350);
 });
-
-// Remove the blur effect upon user scrolling scrollable elements. Resets when closing card again.
-
-function removeScroll(event) {
-    const target = event.target;
-    target.classList.remove("scroll-me");
-    target.removeEventListener("scroll", removeScroll);
-}
-
-function resetScroll(event) {
-    const illustration = event.target.parentElement.parentElement.querySelector(".details-illustration");
-    illustration.removeEventListener("scroll", removeScroll); // Remove any previous events should the user not have triggered it
-    illustration.addEventListener("scroll", removeScroll)
-    illustration.classList.add("scroll-me")
-}
-
-const closeCardButtons = document.querySelectorAll(".button.close-slide")
-const scrollable = document.querySelectorAll(".details-illustration");
-
-for (let i = 0; i < scrollable.length; i++) {
-    scrollable[i].addEventListener("scroll", removeScroll)
-    closeCardButtons[i].addEventListener("click", resetScroll)
-}
 
 // contact form validation
 
@@ -301,3 +293,4 @@ for (i = 0; i < heroText.length; i++) {
 $(".close").click((e) => {
     $(e.currentTarget.parentElement).slideUp(200);
 })
+

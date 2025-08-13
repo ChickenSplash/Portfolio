@@ -76,8 +76,8 @@ input {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?nqll4");
-  src: url("../fonts/icomoon.eot?nqll4#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?nqll4") format("truetype"), url("../fonts/icomoon.woff?nqll4") format("woff"), url("../fonts/icomoon.svg?nqll4#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?byutvg");
+  src: url("../fonts/icomoon.eot?byutvg#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?byutvg") format("truetype"), url("../fonts/icomoon.woff?byutvg") format("woff"), url("../fonts/icomoon.svg?byutvg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -119,6 +119,10 @@ input {
 
 .icon-call:before {
   content: "\e900";
+}
+
+.icon-location_on:before {
+  content: "\e925";
 }
 
 .icon-clear:before {
@@ -371,16 +375,16 @@ pre[class*=language-] {
 }
 
 .hero-image, .details-to-show .content, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
-  background-color: rgba(15, 15, 15, 0.7);
-  box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0.25);
+  background-color: rgba(15.045, 15.045, 15.045, 0.7);
+  box-shadow: 0px 0px 80px 0px rgba(216.75, 216.75, 216.75, 0.25);
 }
 .hero-image:hover, .details-to-show .content:hover, .scs-item:hover, .project-details:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
-  background-color: rgba(15, 15, 15, 0.85);
-  box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0.5);
+  background-color: rgba(15.045, 15.045, 15.045, 0.85);
+  box-shadow: 0px 0px 80px 0px rgba(216.75, 216.75, 216.75, 0.5);
 }
 
 .main-link .center:hover, .initials-link span:hover, .seamless-link:hover {
-  color: #ff00ff;
+  color: hsl(300, 100%, 70%);
 }
 .main-link .center::after, .initials-link span::after, .seamless-link::after {
   content: "";
@@ -391,7 +395,7 @@ pre[class*=language-] {
   transform-origin: center;
   width: 100%;
   height: 1px;
-  background-color: #ff00ff;
+  background-color: hsl(300, 100%, 70%);
   transition: transform 0.2s ease;
 }
 .main-link .center:hover::after, .initials-link span:hover::after, .seamless-link:hover::after {
@@ -403,9 +407,9 @@ pre[class*=language-] {
   width: 100%;
   border-radius: 5px;
   padding: 10px 15px;
-  background-color: #0f0f0f;
-  border: 1px solid #494949;
-  color: rgb(226, 226, 226);
+  background-color: hsl(0, 0%, 5.9%);
+  border: 1px solid hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 85%);
   transition: box-shadow 0.5s ease;
 }
 .message-box textarea.error, input.error {
@@ -413,10 +417,10 @@ pre[class*=language-] {
 }
 .message-box textarea:focus, input:focus {
   outline: none;
-  box-shadow: 0 0 8px #e2e2e2;
+  box-shadow: 0 0 8px rgb(216.75, 216.75, 216.75);
 }
 .message-box textarea::placeholder, input::placeholder {
-  color: rgba(226, 226, 226, 0.4);
+  color: hsla(0, 0%, 85%, 0.4);
 }
 
 .examples-selection .language-info, .my-experience .coding-info {
@@ -427,8 +431,8 @@ pre[class*=language-] {
   display: none;
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid #494949;
-  background-color: #0f0f0f;
+  border: 1px solid hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 5.9%);
   padding: 20px;
   position: absolute;
   bottom: 100px;
@@ -449,7 +453,7 @@ body {
   background-color: #000;
   margin: 0px;
   font-family: "Space Grotesk", serif;
-  color: rgb(226, 226, 226);
+  color: hsl(0, 0%, 85%);
   background-image: url(../image/stars.webp);
   background-position: center;
   background-attachment: fixed;
@@ -507,12 +511,12 @@ footer {
   height: 54px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: rgb(226, 226, 226);
+  background-color: hsl(0, 0%, 85%);
   transition: all 0.5s;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #ff00ff;
+  background-color: hsl(300, 100%, 70%);
 }
 .button .scale {
   transition: all 0.2s;
@@ -523,7 +527,7 @@ footer {
 
 .seamless-link {
   font-weight: bold;
-  color: #ff00ff;
+  color: hsl(300, 100%, 70%);
   position: relative;
   transition: color 0.5s ease;
 }
@@ -652,30 +656,30 @@ p {
   flex-direction: column;
   width: 220px;
   height: 100vh;
-  background-color: #0f0f0f;
+  background-color: hsl(0, 0%, 5.9%);
   position: fixed;
   z-index: 1000;
-  border-right: 1px solid #494949;
+  border-right: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
   transition: all 2s ease, transform 0.5s;
-  box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0);
+  box-shadow: 0px 0px 80px 0px rgba(216.75, 216.75, 216.75, 0);
   transform: translateX(-220px);
 }
 .sidebar:hover {
-  border-right: 1px solid rgb(226, 226, 226);
+  border-right: 1px solid hsl(0, 0%, 85%);
 }
 .sidebar .nav-divider {
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: border 2s ease;
 }
 .sidebar.translate-nav {
   transform: translateX(0px);
 }
 .sidebar:hover {
-  box-shadow: 0px 0px 80px 0px rgba(226, 226, 226, 0.5);
+  box-shadow: 0px 0px 80px 0px rgba(216.75, 216.75, 216.75, 0.5);
 }
 .sidebar:hover .nav-divider {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 @media (min-width: 992px) {
   .sidebar {
@@ -761,7 +765,7 @@ p {
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background: #0f0f0f;
+  background: hsl(0, 0%, 5.9%);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .hamburger.translate-nav {
@@ -790,11 +794,11 @@ p {
   background-position: center;
   height: 100vh;
   box-sizing: content-box;
-  border-bottom: 1px solid #494949;
+  border-bottom: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
 }
 .hero-image:hover {
-  border-bottom: 1px solid rgb(226, 226, 226);
+  border-bottom: 1px solid hsl(0, 0%, 85%);
 }
 .hero-image h1, .hero-image p {
   text-align: center;
@@ -804,7 +808,7 @@ p {
 .hero-image h1 {
   font-size: 3rem;
   color: transparent;
-  -webkit-text-stroke: 1px rgb(226, 226, 226);
+  -webkit-text-stroke: 1px hsl(0, 0%, 85%);
 }
 @media (min-width: 768px) {
   .hero-image h1 {
@@ -840,11 +844,11 @@ p {
 }
 
 .about-me {
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
 }
 .about-me:hover {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 .about-me p {
   font-size: 1.125rem;
@@ -872,7 +876,7 @@ p {
   gap: 20px;
   margin-top: 20px;
 }
-.my-experience .coding-icons [class^=icon-] {
+.my-experience .coding-icons [class^=icon] {
   font-size: 3.5rem;
   cursor: pointer;
 }
@@ -954,14 +958,14 @@ p {
 .my-experience .coding-icons .icon-jquery:hover {
   color: #0769ad;
 }
-.my-experience .coding-icons .icon-language {
+.my-experience .coding-icons .icon-language, .my-experience .coding-icons .icon-info {
   transition: color 0.2s;
 }
-.my-experience .coding-icons .icon-language:hover {
-  color: #4479a1;
+.my-experience .coding-icons .icon-language:hover, .my-experience .coding-icons .icon-info:hover {
+  color: hsl(300, 100%, 70%);
 }
 .details-to-show .skill-description {
-  color: rgba(226, 226, 226, 0.75);
+  color: rgba(216.75, 216.75, 216.75, 0.75);
   margin-top: 0px;
   font-size: 1rem;
 }
@@ -984,14 +988,14 @@ p {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  color: #0f0f0f;
+  color: hsl(0, 0%, 5.9%);
   padding: 0px;
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
   transition: all 2s ease, transform 0.5s ease;
 }
 .project-thumbnail:hover {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 .project-thumbnail img {
   filter: blur(0px) brightness(75%);
@@ -1008,15 +1012,15 @@ p {
   padding: 5px 10px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-color: rgb(226, 226, 226);
-  border: 1px solid #494949;
+  background-color: hsl(0, 0%, 85%);
+  border: 1px solid hsl(0, 0%, 25%);
   border-left: none;
 }
 .project-thumbnail .project-languages {
   display: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  color: rgb(226, 226, 226);
+  color: hsl(0, 0%, 85%);
   padding: 60px 0px 10px 40px;
 }
 .project-thumbnail .project-languages [class^=icon-] {
@@ -1144,12 +1148,12 @@ p {
 }
 
 .contact {
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
   font-size: 1.125rem;
 }
 .contact:hover {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 .contact-info {
   flex: 1;
@@ -1219,20 +1223,20 @@ p {
   width: 70px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border: 1px solid #494949;
-  background-color: #0f0f0f;
+  border: 1px solid hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 5.9%);
   transition: box-shadow, 0.2s, background-color 0.2s;
   cursor: pointer;
 }
 .message-box button [class^=icon-] {
   display: inline-block;
-  color: rgb(226, 226, 226);
+  color: hsl(0, 0%, 85%);
   font-size: 2rem;
   transition: color 0.2s;
 }
 .message-box button:hover {
-  background-color: #ff00ff;
-  box-shadow: 0 0 8px rgb(226, 226, 226);
+  background-color: hsl(300, 100%, 70%);
+  box-shadow: 0 0 8px hsl(0, 0%, 85%);
 }
 
 input {
@@ -1254,11 +1258,11 @@ input {
 }
 
 .project-details {
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
 }
 .project-details:hover {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 
 .details-header {
@@ -1268,7 +1272,7 @@ input {
 .details-header .button {
   width: 32px;
   height: 32px;
-  color: #0f0f0f;
+  color: hsl(0, 0%, 5.9%);
 }
 .details-wrapper {
   grid-template-columns: repeat(2, 1fr);
@@ -1299,41 +1303,14 @@ input {
 .details-info .buttons > * {
   margin-inline: 20px;
   padding-inline: 20px;
-  color: #0f0f0f;
+  color: hsl(0, 0%, 5.9%);
 }
 .details-illustration {
-  height: 500px;
-  margin-top: 16px;
-  overflow-y: scroll;
+  margin-block: 16px;
   border-radius: 5px;
-  position: relative;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-.details-illustration::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
 }
 .details-illustration img {
   transition: filter 0.2s ease;
-}
-.details-illustration .scroll-me-text {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  font-size: 2rem;
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-.details-illustration.scroll-me:hover img {
-  filter: blur(2px) brightness(35%);
-}
-.details-illustration.scroll-me:hover .scroll-me-text {
-  display: flex;
 }
 
 .scs-grid-container {
@@ -1353,7 +1330,7 @@ input {
   }
 }
 .scs-item {
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
 }
 .scs-item li {
@@ -1364,7 +1341,7 @@ input {
   margin-right: 10px;
 }
 .scs-item:hover {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 
 .examples-selection {
@@ -1474,11 +1451,11 @@ input {
 
 .details-to-show .content {
   transition: all 2s ease;
-  border: 1px solid #494949;
+  border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
 }
 .details-to-show .content:hover {
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid hsl(0, 0%, 85%);
 }
 .details-to-show .content .code {
   margin-top: 16px;

@@ -33,6 +33,12 @@
                         <h2 class="top-inset-item">My Skills</h2>
                         <div class="coding-icons">
                             <div class="coding-info">
+                                <span class="icon-info show-details-button" data-target="#personal-info"></span>
+                                <div class="tooltip">
+                                    <h3>Personal Profile</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
                                 <span class="icon-laravel show-details-button" data-target="#laravel-info"></span>
                                 <div class="tooltip">
                                     <h3>Laravel</h3>
@@ -119,14 +125,16 @@
                         </div>
                     </div>
                     <div class="details-to-show">
-                        <!-- <div>
-                            <h2 class="top-inset-item">Where it Started</h2>
-                            <p>My programming journey began with a love for creativity and problem-solving through creating Minecraft <a class="seamless-link" href="https://www.planetminecraft.com/member/chickensplash/" target="_blank">datapacks.</a> Sparking my interest in how things work. This led me to explore 3D modeling with Blender, creating items for the Steam <a class="seamless-link" href="https://steamcommunity.com/id/ChickenSplash/myworkshopfiles/" target="_blank">Workshop</a> and avatars for VRChat.</p>
-                        </div> -->
+                        <div class="slide" id="personal-info">
+                            <h2 class="top-inset-responsive"><span class="icon-info"></span> Personal Profile</h2>
+                            <p class="skill-description"><span class="icon-location_on"></span> Great Yarmouth, Norfolk, United Kingdom</p>
+                            <p>What motivates me is the belief that with the right knowledge and tools, anyone can make anything on the computer.</p>
+                            <p>What started with creating simple <a class="seamless-link" href="https://www.planetminecraft.com/member/chickensplash/" target="_blank">datapacks</a> in minecraft quickly grew into this drive to learn more in the world of software development.</p>
+                        </div>
                         <div class="slide" id="laravel-info">
                             <h2 class="top-inset-responsive"><span class="text-laravel"><span class="icon-laravel"></span> Laravel</span></h2>
                             <p class="skill-description">PHP framework for building modern web applications.</p>
-                            <p>Built my confidence in Laravel from my Companies Dashboard project. I find laravel to be the perfect tool to build a secure websites at scale</p>
+                            <p>Built my confidence in Laravel from my <a class="seamless-link" href="https://laravel.emanuel-correia.netmatters-scs.co.uk/" target="_blank">dashboard</a> project. I find laravel to be the perfect tool to build secure websites at scale.</p>
                         </div>
                         <div class="slide" id="react-info">
                             <h2 class="top-inset-responsive"><span class="text-react"><span class="icon-react"></span> React</span></h2>
@@ -151,7 +159,7 @@
                         <div class="slide" id="c-sharp-info">
                             <h2 class="top-inset-responsive"><span class="text-c-sharp"><span class="icon-c-sharp"></span> C#</span></h2>
                             <p class="skill-description">Versatile language for desktop, web, and game development.</p>
-                            <p>I Have no experience with c#</p>
+                            <p>I Have no experience with c#, I plan to add this to my skillset.</p>
                         </div>
                         <div class="slide" id="php-info">
                             <h2 class="top-inset-responsive"><span class="text-php"><span class="icon-php"></span> PHP</span></h2>
@@ -181,7 +189,7 @@
                         <div class="slide" id="jquery-info">
                             <h2 class="top-inset-responsive"><span class="text-jquery"><span class="icon-jquery"></span> jQuery</span></h2>
                             <p class="skill-description">JavaScript library simplifying DOM manipulation and events.</p>
-                            <p>Sometimes the easier alternative for JavaScript, or manintaining legacy websites</p>
+                            <p>Sometimes the easier alternative to vanilla JavaScript, also useful for manintaining legacy websites</p>
                         </div>
                         <div class="slide" id="tailwind-info">
                             <h2 class="top-inset-responsive"><span class="text-tailwindcss"><span class="icon-tailwindcss"></span> Tailwind</span></h2>
@@ -189,7 +197,7 @@
                             <p>Powerful when paired with Laravel when you can split these rapidly made styles into seperate components for easier maintainability.</p>
                         </div>
                         <div class="slide" id="language-info">
-                            <h2 class="top-inset-responsive"><span class="text-mysql"><span class="icon-language"></span> 2 Fluent languages</span></h2>
+                            <h2 class="top-inset-responsive"><span class="icon-language"></span> 2 Fluent languages</h2>
                             <p class="skill-description"><a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels" class="seamless-link" target="_blank">Learn</a> about language fluency classification</p>
                             <ul>
                                 <li>English: C2</li>
@@ -233,10 +241,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="details-illustration scroll-me">
-                                <div class="scroll-me-text">
-                                    <span>Scroll Me!</span>
-                                </div>
+                            <div class="details-illustration">
                                 <img src="image/Netmatters-website.webp" alt="Preview of the Netmatters website.">
                             </div>
                         </div>
@@ -403,7 +408,7 @@
                             <span class="icon-javascript"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button" id="netmatters-details">
+                            <div class="button load-card" id="netmatters-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -429,7 +434,7 @@
                             <span class="icon-html5"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button" id="project-2-details">
+                            <div class="button load-card" id="project-2-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -455,7 +460,7 @@
                             <span class="icon-html5"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button" id="project-3-details">
+                            <div class="button load-card" id="project-3-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -481,7 +486,7 @@
                             <span class="icon-html5"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button" id="project-4-details">
+                            <div class="button load-card" id="project-4-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -507,7 +512,7 @@
                             <span class="icon-html5"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button" id="project-5-details">
+                            <div class="button load-card" id="project-5-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -533,7 +538,7 @@
                             <span class="icon-html5"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button" id="project-6-details">
+                            <div class="button load-card" id="project-6-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>

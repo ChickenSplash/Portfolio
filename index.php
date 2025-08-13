@@ -30,5 +30,6 @@ if ($_SERVER["REQUEST_URI"] === "/") {
     $headTitle = "Scion Coalition Scheme";
     require BASE_PATH . "pages/scs-scheme.php";
 } else {
+    $headTitle = "404 Page Not Found";
     require BASE_PATH . "pages/404.php";
 }
