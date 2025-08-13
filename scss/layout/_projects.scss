@@ -24,9 +24,11 @@
     @include variable.light-border();
     transition: all 2s ease, transform 0.5s ease;
 
-    img{
+    img {
         filter: blur(0px) brightness(75%);
-        transition: filter 0.2s ease;
+        transition: filter 0.2s ease; 
+        position: absolute;
+        top: 0;
     }
 
     .button {
@@ -42,7 +44,6 @@
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         background-color: variable.$color-light;
-        border: variable.$border-style;
         border-left: none;
     }
 
@@ -95,13 +96,4 @@
     @media (min-width: variable.$break-point-x-small) {
         justify-content: space-between;
     }
-}
-
-#nm-project-img {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
 }

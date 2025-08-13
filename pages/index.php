@@ -30,7 +30,7 @@
                 </div>
                 <div class="about-me">
                     <div class="my-experience">
-                        <h2 class="top-inset-item">My Skills</h2>
+                        <h2 class="top-inset-item">My Toolbox</h2>
                         <div class="coding-icons">
                             <div class="coding-info">
                                 <span class="icon-info show-details-button" data-target="#personal-info"></span>
@@ -211,7 +211,7 @@
                 <div class="section-header" id="projects">
                     <h2>My Projects</h2>
                 </div>
-                <div id="netmatters-card">
+                <div id="project-1-card">
                     <div class="project-details">
                         <div class="details-header">
                             <h2 class="top-inset-item">Netmatters Homepage</h2>
@@ -226,24 +226,24 @@
                                     <li><p>Implemented a dynamic news section powered by a <span class="text-php">MySQL</span> relational database, allowing content to be pulled and displayed using <span class="text-php">PHP</span>, and easily updated and managed through the database.</p></li>
                                     <li><p>Added a <a class="seamless-link" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/contact-us.php" target="_blank">Contact</a> page with a functional contact form complete with <span class="text-javascript">JavaScript</span> client side and <span class="text-php">PHP</span> server side validation, storing the values in the <span class="text-php">MySQL</span> database upon successful submission, feel free to try it out!</p></li>
                                 </ul>
-                                <div class="buttons">
-                                    <a class="button" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-ruler"></span>
-                                            <span>View Project</span>
-                                        </div>
-                                    </a>
-                                    <a class="button" href="https://github.com/ChickenSplash/Netmatters-Homepage" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-embed2"></span>
-                                            <span>View Code</span>
-                                        </div>
-                                    </a>
-                                </div>
                             </div>
                             <div class="details-illustration">
                                 <img src="image/Netmatters-website.webp" alt="Preview of the Netmatters website.">
                             </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="button" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="https://github.com/ChickenSplash/Netmatters-Homepage" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -399,16 +399,18 @@
                 </div>
                 <div class="projects-work">
                     <div class="project-thumbnail">
-                        <img id="nm-project-img" src="image/Netmatters-website.webp" alt="Preview of the Netmatters website.">
+                        <img src="image/Netmatters-website.webp" alt="Project 1 preview.">
                         <h3 class="title">Netmatters Homepage</h3>
                         <div class="project-languages">
+                            <span class="icon-php"></span>
+                            <span class="icon-mysql"></span>
+                            <span class="icon-javascript"></span>
+                            <span class="icon-sass"></span>
                             <span class="icon-html5"></span>
                             <span class="icon-css3"></span>
-                            <span class="icon-sass"></span>
-                            <span class="icon-javascript"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button load-card" id="netmatters-details">
+                            <div class="button load-card" id="project-1-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -429,9 +431,17 @@
                         </div>
                     </div>
                     <div class="project-thumbnail">
-                        <h3 class="title">Project 2</h3>
+                        <img src="image/laravel-employee.webp" alt="Project 2 preview.">
+                        <h3 class="title">Company Management Panel</h3>
                         <div class="project-languages">
+                            <span class="icon-laravel"></span>
+                            <span class="icon-php"></span>
+                            <span class="icon-mysql"></span>
+                            <span class="icon-sass"></span>
+                            <span class="icon-tailwindcss"></span>
                             <span class="icon-html5"></span>
+                            <span class="icon-css3"></span>
+                            <span class="icon-javascript"></span>
                         </div>
                         <div class="view-more">
                             <div class="button load-card" id="project-2-details">
@@ -440,13 +450,13 @@
                                     <span>More Details</span>
                                 </div>
                             </div>
-                            <a class="button" href="#">
+                            <a class="button" target="_blank" href="https://laravel.emanuel-correia.netmatters-scs.co.uk/">
                                 <div class="scale">
                                     <span class="icon-ruler"></span>
                                     <span>View Project</span>
                                 </div>
                             </a>
-                            <a class="button" href="#">
+                            <a class="button" target="_blank" href="https://github.com/ChickenSplash/Company-Management-Panel">
                                 <div class="scale">
                                     <span class="icon-embed2"></span>
                                     <span>View Code</span>
@@ -455,9 +465,13 @@
                         </div>
                     </div>
                     <div class="project-thumbnail">
-                        <h3 class="title">Project 3</h3>
+                        <img src="image/random-image-fetcher.webp" alt="Project 1 preview.">
+                        <h3 class="title">Random Image Fetcher</h3>
                         <div class="project-languages">
+                            <span class="icon-javascript"></span>
+                            <span class="icon-sass"></span>
                             <span class="icon-html5"></span>
+                            <span class="icon-css3"></span>
                         </div>
                         <div class="view-more">
                             <div class="button load-card" id="project-3-details">

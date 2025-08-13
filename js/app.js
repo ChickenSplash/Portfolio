@@ -29,7 +29,7 @@ $(".nav-overlay").on("click", () => {
 
 // Object containing buttons:cards
 const detailsCards = {
-    "#netmatters-details": "#netmatters-card",
+    "#project-1-details": "#project-1-card",
     "#project-2-details": "#project-2-card",
     "#project-3-details": "#project-3-card",
     "#project-4-details": "#project-4-card",
@@ -43,7 +43,7 @@ for (const button in detailsCards) {
     $(button).click(() => {
         $(".projects-work").slideUp(350);
         $(detailsCards[button]).slideDown(350);
-        loadCard();
+        loadCard(); // function that forces the image to take up the height of the text container
     });
 
     $(detailsCards[button] + " .button.close-slide").click(() => {
@@ -51,8 +51,6 @@ for (const button in detailsCards) {
         $(".projects-work").slideDown(350);
     });
 }
-
-// function that forces the image to take up the height of the text container
 
 function loadCard() {
     const wrapper = document.querySelector(".details-wrapper");

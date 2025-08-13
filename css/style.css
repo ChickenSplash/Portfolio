@@ -1000,6 +1000,8 @@ p {
 .project-thumbnail img {
   filter: blur(0px) brightness(75%);
   transition: filter 0.2s ease;
+  position: absolute;
+  top: 0;
 }
 .project-thumbnail .button {
   padding-inline: 20px;
@@ -1013,7 +1015,6 @@ p {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   background-color: hsl(0, 0%, 85%);
-  border: 1px solid hsl(0, 0%, 25%);
   border-left: none;
 }
 .project-thumbnail .project-languages {
@@ -1138,15 +1139,6 @@ p {
   }
 }
 
-#nm-project-img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-}
-
 .contact {
   border: 1px solid hsl(0, 0%, 25%);
   transition: all 2s ease;
@@ -1264,10 +1256,20 @@ input {
 .project-details:hover {
   border: 1px solid hsl(0, 0%, 85%);
 }
+.project-details .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.project-details .buttons > * {
+  padding-inline: 20px;
+  color: hsl(0, 0%, 5.9%);
+}
 
 .details-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 .details-header .button {
   width: 32px;
@@ -1283,27 +1285,9 @@ input {
     display: grid;
   }
 }
-.details-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.details-info li {
-  margin-bottom: 10px;
-}
 .details-info p {
   font-size: 1.125rem;
-  margin-top: 0;
-}
-.details-info .buttons {
-  display: flex;
-  justify-content: center;
-  margin-block: 20px;
-}
-.details-info .buttons > * {
-  margin-inline: 20px;
-  padding-inline: 20px;
-  color: hsl(0, 0%, 5.9%);
+  margin-top: 16px;
 }
 .details-illustration {
   margin-block: 16px;

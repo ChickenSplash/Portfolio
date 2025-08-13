@@ -3,12 +3,24 @@
 .project-details {
     @extend %content-background;
     @include variable.light-border;
+
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        & > *{
+            padding-inline: 20px;
+            color: variable.$color-dark;
+        }
+    }
 }
 
 .details {
     &-header {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 25px;
 
         .button {
             width: 32px;
@@ -27,29 +39,9 @@
     }
 
     &-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        li {
-            margin-bottom: 10px;
-        }
-
         p{
             font-size: 1.125rem;
-            margin-top: 0;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            margin-block: 20px;
-
-            & > *{
-                margin-inline: 20px;
-                padding-inline: 20px;
-                color: variable.$color-dark;
-            }
+            margin-top: 16px;
         }
     }
 
