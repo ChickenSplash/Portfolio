@@ -261,9 +261,9 @@
                                         <strong>Email:</strong> admin@admin.com<br>
                                         <strong>Password:</strong> password
                                     </p></li>
+                                    <li><p>Developed Create, Read, Update, and Delete operations for two key resources; <strong>Companies</strong> and <strong>Employees</strong> using <span class="text-laravel">Laravel</span> and <span class="text-mysql">SQLite</span>.</p></li>
                                     <li><p>Implemented <span class="text-laravel">Laravel's</span> built-in authentication system, request/validation classes, routing system and security features, allowing me to easily build a highly secure site.</p></li>
-                                    <li><p>Developed Create, Read, Update, and Delete operations for two key resources; <strong>Companies</strong> and <strong>Employees</strong>.</p></li>
-                                    <li><p>Built a responsive and proffesional design using <span class="text-tailwindcss">Tailwind</span> components for easy modulation and <span class="text-sass">SASS</span> for fine tuning details.</p></li>
+                                    <li><p>Built a responsive and proffesional design using <span class="text-tailwindcss">Tailwind</span> components for easy modulation and <span class="text-sass">SASS</span>/<span class="text-javascript">JavaScript</span> for fine tuning details.</p></li>
                                 </ul>
                             </div>
                             <div class="details-illustration">

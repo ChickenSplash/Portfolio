@@ -117,7 +117,7 @@ function validateForm() {
     if (!emailPattern.test(email.value.trim())) {
         valid = false;
         email.classList.add("error")
-        email.placeholder += " - Required"
+        email.placeholder += " - Must be valid"
     }
 
     if (message.value.trim() === '') {

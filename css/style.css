@@ -435,7 +435,7 @@ pre[class*=language-] {
   background-color: hsl(0, 0%, 5.9%);
   padding: 20px;
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
 }
 .examples-selection .language-info .tooltip h3, .my-experience .coding-info .tooltip h3 {
   margin: 0px;
