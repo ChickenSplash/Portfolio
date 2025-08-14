@@ -68,7 +68,7 @@ function loadCard($card) {
 
 // collapsing animations for coding examples using jquery
 
-$(".details-to-show .slide").not(":first").hide();
+$(".details-to-show .slide").not(".details-to-show .show-by-default").hide();
 
 $('.show-details-button').click(function () {
     let target = $(this).data('target');
@@ -291,6 +291,6 @@ for (i = 0; i < heroText.length; i++) {
 // event listeners to be able to close server side form validation feedback
 
 $(".close").click((e) => {
-    $(e.currentTarget.parentElement).slideUp(200);
+    $(e.currentTarget.parentElement.parentElement).slideUp(200);
 })
 

@@ -369,16 +369,16 @@ pre[class*=language-] {
   align-items: center;
 }
 
-.examples-selection .language-info .tooltip, .my-experience .coding-info .tooltip, .details-to-show .content, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
+.examples-selection .language-info .tooltip, .my-experience .coding-info .tooltip, .details-to-show .content, .scs-item, .project-details, .nm-homepage, .contact, .feedback-box, .project-thumbnail, .about-me {
   border-radius: 5px;
   padding: 25px;
 }
 
-.hero-image, .details-to-show .content, .scs-item, .project-details, .nm-homepage, .contact, .project-thumbnail, .about-me {
+.hero-image, .details-to-show .content, .scs-item, .project-details, .nm-homepage, .contact, .feedback-box, .project-thumbnail, .about-me {
   background-color: rgba(15.045, 15.045, 15.045, 0.7);
   box-shadow: 0px 0px 80px 0px rgba(216.75, 216.75, 216.75, 0.25);
 }
-.hero-image:hover, .details-to-show .content:hover, .scs-item:hover, .project-details:hover, .nm-homepage:hover, .contact:hover, .project-thumbnail:hover, .about-me:hover {
+.hero-image:hover, .details-to-show .content:hover, .scs-item:hover, .project-details:hover, .nm-homepage:hover, .contact:hover, .feedback-box:hover, .project-thumbnail:hover, .about-me:hover {
   background-color: rgba(15.045, 15.045, 15.045, 0.85);
   box-shadow: 0px 0px 80px 0px rgba(216.75, 216.75, 216.75, 0.5);
 }
@@ -1179,26 +1179,33 @@ p {
 }
 
 .feedback-box {
+  padding: 0px;
+  border: 1px solid hsl(0, 0%, 25%);
+  transition: all 2s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(100, 9, 9);
-  border-radius: 5px;
   margin-bottom: 25px;
   font-size: 1.125rem;
+}
+.feedback-box:hover {
+  border: 1px solid hsl(0, 0%, 85%);
 }
 .feedback-box p {
   margin: 0;
   padding-left: 25px;
 }
 .feedback-box span {
-  padding: 20px;
+  padding: 25px;
   display: block;
   height: 100%;
   cursor: pointer;
 }
-.feedback-box.sent {
-  background-color: rgb(6, 87, 6);
+.feedback-box .feedback-message {
+  color: #d90000;
+}
+.feedback-box .sent {
+  color: #00d900;
 }
 
 .message-box {
@@ -1291,10 +1298,16 @@ input {
 }
 .details-illustration {
   margin-block: 16px;
+  border: 1px solid hsl(0, 0%, 25%);
+  background-color: #2D2D2D;
+  border-radius: 5px;
 }
 .details-illustration img {
   border-radius: 5px;
   transition: filter 0.2s ease;
+}
+.details-illustration img:not(:first-child) {
+  margin-top: 20px;
 }
 
 .scs-grid-container {

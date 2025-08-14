@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     <div class="details-to-show">
-                        <div class="slide" id="personal-info">
+                        <div class="slide show-by-default" id="personal-info">
                             <h2 class="top-inset-responsive"><span class="icon-info"></span> Personal Profile</h2>
                             <p class="skill-description"><span class="icon-location_on"></span> Great Yarmouth, Norfolk, United Kingdom</p>
                             <p>What motivates me is the belief that with the right knowledge and tools, anyone can make anything on the computer.</p>
@@ -134,7 +134,7 @@
                         <div class="slide" id="laravel-info">
                             <h2 class="top-inset-responsive"><span class="text-laravel"><span class="icon-laravel"></span> Laravel</span></h2>
                             <p class="skill-description">PHP framework for building modern web applications.</p>
-                            <p>Built my confidence in Laravel from my <a class="seamless-link" href="https://laravel.emanuel-correia.netmatters-scs.co.uk/" target="_blank">dashboard</a> project. I find laravel to be the perfect tool to build secure websites at scale.</p>
+                            <p>Built my confidence in Laravel from my <a class="seamless-link" href="https://laravel.emanuel-correia.netmatters-scs.co.uk/" target="_blank">Dashboard</a> project. I find laravel to be the perfect tool to build secure websites at scale.</p>
                         </div>
                         <div class="slide" id="react-info">
                             <h2 class="top-inset-responsive"><span class="text-react"><span class="icon-react"></span> React</span></h2>
@@ -144,7 +144,7 @@
                         <div class="slide" id="mysql-info">
                             <h2 class="top-inset-responsive"><span class="text-mysql"><span class="icon-mysql"></span> MySQL</span></h2>
                             <p class="skill-description">Relational database system for managing structured data.</p>
-                            <p>Built relational databases on my Netmatters and Companies Dashboard projects, Following best practices to maintain security, low storage footprint and ease of use.</p>
+                            <p>Built relational databases on my <a class="seamless-link" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/" target="_blank">Netmatters</a> and <a class="seamless-link" href="https://laravel.emanuel-correia.netmatters-scs.co.uk/" target="_blank">Dashboard</a> projects, Following best practices to maintain security, low storage footprint and ease of use.</p>
                         </div>
                         <div class="slide" id="sass-info">
                             <h2 class="top-inset-responsive"><span class="text-sass"><span class="icon-sass"></span> SASS</span></h2>
@@ -224,11 +224,12 @@
                                     <li><p>Applied <span class="text-sass">SASS</span> Mixins using maps for easy application of different colours on sibling elemements</p></li>
                                     <li><p>Used <span class="text-javascript">JavaScript</span> to add dynamic animations, including a pop-out side menu.</p></li>
                                     <li><p>Implemented a dynamic news section powered by a <span class="text-php">MySQL</span> relational database, allowing content to be pulled and displayed using <span class="text-php">PHP</span>, and easily updated and managed through the database.</p></li>
-                                    <li><p>Added a <a class="seamless-link" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/contact-us.php" target="_blank">Contact</a> page with a functional contact form complete with <span class="text-javascript">JavaScript</span> client side and <span class="text-php">PHP</span> server side validation, storing the values in the <span class="text-php">MySQL</span> database upon successful submission, feel free to try it out!</p></li>
+                                    <li><p>Added a <a class="seamless-link" href="https://netmatters.emanuel-correia.netmatters-scs.co.uk/contact" target="_blank">Contact</a> page with a functional contact form complete with <span class="text-javascript">JavaScript</span> client side and <span class="text-php">PHP</span> server side validation, storing the values in the <span class="text-php">MySQL</span> database upon successful submission, feel free to try it out!</p></li>
                                 </ul>
                             </div>
                             <div class="details-illustration">
                                 <img src="image/Netmatters-website.webp" alt="Preview of the Netmatters website.">
+                                <img src="image/netmatters-contact.webp" alt="Preview of the Netmatters website.">
                             </div>
                         </div>
                         <div class="buttons">
@@ -260,14 +261,14 @@
                                         <strong>Email:</strong> admin@admin.com<br>
                                         <strong>Password:</strong> password
                                     </p></li>
-                                    <li><p>Implemented <span class="text-laravel">Laravel's</span> built-in authentication system, allowing secure administrator login and session management.</p></li>
+                                    <li><p>Implemented <span class="text-laravel">Laravel's</span> built-in authentication system, request/validation classes, routing system and security features, allowing me to easily build a highly secure site.</p></li>
                                     <li><p>Developed Create, Read, Update, and Delete operations for two key resources; <strong>Companies</strong> and <strong>Employees</strong>.</p></li>
-                                    <li><p>Leveraged <span class="text-laravel">Laravel's</span> FormRequest classes to enforce validation rules keeping the aplication secure and robust.</p></li>
-                                    <li><p>Built a responsive and proffesional design using <span class="text-sass">SASS</span> and <span class="text-tailwindcss">Tailwind</span>.</p></li>
+                                    <li><p>Built a responsive and proffesional design using <span class="text-tailwindcss">Tailwind</span> components for easy modulation and <span class="text-sass">SASS</span> for fine tuning details.</p></li>
                                 </ul>
                             </div>
                             <div class="details-illustration">
                                 <img src="image/laravel-company.webp" alt="Preview of the website.">
+                                <img src="image/laravel-employee.webp" alt="Preview of the website.">
                             </div>
                         </div>
                         <div class="buttons">
@@ -295,14 +296,14 @@
                         <div class="details-wrapper">
                             <div class="details-info">
                                 <ul>
-                                    <li><p>Utilises the <a class="seamless-link" target="_blank" href="https://picsum.photos/">Picsum</a> API to dynamically fetch random images based on user-defined width and height inputs, the user can then assign any image to any email address. All done within <span class="text-javascript">JavaScript</span>.</p></li>
+                                    <li><p>Utilises the <a class="seamless-link" target="_blank" href="https://picsum.photos/">Picsum</a> API to dynamically fetch random images based on user-defined width and height inputs, the user can then assign any image to any valid email address. All done within <span class="text-javascript">JavaScript</span>.</p></li>
                                     <li><p>Stores previously loaded images should the user want to go back and add them.</p></li>
-                                    <li><p>Implemented various different checks to ensure the program is to be used as intended, paird with clear and consise user feedback</p></li>
+                                    <li><p>Implemented various different checks to ensure the program is to be used as intended, paird with clear and consise user feedback. Feel free to stress test it!</p></li>
                                     <li><p>Built a responsive and proffesional design using <span class="text-sass">SASS</span>.</p></li>
                                 </ul>
                             </div>
                             <div class="details-illustration">
-                                <img src="image/random-image-fetcher.webp" alt="Website Preview.">
+                                <img src="image/random-image-fetcher.webp" alt="Screenshot of the Random Image Fetcher web application showing a clean interface with input fields for width and height, a button to fetch a random image, and a gallery of previously loaded images. The page has a modern and friendly design with soft colors and rounded corners. The overall tone is inviting and playful. Visible text includes Random Image Fetcher as the page title and labels for width, height, and fetch image button.">
                             </div>
                         </div>
                         <div class="buttons">
@@ -445,7 +446,7 @@
                         </div>
                     </div>
                     <div class="project-thumbnail">
-                        <img src="image/laravel-employee.webp" alt="Project 2 preview.">
+                        <img src="image/laravel-index.webp" alt="Project 2 preview.">
                         <h3 class="title">Company Management Panel</h3>
                         <div class="project-languages">
                             <span class="icon-laravel"></span>
@@ -494,13 +495,13 @@
                                     <span>More Details</span>
                                 </div>
                             </div>
-                            <a class="button" href="#">
+                            <a class="button" target="_blank" href="https://js-array.emanuel-correia.netmatters-scs.co.uk">
                                 <div class="scale">
                                     <span class="icon-ruler"></span>
                                     <span>View Project</span>
                                 </div>
                             </a>
-                            <a class="button" href="#">
+                            <a class="button" target="_blank" href="https://github.com/ChickenSplash/JavaScript-Image-Array">
                                 <div class="scale">
                                     <span class="icon-embed2"></span>
                                     <span>View Code</span>
@@ -591,8 +592,10 @@
                     <h2>Get In Touch</h2>
                 </div>
                 <?php foreach ($status as $message): ?>
-                    <div class="feedback-box <?php if ($message === "Message Sent!") {echo "sent";} ?>">
-                        <p><?= $message ?></p><span class="icon-clear close"></span>
+                    <div> <!-- necessary div for slideUp() js function to work properly -->
+                        <div class="feedback-box">
+                            <p class="feedback-message <?php if ($message === "Message Sent!") {echo "sent";} ?>"><?= $message ?></p><span class="icon-clear close"></span>
+                        </div>
                     </div>
                 <?php endforeach; ?>
                 <div class="contact">

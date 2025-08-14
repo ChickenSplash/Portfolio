@@ -46,11 +46,12 @@
 }
 
 .feedback-box {
+    @extend %content-background;
+    padding: 0px;
+    @include variable.light-border();
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(100, 9, 9);
-    border-radius: 5px;
     margin-bottom: 25px;
     font-size: 1.125rem;
 
@@ -60,14 +61,18 @@
     }
     
     span {
-        padding: 20px;
+        padding: 25px;
         display: block;
         height: 100%;
         cursor: pointer;
     }
 
-    &.sent {
-        background-color: rgb(6, 87, 6);
+    & .feedback-message {
+        color: #d90000;
+    }
+
+    & .sent {
+        color: #00d900;
     }
 }
 

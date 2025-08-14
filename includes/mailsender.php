@@ -17,6 +17,7 @@ try {
     $mail->Port = $_ENV["ML_PORT"];
     $mail->Username = $_ENV["ML_USER"];
     $mail->Password = $_ENV["ML_PASSWORD"];
+    $mail->SMTPSecure = 'tls';
 
     // Recipients
     $mail->setFrom($_ENV["ML_SEND_FROM"], 'Portfolio Website');
@@ -24,11 +25,13 @@ try {
 
     // Content
     $mail->isHTML(true);
-    $mail->Subject = 'New Contact Form Submission: ' . $_POST["subject"];
+    $mail->Subject = $_POST["subject"];
     $mail->Body    = "
-        <p><strong>Name:</strong> {$_POST["forename"]} {$_POST["surname"]}</p>
-        <p><strong>Email:</strong> {$_POST["email"]}</p>
-        <p><strong>Message:</strong><br> {$_POST["message"]}</p>
+        <div style='font-size: 18px; font-family: Arial, sans-serif;'>
+            <p>{$_POST["forename"]} {$_POST["surname"]}</p>
+            <p>{$_POST["email"]}</p>
+            <p>{$_POST["message"]}</p>
+        </div>
     ";
 
     $mail->send();
