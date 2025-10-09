@@ -1407,6 +1407,8 @@ input {
   border: 1px solid hsl(0, 0%, 25%);
   background-color: #2D2D2D;
   border-radius: 5px;
+  overflow-y: auto;
+  height: 500px;
 }
 .details-illustration img {
   border-radius: 5px;

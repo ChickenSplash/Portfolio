@@ -43,7 +43,7 @@ for (const button in detailsCards) {
     $(button).click(() => {
         $(".projects-work").slideUp(350);
         $(detailsCards[button]).slideDown(350);
-        loadCard($(detailsCards[button])); // function that forces the image to take up the height of the text container
+        // loadCard($(detailsCards[button])); // function that forces the image to take up the height of the text container
     });
 
     $(detailsCards[button] + " .button.close-slide").click(() => {
@@ -52,19 +52,19 @@ for (const button in detailsCards) {
     });
 }
 
-function loadCard($card) {
-    const $wrapper = $card.find(".details-wrapper");
-    const $illustration = $card.find(".details-illustration");
-    const $info = $card.find(".details-info ul");
+// function loadCard($card) {
+//     const $wrapper = $card.find(".details-wrapper");
+//     const $illustration = $card.find(".details-illustration");
+//     const $info = $card.find(".details-info ul");
 
-    if ($wrapper.length && $illustration.length && $info.length) {
-        const infoHeight = $info.outerHeight();
-        $illustration.css({
-            maxHeight: infoHeight + "px",
-            overflowY: "auto"
-        });
-    }
-}
+//     if ($wrapper.length && $illustration.length && $info.length) {
+//         const infoHeight = $info.outerHeight();
+//         $illustration.css({
+//             maxHeight: infoHeight + "px",
+//             overflowY: "auto"
+//         });
+//     }
+// }
 
 // collapsing animations for coding examples using jquery
 

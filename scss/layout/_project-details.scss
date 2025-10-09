@@ -50,6 +50,8 @@
         border: variable.$border-style;
         background-color: #2D2D2D;
         border-radius: 5px;
+        overflow-y: auto;
+        height: 500px;
         
         img {
             border-radius: 5px;

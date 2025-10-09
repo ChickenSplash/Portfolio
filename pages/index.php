@@ -307,7 +307,7 @@
                                     </p></li>
                                     <li><p>Developed Create, Read, Update, and Delete operations for two key resources; <strong>Companies</strong> and <strong>Employees</strong> using <span class="text-laravel">Laravel</span> and <span class="text-mysql">SQLite</span>.</p></li>
                                     <li><p>Implemented <span class="text-laravel">Laravel's</span> built-in authentication system, request/validation classes, routing system and security features, allowing me to easily build a highly secure site.</p></li>
-                                    <li><p>Built a responsive and proffesional design using <span class="text-tailwindcss">Tailwind</span> components for easy modulation and <span class="text-sass">SASS</span>/<span class="text-javascript">JavaScript</span> for fine tuning details.</p></li>
+                                    <li><p>Built a responsive and professional design using <span class="text-tailwindcss">Tailwind</span> components for easy modulation and <span class="text-sass">SASS</span>/<span class="text-javascript">JavaScript</span> for fine tuning details.</p></li>
                                 </ul>
                             </div>
                             <div class="details-illustration">
@@ -340,24 +340,23 @@
                         <div class="details-wrapper">
                             <div class="details-info">
                                 <ul>
-                                    <li><p>Utilises the <a class="seamless-link" target="_blank" href="https://picsum.photos/">Picsum</a> API to dynamically fetch random images based on user-defined width and height inputs, the user can then assign any image to any valid email address. All done within <span class="text-javascript">JavaScript</span>.</p></li>
-                                    <li><p>Stores previously loaded images should the user want to go back and add them.</p></li>
-                                    <li><p>Implemented various different checks to ensure the program is to be used as intended, paird with clear and consise user feedback. Feel free to stress test it!</p></li>
-                                    <li><p>Built a responsive and proffesional design using <span class="text-sass">SASS</span>.</p></li>
+                                    <li><p>Built a single-page application (SPA) for browsing, filtering, and sorting products dynamically using <span class="text-react">React</span> with functional components and hooks for state management.</p></li>
+                                    <li><p>Implemented dynamic filtering by category, price range, and stock availability.</p></li>
+                                    <li><p>Ensured responsive layout using <span class="text-css3">CSS</span> Grid/Flexbox for mobile and desktop compatibility.</p></li>
                                 </ul>
                             </div>
                             <div class="details-illustration">
-                                <img src="image/random-image-fetcher.webp" alt="Screenshot of the Random Image Fetcher web application showing a clean interface with input fields for width and height, a button to fetch a random image, and a gallery of previously loaded images. The page has a modern and friendly design with soft colors and rounded corners. The overall tone is inviting and playful. Visible text includes Random Image Fetcher as the page title and labels for width, height, and fetch image button.">
+                                <img src="image/product-catalogue-page.webp" alt="Preview of the website.">
                             </div>
                         </div>
                         <div class="buttons">
-                            <a class="button" href="#" target="_blank">
+                            <a class="button" href="https://react.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
                                 <div class="scale">
                                     <span class="icon-ruler"></span>
                                     <span>View Project</span>
                                 </div>
                             </a>
-                            <a class="button" href="#" target="_blank">
+                            <a class="button" href="https://github.com/ChickenSplash/Products-Catalogue" target="_blank">
                                 <div class="scale">
                                     <span class="icon-embed2"></span>
                                     <span>View Code</span>
@@ -369,30 +368,35 @@
                 <div id="project-4-card">
                     <div class="project-details">
                         <div class="details-header">
-                            <h2 class="top-inset-item">Project 4</h2>
+                            <h2 class="top-inset-item">Random Image Fetcher</h2>
                             <div class="button close-slide">X</div>
                         </div>
                         <div class="details-wrapper">
                             <div class="details-info">
-                                <p>This is a future project that I shall do, im not sure what im going to do yet... guess ill find out :p</p>
-                                <div class="buttons">
-                                    <a class="button" href="#" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-ruler"></span>
-                                            <span>View Project</span>
-                                        </div>
-                                    </a>
-                                    <a class="button" href="#" target="_blank">
-                                        <div class="scale">
-                                            <span class="icon-embed2"></span>
-                                            <span>View Code</span>
-                                        </div>
-                                    </a>
-                                </div>
+                                <ul>
+                                    <li><p>Utilises the <a class="seamless-link" target="_blank" href="https://picsum.photos/">Picsum</a> API to dynamically fetch random images based on user-defined width and height inputs, the user can then assign any image to any valid email address. All done within <span class="text-javascript">JavaScript</span>.</p></li>
+                                    <li><p>Stores previously loaded images should the user want to go back and add them.</p></li>
+                                    <li><p>Implemented various different checks to ensure the program is to be used as intended, paird with clear and consise user feedback. Feel free to stress test it!</p></li>
+                                    <li><p>Built a responsive and proffesional design using <span class="text-sass">SASS</span>.</p></li>
+                                </ul>
                             </div>
                             <div class="details-illustration">
-                                <span>image goes here</span>
+                                <img src="image/random-image-fetcher.webp" alt="Screenshot of the Random Image Fetcher web application showing a clean interface with input fields for width and height, a button to fetch a random image, and a gallery of previously loaded images. The page has a modern and friendly design with soft colors and rounded corners. The overall tone is inviting and playful. Visible text includes Random Image Fetcher as the page title and labels for width, height, and fetch image button.">
                             </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="button" href="https://js-array.emanuel-correia.netmatters-scs.co.uk" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="https://github.com/ChickenSplash/JavaScript-Image-Array" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -524,6 +528,37 @@
                         </div>
                     </div>
                     <div class="project-thumbnail">
+                        <img src="image/product-catalogue-page.webp" alt="react project preview">
+                        <h3 class="title">Product Catalogue</h3>
+                        <div class="project-languages">
+                            <span class="icon-react"></span>
+                            <span class="icon-javascript"></span>
+                            <span class="icon-sass"></span>
+                            <span class="icon-tailwindcss"></span>
+                            <span class="icon-html5"></span>
+                        </div>
+                        <div class="view-more">
+                            <div class="button load-card" id="project-3-details">
+                                <div class="scale">
+                                    <span class="icon-info"></span>
+                                    <span>More Details</span>
+                                </div>
+                            </div>
+                            <a class="button" href="https://react.emanuel-correia.netmatters-scs.co.uk/" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-ruler"></span>
+                                    <span>View Project</span>
+                                </div>
+                            </a>
+                            <a class="button" href="https://github.com/ChickenSplash/Products-Catalogue" target="_blank">
+                                <div class="scale">
+                                    <span class="icon-embed2"></span>
+                                    <span>View Code</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-thumbnail">
                         <img src="image/random-image-fetcher-thumbnail.webp" alt="Project 1 preview.">
                         <h3 class="title">Random Image Fetcher</h3>
                         <div class="project-languages">
@@ -533,7 +568,7 @@
                             <span class="icon-css3"></span>
                         </div>
                         <div class="view-more">
-                            <div class="button load-card" id="project-3-details">
+                            <div class="button load-card" id="project-4-details">
                                 <div class="scale">
                                     <span class="icon-info"></span>
                                     <span>More Details</span>
@@ -546,32 +581,6 @@
                                 </div>
                             </a>
                             <a class="button" target="_blank" href="https://github.com/ChickenSplash/JavaScript-Image-Array">
-                                <div class="scale">
-                                    <span class="icon-embed2"></span>
-                                    <span>View Code</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-thumbnail">
-                        <h3 class="title">Project 4</h3>
-                        <div class="project-languages">
-                            <span class="icon-html5"></span>
-                        </div>
-                        <div class="view-more">
-                            <div class="button load-card" id="project-4-details">
-                                <div class="scale">
-                                    <span class="icon-info"></span>
-                                    <span>More Details</span>
-                                </div>
-                            </div>
-                            <a class="button" href="#">
-                                <div class="scale">
-                                    <span class="icon-ruler"></span>
-                                    <span>View Project</span>
-                                </div>
-                            </a>
-                            <a class="button" href="#">
                                 <div class="scale">
                                     <span class="icon-embed2"></span>
                                     <span>View Code</span>
