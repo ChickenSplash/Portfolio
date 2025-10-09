@@ -403,12 +403,12 @@
                 <div id="project-5-card">
                     <div class="project-details">
                         <div class="details-header">
-                            <h2 class="top-inset-item">Project 5</h2>
+                            <h2 class="top-inset-item">Company Management Panel</h2>
                             <div class="button close-slide">X</div>
                         </div>
                         <div class="details-wrapper">
                             <div class="details-info">
-                                <p>This is a future project that I shall do, im not sure what im going to do yet... guess ill find out :p</p>
+                                <p>Coming Soon</p>
                                 <div class="buttons">
                                     <a class="button" href="#" target="_blank">
                                         <div class="scale">
@@ -438,7 +438,7 @@
                         </div>
                         <div class="details-wrapper">
                             <div class="details-info">
-                                <p>This is a future project that I shall do, im not sure what im going to do yet... guess ill find out :p</p>
+                                <p>Coming Soon</p>
                                 <div class="buttons">
                                     <a class="button" href="#" target="_blank">
                                         <div class="scale">
@@ -589,7 +589,7 @@
                         </div>
                     </div>
                     <div class="project-thumbnail">
-                        <h3 class="title">Project 5</h3>
+                        <h3 class="title">Company Management Panel</h3>
                         <div class="project-languages">
                             <span class="icon-html5"></span>
                         </div>
