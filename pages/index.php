@@ -51,6 +51,12 @@
                                 </div>
                             </div>
                             <div class="coding-info">
+                                <span class="icon-dot-net show-details-button" data-target="#dot-net-info"></span>
+                                <div class="tooltip">
+                                    <h3>C# .NET</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
                                 <span class="icon-mysql show-details-button" data-target="#mysql-info"></span>
                                 <div class="tooltip">
                                     <h3>MySLQ</h3>
@@ -69,12 +75,6 @@
                                 </div>
                             </div>
                             <div class="coding-info">
-                                <span class="icon-c-sharp show-details-button" data-target="#c-sharp-info"></span>
-                                <div class="tooltip">
-                                    <h3>C#</h3>
-                                </div>
-                            </div>
-                            <div class="coding-info">
                                 <span class="icon-php show-details-button" data-target="#php-info"></span>
                                 <div class="tooltip">
                                     <h3>PHP</h3>
@@ -84,6 +84,12 @@
                                 <span class="icon-python show-details-button" data-target="#python-info"></span>
                                 <div class="tooltip">
                                     <h3>Python</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-lua show-details-button" data-target="#lua-info"></span>
+                                <div class="tooltip">
+                                    <h3>Lua</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
@@ -105,6 +111,12 @@
                                 </div>
                             </div>
                             <div class="coding-info">
+                                <span class="icon-typescript show-details-button" data-target="#typescript-info"></span>
+                                <div class="tooltip">
+                                    <h3>TypeScript</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
                                 <span class="icon-jquery show-details-button" data-target="#jquery-info"></span>
                                 <div class="tooltip">
                                     <h3>jQuery</h3>
@@ -114,6 +126,18 @@
                                 <span class="icon-tailwindcss show-details-button" data-target="#tailwind-info"></span>
                                 <div class="tooltip">
                                     <h3>Tailwind</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-bootstrap show-details-button" data-target="#bootstrap-info"></span>
+                                <div class="tooltip">
+                                    <h3>Bootstrap</h3>
+                                </div>
+                            </div>
+                            <div class="coding-info">
+                                <span class="icon-git show-details-button" data-target="#git-info"></span>
+                                <div class="tooltip">
+                                    <h3>Git</h3>
                                 </div>
                             </div>
                             <div class="coding-info">
@@ -139,7 +163,12 @@
                         <div class="slide" id="react-info">
                             <h2 class="top-inset-responsive"><span class="text-react"><span class="icon-react"></span> React</span></h2>
                             <p class="skill-description">JavaScript library for creating interactive UIs.</p>
-                            <p>I Have no experience with react, I plan to add this to my skillset.</p>
+                            <p>Learned about how states work and and wrap them around components to be able to update the virtual dom dynamically as the user interacts with the page.</p>
+                        </div>
+                        <div class="slide" id="dot-net-info">
+                            <h2 class="top-inset-responsive"><span class="text-dot-net"><span class="icon-dot-net"></span> C# .NET</span></h2>
+                            <p class="skill-description">Framework for building cross-platform applications.</p>
+                            <p>Have experience with creating RESTful API's using ASP.NET Core, also learning about the vast and exciting eco-system found in .NET</p>
                         </div>
                         <div class="slide" id="mysql-info">
                             <h2 class="top-inset-responsive"><span class="text-mysql"><span class="icon-mysql"></span> MySQL</span></h2>
@@ -156,11 +185,6 @@
                             <p class="skill-description">Programming language for dynamic web functionality.</p>
                             <p>Very handy for adding intractability on any website. This portfolio uses javascript extensively.</p>
                         </div>
-                        <div class="slide" id="c-sharp-info">
-                            <h2 class="top-inset-responsive"><span class="text-c-sharp"><span class="icon-c-sharp"></span> C#</span></h2>
-                            <p class="skill-description">Versatile language for desktop, web, and game development.</p>
-                            <p>I Have no experience with c#, I plan to add this to my skillset.</p>
-                        </div>
                         <div class="slide" id="php-info">
                             <h2 class="top-inset-responsive"><span class="text-php"><span class="icon-php"></span> PHP</span></h2>
                             <p class="skill-description">Server-side scripting language for dynamic web content.</p>
@@ -170,6 +194,11 @@
                             <h2 class="top-inset-responsive"><span class="text-python"><span class="icon-python"></span> Python</span></h2>
                             <p class="skill-description">High-level language for versatile programming applications.</p>
                             <p>My first programming language, giving me confidence to work with all the different logical operations and functions.</p>
+                        </div>
+                        <div class="slide" id="lua-info">
+                            <h2 class="top-inset-responsive"><span class="text-lua"><span class="icon-lua"></span> Lua</span></h2>
+                            <p class="skill-description">Scripting language for embedded systems and games.</p>
+                            <p>Used Lua to build game logic in Roblox. Learning about how lua tables work and how to structure and distribute data within a game.</p>
                         </div>
                         <div class="slide" id="blender-info">
                             <h2 class="top-inset-responsive"><span class="text-blender"><span class="icon-blender"></span> Blender</span></h2>
@@ -186,6 +215,11 @@
                             <p class="skill-description">Stylesheet language for designing web presentation.</p>
                             <p>The presentation layer of the website, very powerful when paired with SASS.</p>
                         </div>
+                        <div class="slide" id="typescript-info">
+                            <h2 class="top-inset-responsive"><span class="text-typescript"><span class="icon-typescript"></span> Typescript</span></h2>
+                            <p class="skill-description">JavaScript with static typing for safer, scalable code.</p>
+                            <p>I have no experience with Typescript, I will learn it as I build confidence with React, as i recognise the usefulness of safe typing</p>
+                        </div>
                         <div class="slide" id="jquery-info">
                             <h2 class="top-inset-responsive"><span class="text-jquery"><span class="icon-jquery"></span> jQuery</span></h2>
                             <p class="skill-description">JavaScript library simplifying DOM manipulation and events.</p>
@@ -195,6 +229,16 @@
                             <h2 class="top-inset-responsive"><span class="text-tailwindcss"><span class="icon-tailwindcss"></span> Tailwind</span></h2>
                             <p class="skill-description">Utility-first CSS framework for rapid UI design.</p>
                             <p>Powerful when paired with Laravel when you can split these rapidly made styles into seperate components for easier maintainability.</p>
+                        </div>
+                        <div class="slide" id="bootstrap-info">
+                            <h2 class="top-inset-responsive"><span class="text-bootstrap"><span class="icon-bootstrap"></span> Bootstrap</span></h2>
+                            <p class="skill-description">CSS framework for responsive web design.</p>
+                            <p>Learned about the usefulness of Bootstrap when building my ASP.NET Core project. Allowing me to use predefined themes without needing to build my own CSS file, only defining classes in the markup.</p>
+                        </div>
+                        <div class="slide" id="git-info">
+                            <h2 class="top-inset-responsive"><span class="text-git"><span class="icon-git"></span> Git</span></h2>
+                            <p class="skill-description">Version control system for tracking code changes.</p>
+                            <p>Consistently used on every project I work on. Useful to keep track of who changes what and to roll back changes should mistakes have been made. I find version control essential for a good development environment.</p>
                         </div>
                         <div class="slide" id="language-info">
                             <h2 class="top-inset-responsive"><span class="icon-language"></span> 2 Fluent languages</h2>

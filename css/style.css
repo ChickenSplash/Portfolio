@@ -76,8 +76,8 @@ input {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?byutvg");
-  src: url("../fonts/icomoon.eot?byutvg#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?byutvg") format("truetype"), url("../fonts/icomoon.woff?byutvg") format("woff"), url("../fonts/icomoon.svg?byutvg#icomoon") format("svg");
+  src: url("vfonts/icomoon.eot?s0nu8h");
+  src: url("../fonts/icomoon.eot?s0nu8h#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?s0nu8h") format("truetype"), url("../fonts/icomoon.woff?s0nu8h") format("woff"), url("../fonts/icomoon.svg?s0nu8h#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -185,6 +185,10 @@ input {
   content: "\e915";
 }
 
+.icon-bootstrap:before {
+  content: "\e92a";
+}
+
 .icon-c-sharp:before {
   content: "\e914";
 }
@@ -195,6 +199,14 @@ input {
 
 .icon-discord:before {
   content: "\e917";
+}
+
+.icon-dot-net:before {
+  content: "\e926";
+}
+
+.icon-git:before {
+  content: "\e927";
 }
 
 .icon-github:before {
@@ -215,6 +227,10 @@ input {
 
 .icon-laravel:before {
   content: "\e920";
+}
+
+.icon-lua:before {
+  content: "\e928";
 }
 
 .icon-mysql:before {
@@ -243,6 +259,10 @@ input {
 
 .icon-tailwindcss:before {
   content: "\e923";
+}
+
+.icon-typescript:before {
+  content: "\e929";
 }
 
 .icon-youtube:before {
@@ -440,6 +460,7 @@ pre[class*=language-] {
 .examples-selection .language-info .tooltip h3, .my-experience .coding-info .tooltip h3 {
   margin: 0px;
   text-align: center;
+  text-wrap: nowrap;
 }
 .examples-selection .language-info:hover .tooltip, .my-experience .coding-info:hover .tooltip {
   display: block;
@@ -624,6 +645,31 @@ p {
 
 .text-jquery {
   color: #0769ad;
+  font-weight: bold;
+}
+
+.text-dot-net {
+  color: #5c2d91;
+  font-weight: bold;
+}
+
+.text-git {
+  color: #f05032;
+  font-weight: bold;
+}
+
+.text-lua {
+  color: #2c2d72;
+  font-weight: bold;
+}
+
+.text-typescript {
+  color: #007acc;
+  font-weight: bold;
+}
+
+.text-bootstrap {
+  color: #563d7c;
   font-weight: bold;
 }
 
@@ -958,6 +1004,36 @@ p {
 .my-experience .coding-icons .icon-jquery:hover {
   color: #0769ad;
 }
+.my-experience .coding-icons .icon-dot-net {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-dot-net:hover {
+  color: #5c2d91;
+}
+.my-experience .coding-icons .icon-git {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-git:hover {
+  color: #f05032;
+}
+.my-experience .coding-icons .icon-lua {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-lua:hover {
+  color: #2c2d72;
+}
+.my-experience .coding-icons .icon-typescript {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-typescript:hover {
+  color: #007acc;
+}
+.my-experience .coding-icons .icon-bootstrap {
+  transition: color 0.2s ease;
+}
+.my-experience .coding-icons .icon-bootstrap:hover {
+  color: #563d7c;
+}
 .my-experience .coding-icons .icon-language, .my-experience .coding-icons .icon-info {
   transition: color 0.2s;
 }
@@ -1105,6 +1181,36 @@ p {
 }
 .project-thumbnail .project-languages .icon-jquery:hover {
   color: #0769ad;
+}
+.project-thumbnail .project-languages .icon-dot-net {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-dot-net:hover {
+  color: #5c2d91;
+}
+.project-thumbnail .project-languages .icon-git {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-git:hover {
+  color: #f05032;
+}
+.project-thumbnail .project-languages .icon-lua {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-lua:hover {
+  color: #2c2d72;
+}
+.project-thumbnail .project-languages .icon-typescript {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-typescript:hover {
+  color: #007acc;
+}
+.project-thumbnail .project-languages .icon-bootstrap {
+  transition: color 0.2s ease;
+}
+.project-thumbnail .project-languages .icon-bootstrap:hover {
+  color: #563d7c;
 }
 .project-thumbnail .view-more {
   display: none;
@@ -1444,6 +1550,41 @@ input {
 }
 .examples-selection .language-info .icon-jquery:hover {
   color: #0769ad;
+}
+.examples-selection .language-info .icon-dot-net {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-dot-net:hover {
+  color: #5c2d91;
+}
+.examples-selection .language-info .icon-git {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-git:hover {
+  color: #f05032;
+}
+.examples-selection .language-info .icon-lua {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-lua:hover {
+  color: #2c2d72;
+}
+.examples-selection .language-info .icon-typescript {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-typescript:hover {
+  color: #007acc;
+}
+.examples-selection .language-info .icon-bootstrap {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.examples-selection .language-info .icon-bootstrap:hover {
+  color: #563d7c;
 }
 
 .details-to-show .content {
