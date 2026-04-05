@@ -6,7 +6,7 @@ services:
     volumes:
       - .:/var/www/html
     env_file:
-      - includes/.env
+      - .env
     depends_on:
       db:
         condition: service_healthy
